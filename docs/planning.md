@@ -7,9 +7,9 @@ Note : there is a unique version number (and associated git tag) for the frozen 
 **For new developments** 
 
 :red_circle: November 10, 2024:
+Merge ABINITv10.3.0 contributions, as well as merge ABINITv10.2.X bug fixes, to reach frozen v10.3.1. Start ABINITv10.3.2, for further new developments.
 
-:red_circle: Merge ABINITv10.3.0 contributions, as well as merge ABINITv10.2.X bug fixes, to reach frozen v10.3.1. Start ABINITv10.3.2, for further new developments.
-[DONE] Octobre 10, 2024:
+[DONE] October 10, 2024:
 Start ABINITv10.3.0 (596cf06743), for new developments, from v10.1.7.
 
 
@@ -18,9 +18,8 @@ Start ABINITv10.3.0 (596cf06743), for new developments, from v10.1.7.
 
 **For bug fixes and releases** 
 
-:red_circle: October 25, 2024:
-
-:red_circle: Merge ABINITv10.2.2 contributions, to reach frozen v10.2.3, for public release. Start ABINITv10.2.4, for further bu fixes, improvement of documentation, etc.
+:red_circle: October 27, 2024:
+Merge ABINITv10.2.2 contributions, to reach frozen v10.2.3, for public release. Start ABINITv10.2.4, for further bug fixes, improvement of documentation, etc.
 
 [DONE] October 11, 2024:
 ABINITv10.2.1 (0b90756ad), for beta release. Start ABINITv10.2.2 (commit 5c71e5c45a), for examination of release notes, improvement of documentation, and fixing bugs.
