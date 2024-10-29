@@ -18,7 +18,7 @@ Start ABINITv10.3.0 (596cf06743), for new developments, from v10.1.7.
 
 **For bug fixes and releases** 
 
-:red_circle: October 27, 2024:
+:red_circle: October 29, 2024:
 Merge ABINITv10.2.2 contributions, to reach frozen v10.2.3, for public release. Start ABINITv10.2.4, for further bug fixes, improvement of documentation, etc.
 
 [DONE] October 11, 2024:
