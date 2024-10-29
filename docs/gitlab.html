@@ -373,7 +373,8 @@ In order to keep your branches <span style="color:red; ">user_id</span>/<span st
 <p>
 Then, in order to synchronize, in a first step, issue :
 </p>
-<pre class="code"> git fetch --tags trunk</pre>
+<pre class="code"> git pull -t trunk develop</pre>
+<pre class="code"> git push --tags</pre>
 
 <p>
 then, if the develop branch is to be updated, supposing it is checked out, merge the trunk/develop in your develop :
