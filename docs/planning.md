@@ -24,8 +24,11 @@ Start ABINITv10.3.0 (596cf06743), for new developments, from v10.1.7.
 
 **For bug fixes and releases** 
 
-:red_circle: November 26, 2024:
-Merge ABINITv10.2.4 contributions, to reach frozen ABINITv10.2.5 , for public release. Start ABINITv10.2.6, for further bug fixes.
+:red_circle: December XX, 2024:
+Merge ABINITv10.2.6 contributions, to reach frozen ABINITv10.2.7, for public release. Start ABINITv10.2.8, for further bug fixes.
+
+[DONE] November 27, 2024:
+Merge ABINITv10.2.4 contributions, to reach frozen ABINITv10.2.5 (9554bfd2ed), for public release. Start ABINITv10.2.6, for further bug fixes.
 
 [DONE] November 4, 2024:
 Merge ABINITv10.2.2 contributions, to reach frozen ABINITv10.2.3 (f9f3630664), for public release. Start ABINITv10.2.4 (ee2e9b6a), for further bug fixes, improvement of documentation, etc.
