@@ -1,6 +1,6 @@
 ## Buildbot worker matrix 
 
-The current reference worker is "alps", with reference [builder](https://github.com/abinit/abinit_web/blob/final_burger/docs/builder.md) "alps_gnu_9.3_openmpi".
+The current reference worker is "alps", with reference [builder](https://github.com/abinit/abinit_web/blob/main/docs/builder.md) "alps_gnu_9.3_openmpi".
 
 
 | Name   | CPU Type                | #Cores<br>(#THD) | Freq (GHz) | RAM (GB) | OS         | Compiler                                | MPI                           | Math                            | Misc               | Purchase         | S/N                   |

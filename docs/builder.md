@@ -2,7 +2,7 @@
 
 ### The reference builder 
 
-The current reference [workers](https://github.com/abinit/abinit_web/blob/final_burger/docs/workers.md) is "alps", with reference builder "alps_gnu_9.3_openmpi (LPR)".\\  In order to understand the rationale behind the set of the different builders let's first detail this reference builder LPR.
+The current reference [workers](https://github.com/abinit/abinit_web/blob/main/docs/workers.md) is "alps", with reference builder "alps_gnu_9.3_openmpi (LPR)".\\  In order to understand the rationale behind the set of the different builders let's first detail this reference builder LPR.
 
 LPR "alps_gnu_9.3_openmpi" is characterized by the following elements :
   *  The compiler is gcc 9.3 \\ with "-O2 -g -Wall -Wno-maybe-uninitialized -ffpe-trap=invalid,zero,overflow -fbacktrace -pedantic -fcheck=all" flags.
