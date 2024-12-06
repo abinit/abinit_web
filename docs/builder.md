@@ -5,7 +5,7 @@
 The current reference [worker](https://github.com/abinit/abinit_web/blob/main/docs/workers.md) is "alps", with reference builder "alps_gnu_9.3_openmpi (LPR)". In order to understand the rationale behind the set of the different builders let's first detail this reference builder LPR.
 
 LPR "alps_gnu_9.3_openmpi" is characterized by the following elements :
-  *  The compiler is gcc 9.3 \\ with "-O2 -g -Wall -Wno-maybe-uninitialized -ffpe-trap=invalid,zero,overflow -fbacktrace -pedantic -fcheck=all" flags.
+  *  The compiler is gcc 9.3 with "-O2 -g -Wall -Wno-maybe-uninitialized -ffpe-trap=invalid,zero,overflow -fbacktrace -pedantic -fcheck=all" flags.
   *  The MPI is Open MPI version 4.0.4.
   *  The compilation is done with "make -j 8", with the external libraries : NetCDF-C(-Fortran), HDF5, LibXC, OpenBLAS, Wannier90, BigDFT and PSML, build with MPI and with MPI_IO .
   * GW is compiled with double precision
