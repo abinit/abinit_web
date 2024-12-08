@@ -49,8 +49,8 @@ Also, some bots provide unique services :
 | buda2  | 1       | buda2_gnu_8.5_cuda           | yes      | gnu-8.5      | openmpi-4.1.3 | mkl-2019.0.1<br>cuda 11.2 | | enable_gpu |
 | eos    | 3       | eos_nvhpc_23.9_elpa          | yes      | nvhpc 23.9   | openmpi-4.1.6 | mkl-2023 elpa-2022                   |                | cuda-12                     |
 |        |         | eos_nvhpc_24.9_openmpi       | no       | nvhpc 24.9   | openmpi-4.1.6 | mkl-2023            |   |       |    cuda 12.2                                       |
-|        |         | eos_gnu_13.2_mpich           | reference  | gnu-13.2   | mpich-4.2.3   | OpenBLAS<br>fftw3 | ABPW | -fcheck=all,no-pointer<br>-ffpe-trap=i,z,o<br>-fallow-argument-mismatch |
-|        |         | eos_gnu_13.2_serial          | reference  | gnu-13.2   |               | OpenBLAS<br>fftw3 | ABPW | -fcheck=all,no-pointer<br>-ffpe-trap=i,z,o<br>-fallow-argument-mismatch |
+|        |         | eos_gnu_13.2_mpich           | reference  | gnu-13.2   | mpich-4.2.3   | mkl 2023.2 | ABPW | -fcheck=all,no-pointer<br>-ffpe-trap=i,z,o<br>-fallow-argument-mismatch |
+|        |         | eos_gnu_13.2_serial          | reference  | gnu-13.2   |               | mkl 2023.2 | ABPW | -fcheck=all,no-pointer<br>-ffpe-trap=i,z,o<br>-fallow-argument-mismatch |
 | higgs  | 1       | higgs_gnu_12.3_cov           | yes      | gnu-12.3     | mpich-4.1.2   | mkl 2019           | ABPW           | coverage analysis<br>enable-netcdf-default |
 | scope  | 3       | scope_gnu_10.2_paral         | ref for tparal | gnu-10.2 | mpich-3.2 | OpenBLAS | BPW | mpirun -np 2 if max_nprocs allows it<br>enable-netcdf-default GW_SP |
 |        |         | scope_gnu_13.2_dep           | yes      | gnu-13.2     | mpich-4.1.2   | OpenBLAS           | PW             | check dependency<br>enable-netcdf-default |
