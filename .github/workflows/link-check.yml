@@ -43,7 +43,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y ruby-full
-          gem install html-proofer
+          sudo gem install html-proofer
 
       # Step 3: Run HTML Link Checker
       - name: Run HTMLProofer
