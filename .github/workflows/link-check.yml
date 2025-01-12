@@ -18,8 +18,8 @@ on:
 #      # Step 2: Install a static file server and the link checker
 #      - name: Install Tools
 #        run: |
-#          npm install -g http-server
-#          npm install -g broken-link-checker
+#          sudo npm install -g http-server
+#          sudo npm install -g broken-link-checker
 #
 #      # Step 3: Serve the file locally
 #      - name: Serve the Site
@@ -41,8 +41,8 @@ jobs:
       # Step 2: Install Ruby and html-proofer
       - name: Install Ruby and HTMLProofer
         run: |
-          apt-get update
-          apt-get install -y ruby-full
+          sudo apt-get update
+          sudo apt-get install -y ruby-full
           gem install html-proofer
 
       # Step 3: Run HTML Link Checker
