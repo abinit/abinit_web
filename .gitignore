@@ -1,0 +1,13 @@
+.DS_Store
+.idea
+.cache
+*.sw[op]
+__pycache__
+!.gitkeep
+
+# Pycharm
+.idea/
+
+# VSC
+.vscode/
+

@@ -1,0 +1,23 @@
+name: Validate HTML Links
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Step 2: Install and run Link Checker
+      - name: Install HTML Link Checker
+        run: npm install -g broken-link-checker
+
+      - name: Run HTML Link Checker
+        run: blc file://$GITHUB_WORKSPACE/docs/index.html --recursive --verbose
