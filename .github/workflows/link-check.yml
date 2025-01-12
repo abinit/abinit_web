@@ -15,9 +15,16 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      # Step 2: Install and run Link Checker
-      - name: Install HTML Link Checker
-        run: npm install -g broken-link-checker
+      # Step 2: Install a static file server and the link checker
+      - name: Install Tools
+        run: |
+          npm install -g http-server
+          npm install -g broken-link-checker
 
+      # Step 3: Serve the file locally
+      - name: Serve the Site
+        run: http-server ./docs -p 8080 &
+
+      # Step 4: Run Link Checker
       - name: Run HTML Link Checker
-        run: blc file://$GITHUB_WORKSPACE/docs/index.html --recursive --verbose
+        run: blc http://127.0.0.1:8080/index.html --recursive --verbose
