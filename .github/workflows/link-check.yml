@@ -6,29 +6,6 @@ on:
       - main
   pull_request:
 
-#jobs:
-#  link-check:
-#    runs-on: ubuntu-latest
-#
-#    steps:
-#      # Step 1: Check out the repository
-#      - name: Checkout Code
-#        uses: actions/checkout@v3
-#
-#      # Step 2: Install a static file server and the link checker
-#      - name: Install Tools
-#        run: |
-#          sudo npm install -g http-server
-#          sudo npm install -g broken-link-checker
-#
-#      # Step 3: Serve the file locally
-#      - name: Serve the Site
-#        run: http-server ./docs -p 8080 &
-#
-#      # Step 4: Run Link Checker
-#      - name: Run HTML Link Checker
-#        run: blc http://127.0.0.1:8080/index.html --recursive --verbose
-
 jobs:
   link-check:
     runs-on: ubuntu-latest
@@ -38,13 +15,36 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      # Step 2: Install Ruby and html-proofer
-      - name: Install Ruby and HTMLProofer
+      # Step 2: Install a static file server and the link checker
+      - name: Install Tools
         run: |
-          sudo apt-get update
-          sudo apt-get install -y ruby-full
-          sudo gem install html-proofer
+          sudo npm install -g http-server
+          sudo npm install -g broken-link-checker
 
-      # Step 3: Run HTML Link Checker
-      - name: Run HTMLProofer
-        run: htmlproofer ./docs --disable-external
+      # Step 3: Serve the file locally
+      - name: Serve the Site
+        run: http-server ./docs -p 8080 &
+
+      # Step 4: Run Link Checker
+      - name: Run HTML Link Checker
+        run: blc http://127.0.0.1:8080/index.html --recursive --verbose
+
+#jobs:
+#  link-check:
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      # Step 1: Check out the repository
+#      - name: Checkout Code
+#        uses: actions/checkout@v3
+#
+#      # Step 2: Install Ruby and html-proofer
+#      - name: Install Ruby and HTMLProofer
+#        run: |
+#          sudo apt-get update
+#          sudo apt-get install -y ruby-full
+#          sudo gem install html-proofer
+#
+#      # Step 3: Run HTML Link Checker
+#      - name: Run HTMLProofer
+#        run: htmlproofer ./docs --disable-external
