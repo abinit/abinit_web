@@ -2,12 +2,18 @@
 ## Planning of merges
 Note : there is a unique version number (and associated git tag) for the frozen versions, different from the version number for versions “in progress”. In the X.Y.Z chain, the “Z” of versions “in progress” is even, and the “Z” of frozen versions is odd
 
+
+### ABINITv10.4 and ABINITv10.5 planning (very tentatively)
+
+Likely end of March 2025 : launch ABINITv10.4.0 (for bug fixes) and ABINITv10.5.0 (for new developments). The first v10.4 public release, v10.4.1 is expected end of April 2025.
+
+
 ### ABINITv10.3 planning  
 
 **For new developments** 
 
 :red_circle: March 1, 2025 (depending on the stabilization of the test farm ...):
-Merge ABINITv10.3.4 contributions, as well as merge ABINITv10.2.6 bug fixes, to reach frozen v10.3.5. Start ABINITv10.3.6, for further new developments. Then, after about three-four weeks, launch ABINITv10.4.0 and ABINITv10.5.0.
+Merge ABINITv10.3.4 contributions, as well as merge ABINITv10.2.6 bug fixes, to reach frozen v10.3.5. Start ABINITv10.3.6, for further new developments. 
 
 [DONE] November 28, 2024:
 Merge ABINITv10.3.3 contributions, as well as merge ABINITv10.2.4 bug fixes. Start ABINITv10.3.4 (3d596456), for further new developments.
