@@ -12,8 +12,11 @@ Likely end of March 2025 : launch ABINITv10.4.0 (for bug fixes) and ABINITv10.5.
 
 **For new developments** 
 
-:red_circle: March 1, 2025 (depending on the stabilization of the test farm ...):
-Merge ABINITv10.3.4 contributions, as well as merge ABINITv10.2.6 bug fixes, to reach frozen v10.3.5. Start ABINITv10.3.6, for further new developments during March. 
+:red_circle: March 28, 2025 (depending on the stabilization of the test farm ...):
+Merge ABINITv10.3.5 contributions, to reach frozen v10.3.6. Start ABINITv10.4.0, for examination of release notes, improvement of documentation, and fixing bugs. Start ABINITv10.5.0, for further new developments.
+
+[DONE] March 2, 2025:
+Merge ABINITv10.3.4 contributions, as well as merge ABINITv10.2.6 bug fixes, to reach frozen v10.3.5 (a8aa2c57). Start ABINITv10.3.6 (217514bc), for further new developments during March. 
 
 [DONE] November 28, 2024:
 Merge ABINITv10.3.3 contributions, as well as merge ABINITv10.2.4 bug fixes. Start ABINITv10.3.4 (3d596456), for further new developments.
