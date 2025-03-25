@@ -97,12 +97,18 @@
 
     <h2>ABINIT Fallbacks (aka Plugins)</h2>
 
-    <p>From ABINIT 5.6 and up to ABINIT 8.10.3, fallbacks (aka plugins) are automatically downloaded at configure-time. They are not shipped anymore with the sources. If you do not have a permanent access to the internet, you may of course download them now and keep them together in a directory on your computer for further use. The default directory is <em>~/.abinit/tarballs/</em>, but you may store them anywhere you want. See the <tt>--with-tardir</tt> option of <em>configure</em> for details.</p>
+    <p> The <a href="https://github.com/abinit/abinit-fallbacks" style="color: #F18F34;">abinit-fallbacks project</a> is a package builder for the external dependencies of Abinit, 
+   in development environments lacking these components. 
+   You will find on the Web site of the project all the information on how to build and install fallbacks from source. The list of dependencies is mentioned below.
+   </p>
 
-    <p>Starting with ABINIT 9, fallbacks (aka External Libraries) are no longer managed by the ABINIT build system. The <a href="https://gitlab.abinit.org/buildbot/abinit-fallbacks" style="color: #F18F34;">abinit-fallbacks project</a> is a package builder for the external dependencies of Abinit, in development environments lacking these components. You will find on the <a href="https://wiki.abinit.org/doku.php?id=build:fallbacks" style="color: #F18F34;">ABINIT wiki</a> all the information on how to build and install fallbacks from source.</p>
+   <p> In versions of ABINIT prior to ABINIT 5.6, the fallbacks (aka plugins) were shipped with the sources, and managed by the build system. 
+Then, from ABINIT 5.6 and up to ABINIT 8.10.3 these were automatically downloaded at configure time. This proved too difficult to maintain. 
+Starting with ABINIT 9, fallbacks (aka External Libraries) are no longer managed by the ABINIT build system. 
+It is supposed that these dependencies are already available at compile time in development environments. The abinit-fallbacks package builder can help to achieve proper set up of the external dependencies.</p>
 
     <hr>
-    <h2>For ABINIT 9.8.x ... 9.10.x</h2>
+    <h2>For ABINIT 9.8.x ... 9.10.x.. 10.0.x ... 10.2.x </h2>
 
     <h6>download the last <a href="https://forge.abinit.org/abinit-fallbacks-9.8.tar.gz" style="color: #F18F34;">abinit-fallbacks tarball</a> (<a href="https://forge.abinit.org/abinit-fallbacks-9.8.md5sum" style="color: #F18F34;">md5sum</a>)</h6>
 
