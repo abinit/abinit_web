@@ -11,6 +11,7 @@
 </head>
 
 <body>
+<div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
 <div class="icon-container">
     <div class="icon-row">
         <div>
@@ -22,7 +23,6 @@
         </div>
 
     </div>
-
     <div class="icon-row">
         <div class="icon">
             <a href="./pseudopotential.html">
@@ -80,9 +80,18 @@
         </div>
 </div>
 </div>
+
+    <script>
+            function toggleMenu() {
+                const iconContainer = document.querySelector('.icon-container');
+                iconContainer.classList.toggle('active');
+            }
+    </script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <div class="separator-line1"></div>
+
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -99,6 +108,7 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
     <!-- Add more li elements for each slide -->
   </ol>
 <div class="container-fluid">
@@ -170,29 +180,37 @@
                <img class="d-block w-100" src="./img/positron.png" alt="13th slide">
                </a>
           </div>
+	  <div class="carousel-item">
+	       <a href="https://pubs.acs.org/doi/abs/10.1021/acs.nanolett.4c04125" target="_blank">
+               <img class="d-block w-100" src="./img/apex.jpg" alt="14th slide">
+	       </a>
+	  </div>
           <div class="carousel-item">
                <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.094438" target="_blank">
-               <img class="d-block w-100" src="./img/cDFT.png" alt="14th slide">
+               <img class="d-block w-100" src="./img/cDFT.png" alt="15th slide">
                </a>
           </div>
         </div>
+
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
+
         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
+
     </div>
   </div>
+ </div>
 </div>
 
-  </div>
 <div class="blinker">
     <span class="blink_me">New :</span>
-    <a href="https://github.com/abinit/abinit/releases/tag/10.0.7">
-        <span style="color: #F18F34;">Abinit 10.0.7 available (production)</span>
+    <a href="https://github.com/abinit/abinit/releases/releases/latest/">
+        <span style="color: #F18F34;">Abinit 10.2.7 available (production)</span>
     </a>
 </div>
 
@@ -206,9 +224,11 @@
         <span class="details" style="display: none;">
             <strong>ABINIT</strong> can calculate molecules, nanostructures and solids with any chemical composition, and comes with <strong>several complete and robust tables of atomic potentials</strong>.<br>
             <strong>On-line tutorials</strong> are available for the main features of the code, and several schools and workshops are organized each year.
-            <a href="#" class="less-link">-</a></span>
+            <a href="#" class="less-link">-</a>
         </span>
+
 <!--        <span class="read-less"> <a href="#" class="less-link">-</a></span>-->
+
     </div>
 </div>
 
@@ -270,13 +290,12 @@
                     <h4>Learn Abinit</h4>
                     <div class="footer_desc">
                         <ul>
-<!--                            <li>&lt;!&ndash; <a href="/doc">Documentation</a> &ndash;&gt;</li>-->
+                            <!--  <a href="/doc">Documentation</a> </li> -->
                             <li><a href="https://docs.abinit.org/">Guide for new users</a></li>
                             <li><a href="https://docs.abinit.org/tutorial/">Tutorials</a></li>
                             <li><a href="https://docs.abinit.org/variables/">Input variables</a></li>
                             <li><a href="https://docs.abinit.org/topics/features/">Features</a></li>
-                            <li><a href="https://docs.abinit.org/theory/documents/">Miscellaneous
-                            </a></li>
+                            <li><a href="https://docs.abinit.org/theory/documents/">Miscellaneous</a></li>
                             <li><a href="./benchmark.html">Benchmarks</a></li>
                             <li><a href="https://docs.abinit.org/developers/developers_howto/">For developers</a></li>
                         </ul>
@@ -292,21 +311,15 @@
                     <h4>Get in Touch</h4>
                     <div class="footer_desc">
                         <ul>
-                            <li><a href="contact.html" target="_self">Contact
-                                information</a></li>
+                            <li><a href="contact.html" target="_self">Contact information</a></li>
 <!--                            <li><a href="https://forum.abinit.org/viewtopic.php?f=20&amp;t=251" target="_blank">Nettiquette</a></li>-->
                             <li><a href="https://sympa-2.sipr.ucl.ac.be/abinit.org" target="_blank">Mailing list</a></li>
                             <!-- <li><a href="https://forum.abinit.org" target="_blank">Forum</a></li> -->
-                            <li><a href="forum.html" target="_blank">Forum
-                            </a></li>
+                            <li><a href="forum.html" target="_blank">Forum </a></li>
 <!--                            <li><a href="https://wiki.abinit.org" target="_blank">Wiki</a></li>-->
-                            <li><a href="support.html"
-                                   target="_self">Support the
-                                Abinit group</a></li>
-                            <li><a
-                                    href="https://wiki.abinit.org/doku.php?id=start">Wiki (old)</a></li>
-                            <li><a href="./corner.html">Developer's
-                                corner</a></li>
+                            <li><a href="support.html" target="_self">Support the Abinit group</a></li>
+                            <li><a href="https://wiki.abinit.org/doku.php?id=start">Wiki (old)</a></li>
+                            <li><a href="./corner.html">Developer's corner</a></li>
                         </ul>
                     </div>
                 </div>
@@ -318,7 +331,24 @@
 
 
 <div class="content-bottom2 row">
-  <div class="content-sponsors col-md-6 col-sm-6">
+
+  <div class="content-sponsors col-md-4 col-sm-4">
+    <div class="block" id="block-sponsorspartrners">
+      <!-- Inserted ABI-Logix Consortium logos -->
+      <div class="content">
+        <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item">
+          <p class="h5"><strong>ABI-Logix</strong> :
+            <a href="https://uclouvain.be"><img src="./sponsors/logo_uclouvain.png" alt="UCLouvain logo" class="image-footer"></a>
+            <a href="https://www.uliege.be"><img src="./sponsors/logo_uliege.png" alt="ULiège logo" class="image-footer"></a>
+            <a href="https://www.unamur.be"><img src="./sponsors/logo_unamur.png" alt="UNamur logo" class="image-footer"></a>
+            <a href="https://www.cea.fr"><img src="./sponsors/logo_cea.png" alt="CEA logo" class="image-footer"></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-sponsors col-md-4 col-sm-4">
     <div class="block" id="block-sponsorspartrners">
       <div class="content">
         <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item">
@@ -332,7 +362,8 @@
       </div>
     </div>
   </div>
-  <div class="content-partners col-md-3 col-sm-3">
+
+  <div class="content-partners col-md-2 col-sm-2">
     <div class="block" id="block-partners">
       <div class="content">
         <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item">
@@ -344,6 +375,7 @@
       </div>
     </div>
   </div>
+
   <div class="content-partners col-md-3 col-sm-3">
     <div class="block" id="block-socials">
       <div class="content">
@@ -357,6 +389,7 @@
       </div>
     </div>
   </div>
+
 </div>
 
 
