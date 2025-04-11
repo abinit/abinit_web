@@ -5,10 +5,14 @@ Note : there is a unique version number (and associated git tag) for the frozen 
 
 ### ABINITv10.5 planning 
 
+**For new developments**
+
 :red_circle: April 12, 2025:
 Start ABINITv10.5.0 (XX), for new developments, from v10.3.7.
 
 ### ABINITv10.4 planning 
+
+**For bug fixes and releases**
 
 :red_circle: April 12, 2025:
 Start ABINITv10.4.0 (XX), for bug fixes and documentation, from v10.3.7. The first v10.4 public release, v10.4.1, is expected end of April 2025.
