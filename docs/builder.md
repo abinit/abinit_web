@@ -2,7 +2,7 @@
 
 ### The reference builder 
 
-The current reference [worker](https://github.com/abinit/abinit_web/blob/main/docs/workers.md) is "eos", with reference builder "eos_gnu_13.2_mpich (EOF)". 
+The current reference builder is "eos_gnu_13.2_mpich" (EOF) running on the "eos" testfarm [server](https://github.com/abinit/abinit_web/blob/main/docs/servers.md).
 In order to understand the rationale behind the set of the different builders let's first detail this reference builder EOF.
 
 eos_gnu_13.2_mpich (EOF) is characterized by the following elements :

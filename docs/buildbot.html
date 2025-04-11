@@ -142,7 +142,7 @@
 <ul class="toc">
 <li class="level2"><div class="li"><a href="#triggering_the_execution_of_the_automatic_tests">Triggering the execution of the automatic tests</a></div></li>
 <li class="level2"><div class="li"><a href="#how_to_handle_failures">How to handle failures ?</a></div></li>
-<li class="level2"><div class="li"><a href="#accessing_directly_some_worker">Accessing directly some worker.</a></div></li>
+<li class="level2"><div class="li"><a href="#accessing_directly_some_server">Accessing directly some server.</a></div></li>
 </ul></li>
 </ul>
 </div>
@@ -166,14 +166,14 @@ In the following, we suppose that you are a well-identified developer of ABINIT,
 There are two ways to trigger the tests on the test farm:
 </p>
 <ul>
-<li class="level1"><div class="li">     a merge request of your branch to trunk/develop will trigger nightly (the bunch starts around 10:30pm European time) the launch of automatic tests on all the “nightly” workers ;</div>
+<li class="level1"><div class="li">     a merge request of your branch to trunk/develop will trigger nightly (the bunch starts around 10:30pm European time) the launch of automatic tests on all the “nightly” builders ;</div>
 </li>
 <li class="level1"><div class="li">     a general “on-demand” Web page on bbportal. You can contact Xavier if you think you are sufficiently expert to use it, provided (of course) you need it for your development.</div>
 </li>
 </ul>
 
 <p>
-You will receive by mail the results of the execution of the tests, concerning each nightly worker, one for each worker. Congratulation if your compilation succeeded, all the tests succeeded, etc !
+You will receive by mail the results of the execution of the tests, concerning each nightly builder, one mail for each builder. Congratulation if your compilation succeeded, all the tests succeeded, etc !
 </p>
 
 </div>
@@ -212,11 +212,11 @@ In order to correct the test in the “22. abirules” or “23. buildsys” ser
 
 </div>
 
-<h2 class="sectionedit4" id="accessing_directly_some_worker">Accessing directly some worker.</h2>
+<h2 class="sectionedit4" id="accessing_directly_some_server">Accessing directly some server.</h2>
 <div class="level2">
 
 <p>
-If you have git branches, you are entitled to have interactive access to each of the workers. Moreover, you can login as “buildbot” user, and place yourself as if you were the one who just made the run reported in the mail that you received. Hence, you are directly placed in an environment ready to debug.
+If you have git branches, you are entitled to have interactive access to each of the testfarm servers. Moreover, you can login as “buildbot” user, and place yourself as if you were the one who just made the run reported in the mail that you received. Hence, you are directly placed in an environment ready to debug.
 </p>
 <ol>
 <li class="level1"><div class="li">  Login on a gateway (well, the first time, contact Jean-Michel Beuken, to allow your machine to connect to the private network - the following instruction assumes your public key is ~/.ssh/id_rsa_abinit ) : <br>
@@ -252,7 +252,7 @@ The first part of the name of the bot is the name_of_the_machine.</div>
 <li class="level1"><div class="li">  Use the command “module load NAME_OF_BUILDER” to select the compiler that you want to use (type “module avail” to see the list of options). <br>
 Try to solve your problem … ! You can modify the files, recompile, etc …</div>
 </li>
-<li class="level1"><div class="li">  The worker can handle usual git commands. So you might make modifications, commit and push to your branch. Note however that by default, buildbot is in a “detached HEAD” state. You can check this by issuing <strong>git branch -a</strong>. You need to checkout your branch, with the command <strong>git checkout &lt;name_of_your_branch&gt;</strong>. Also, you nedd to checkout the file config/specs/testfarm.conf, with the command <strong>git checkout config/specs/testfarm.conf</strong> </div>
+<li class="level1"><div class="li">  The server can handle usual git commands. So you might make modifications, commit and push to your branch. Note however that by default, buildbot is in a “detached HEAD” state. You can check this by issuing <strong>git branch -a</strong>. You need to checkout your branch, with the command <strong>git checkout &lt;name_of_your_branch&gt;</strong>. Also, you nedd to checkout the file config/specs/testfarm.conf, with the command <strong>git checkout config/specs/testfarm.conf</strong> </div>
 </li>
 <li class="level1"><div class="li"> Of course, after commit and push, it is also advised to test your modifications on your own machine, before using again the test farm, although this is not mandatory.</div>
 </li>
