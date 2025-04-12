@@ -1,6 +1,6 @@
-## Buildbot worker matrix 
+## Buildbot testfarm server matrix 
 
-The current reference worker is "eos", with reference [builder](https://github.com/abinit/abinit_web/blob/main/docs/builder.md) "eos_gnu_13.2_mpich".
+The current reference [builder](https://github.com/abinit/abinit_web/blob/main/docs/builder.md) "eos_gnu_13.2_mpich", running on the server "eos".
 
 
 | Name   | CPU Type<br>$${\color{red}GPU \space Type}$$    | #Cores<br>(#THD)  | RAM (GB) | OS         | Compiler                                | MPI                           | Math                            | Misc               | Purchase         | S/N                   |
