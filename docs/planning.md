@@ -7,7 +7,7 @@ Note : there is a unique version number (and associated git tag) for the frozen 
 
 **For new developments**
 
-:red_circle: May 12, 2024:
+:red_circle: May 15, 2024:
 Merge ABINITv10.5.0 contributions, as well as merge ABINITv10.4.x, to reach frozen v10.5.1 . Start ABINITv10.5.2, for further new developments.
 
 [DONE] April 12, 2025:
@@ -17,8 +17,8 @@ Start ABINITv10.5.0 (24c179f9), for new developments, from v10.3.7.
 
 **For bug fixes and releases**
 
-:red_circle: May 8, 2025:
-Merge ABINITv10.4.0, and freeze ABINITv10.4.1. Start ABINITv10.4.2, for examination of release notes, improvement of documentation, and fixing bugs. Public release of ABINITv10.4.3 is expected mid-May.
+:red_circle: May 14, 2025:
+Merge ABINITv10.4.0, and freeze ABINITv10.4.1. Start ABINITv10.4.2, for examination of release notes, improvement of documentation, and fixing bugs. Public release of ABINITv10.4.3 is expected end of May.
 
 [DONE] April 12, 2025:
 Start ABINITv10.4.0 (6ef134e2), for bug fixes and documentation, including preparation of the release notes, from v10.3.7.
