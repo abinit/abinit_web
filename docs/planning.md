@@ -17,7 +17,7 @@ Start ABINITv10.5.0 (24c179f9), for new developments, from v10.3.7.
 
 **For bug fixes and releases**
 
-:red_circle: May 24, 2025:
+:red_circle: May 31, 2025:
 Merge ABINITv10.4.2, and freeze ABINITv10.4.3, for public release. Start ABINITv10.4.4, for fixing bugs. 
 
 [DONE] May 16, 2025:
