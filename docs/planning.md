@@ -34,7 +34,7 @@ Start ABINITv10.4.0 (6ef134e2), for bug fixes and documentation, including prepa
 **For new developments** 
 
 [DONE] April 11, 2025:
-Merge ABINITv10.3.6 contributions, to reach frozen v10.3.7 (XX).
+Merge ABINITv10.3.6 contributions, to reach frozen v10.3.7 (858200d8).
 
 [DONE] March 2, 2025:
 Merge ABINITv10.3.4 contributions, as well as merge ABINITv10.2.6 bug fixes, to reach frozen v10.3.5 (a8aa2c57). Start ABINITv10.3.6 (217514bc), for further new developments during March. 
