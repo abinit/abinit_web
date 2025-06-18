@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+abidev2024.abinit.org	TRUE	/	FALSE	1999999999	cba44aed2b1d58d1749bc067487bf03e	gcpm1rqah1m9gic97kspqb9ckh
+
