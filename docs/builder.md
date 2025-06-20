@@ -17,7 +17,7 @@ This reference builder is not doing everything :
   * OpenMP, and memory profiling is not activated for EOF
   * Several procedures are not tested by EOF, like distchck.
   * GW is not tested in single precision
-  * BigDFT tests are not executed (for the time being)
+  <!-- * BigDFT tests are not executed (for the time being) -->
 
 ### The other builders 
 
@@ -34,24 +34,23 @@ Also, some other bots provide additional unique services :
   * scope_gnu_12.2_mpich (enable_memory_profiling=yes, detect memory leak)
   * alps_gnu_9.5_sdebug (for buildsys, abirules, distchk [checking the production of the .tar.gz package] and html link checker)...
   * scope_gnu_13.2_dep check dependency
-  * higgs_gnu_12.3_cov and ubu_intel_16.0_mpich test the BigDFT library.
 
 ### Matrix of builders 
 
 | Slave  | #Nightly | Builder                     | Nightly | Compiler     | MPI           | Linear Algebra     | Libs Tested     | Departure from Ref                          |
 |--------|---------|------------------------------|---------|--------------|---------------|--------------------|----------------|---------------------------------------------|
-| alps   | 2       | alps_gnu_9.5_sdebug          | yes      | gnu-9.5      | mpich-4.2.3   | OpenBLAS<br>fftw3 | ABPW | -fno-frontend-optimize<br>-ffpe-trap=i,z,o |
+| alps   | 3       | alps_gnu_9.5_sdebug          | yes      | gnu-9.5      | mpich-4.2.3   | OpenBLAS<br>fftw3 | ABPW | -fno-frontend-optimize<br>-ffpe-trap=i,z,o |
+|        |         | alps_gnu_14.2_cov            | yes      | gnu-14.2     | mpich-4.2.3   | mkl 2025.0         | ABW |          | coverage                        |
 |        |         | alps_nag_7.2_serial          | yes      | nag-7.2      |               | netlib_3.10.0      | A              | enable-netcdf-default                       |
 |        |         | alps_nag_7.2_openmpi         | no       | nag-7.2      | openmpi-4.1.2 | netlib_3.10.0      | A              | enable-netcdf-default                       |
-|        |         | alps_intel_2024_oneAPI       | no       | intel<br>oneAPI_2024.2 | intel mpi  | mkl 2024.2 | APW | scalapack ifort 2021.13 |
-|        |         | alps_intel_2025_oneAPI       | no       | intel<br>oneAPI_2025.0 | intel mpi  | mkl 2024.2 | APW | scalapack ifx  |
+|        |         | alps_intel_2025_elpa         | yes      | intel<br>oneAPI_2025.0 | intel mpi  | mkl 2024.2 | APW | scalapack ifx  |
 | bob    | 1       | bob_gnu_13.2_openmp          | yes      | gnu-13.2     |               | atlas-3.10         | P              | Fedora39 packages                           |
 | buda2  | 1       | buda2_gnu_8.5_cuda           | yes      | gnu-8.5      | openmpi-4.1.3 | mkl-2019.0.1<br>cuda 11.2 | | enable_gpu |
-| eos    | 3       | eos_nvhpc_23.9_elpa          | yes      | nvhpc 23.9   | openmpi-4.1.6 | mkl-2023 elpa-2022                   |                | cuda-12                     |
-|        |         | eos_nvhpc_24.9_openmpi       | no       | nvhpc 24.9   | openmpi-4.1.6 | mkl-2023            |   |       |    cuda 12.2                                       |
+| eos    | 5       | eos_nvhpc_23.9_elpa          | yes      | nvhpc 23.9   | openmpi-4.1.6 | mkl-2023 elpa-2022                   |                | cuda-12                     |
+|        |         | eos_nvhpc_24.9_openmpi       | yes      | nvhpc 24.9   | openmpi-4.1.6 | mkl-2023            |   |       |    cuda 12.2                                       |
 |        |         | eos_gnu_13.2_mpich           | reference  | gnu-13.2   | mpich-4.2.3   | mkl 2023.2 | ABPW | -fcheck=all,no-pointer<br>-ffpe-trap=i,z,o<br>-fallow-argument-mismatch |
 |        |         | eos_gnu_13.2_serial          | reference  | gnu-13.2   |               | mkl 2023.2 | ABPW | -fcheck=all,no-pointer<br>-ffpe-trap=i,z,o<br>-fallow-argument-mismatch |
-| higgs  | 1       | higgs_gnu_12.3_cov           | yes      | gnu-12.3     | mpich-4.1.2   | mkl 2019           | ABPW           | coverage analysis<br>enable-netcdf-default |
+|        |         | eos_intel_2023_cmake         | yes        | oneAPI<br>2023   | intel   | mkl 2023.2 |  | elpa? |
 | scope  | 3       | scope_gnu_10.2_paral         | ref for tparal | gnu-10.2 | mpich-3.2 | OpenBLAS | BPW | mpirun -np 2 if max_nprocs allows it<br>enable-netcdf-default GW_SP |
 |        |         | scope_gnu_13.2_dep           | yes      | gnu-13.2     | mpich-4.1.2   | OpenBLAS           | PW             | check dependency<br>enable-netcdf-default |
 |        |         | scope_gnu_12.2_mpich         | yes      | gnu-12.2     | mpich-4.0.3   | OpenBLAS           | PW             | enable_memory_profiling                    |
