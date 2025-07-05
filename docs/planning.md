@@ -24,7 +24,7 @@ Start ABINITv10.5.0 (24c179f9), for new developments, from v10.3.7.
 Merge ABINITv10.4.4, and freeze ABINITv10.4.5, for public release. Start ABINITv10.4.6, for fixing bugs. 
 
 [DONE] July 5, 2025:
-Merge ABINITv10.4.2 (2cc45ad69c), and freeze ABINITv10.4.3 (79fd6b8d24). Start ABINITv10.4.4(e8f6235be2), for fixing bugs. 
+Merge ABINITv10.4.2 (2cc45ad69c), and freeze ABINITv10.4.3 (79fd6b8d24), for public release. Start ABINITv10.4.4(e8f6235be2), for fixing bugs. 
 
 [DONE] May 16, 2025:
 Merge ABINITv10.4.0 (99e4d91d), and freeze ABINITv10.4.1(cb81239). Start ABINITv10.4.2(7d8a5c19), for examination of release notes, improvement of documentation, and fixing bugs. 
