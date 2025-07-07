@@ -44,6 +44,8 @@ Also, some other bots provide additional unique services :
 |        |         | alps_nag_7.2_serial          | yes      | nag-7.2      |               | netlib_3.10.0      | A              | enable-netcdf-default                       |
 |        |         | alps_nag_7.2_openmpi         | no       | nag-7.2      | openmpi-4.1.2 | netlib_3.10.0      | A              | enable-netcdf-default                       |
 |        |         | alps_intel_2025_elpa         | yes      | intel<br>oneAPI_2025.0 | intel mpi  | mkl 2024.2 | APW | scalapack ifx  |
+| atlas  | 1       | atlas_gnu_14.2_triqs         | yes      | gnu-14.2     | openmpi-5.0.5 | mkl-2025.1         |    | triqs v3.2.1 |
+|        |         | atlas_gnu_14.2_openmp        | no       | gnu-14.2     |               | atlas fftw3        |    | openmp  |
 | bob    | 1       | bob_gnu_13.2_openmp          | yes      | gnu-13.2     |               | atlas-3.10         | P              | Fedora39 packages                           |
 | buda2  |         | buda2_gnu_8.5_cuda           | no       | gnu-8.5      | openmpi-4.1.3 | mkl-2019.0.1<br>cuda 11.2 | | enable_gpu |
 | eos    | 5       | eos_nvhpc_23.9_elpa          | yes      | nvhpc 23.9   | openmpi-4.1.6 | mkl-2023 elpa-2022                   |                | cuda-12                     |
