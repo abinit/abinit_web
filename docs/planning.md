@@ -11,10 +11,10 @@ Note : there is a unique version number (and associated git tag) for the frozen 
 Merge ABINITv10.5.6 contributions, as well as merge ABINITv10.4.7, to reach frozen v10.5.7. v10.5.7 might be the last revision of the v10.4.X series, followed by the release of v10.5 and launched of v10.6. Otherwise, start v10.5.8 for further developments.
 
 [DONE] September 7, 2025:
-Merge ABINITv10.5.4 contributions (9686a6649d), as well as merge ABINITv10.4.5, to reach frozen v10.5.5 (054dc52e) . Start ABINITv10.5.6 ( ), for further new developments.
+Merge ABINITv10.5.4 contributions (9686a6649d), as well as merge ABINITv10.4.5, to reach frozen v10.5.5 (054dc52e) . Start ABINITv10.5.6 (d328b4a3), for further new developments.
 
 [DONE] July 17, 2025:
-Merge ABINITv10.5.2 contributions (ff0a503d45), as well as merge ABINITv10.4.3, to reach frozen v10.5.3 (45c13f177e) . Start ABINITv10.5.4 67925a8ad1, for further new developments.
+Merge ABINITv10.5.2 contributions (ff0a503d45), as well as merge ABINITv10.4.3, to reach frozen v10.5.3 (45c13f177e) . Start ABINITv10.5.4 (67925a8ad1), for further new developments.
 
 [DONE] May 15, 2025:
 Merge ABINITv10.5.0 contributions (eb3d645a), as well as merge ABINITv10.4.1, to reach frozen v10.5.1(dc38c9af) . Start ABINITv10.5.2 (c3b88d02), for further new developments.
