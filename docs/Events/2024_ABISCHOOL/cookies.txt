@@ -1,4 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-school2024.abinit.org	TRUE	/	FALSE	1999999999	cba44aed2b1d58d1749bc067487bf03e	sfij597ca36c4kbfoogm40927u
-
