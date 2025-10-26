@@ -4,7 +4,11 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - 'docs/Events/**'
   pull_request:
+    paths-ignore:
+      - 'docs/Events/**'
 
 jobs:
   link-check:
