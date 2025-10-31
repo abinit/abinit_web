@@ -27,8 +27,12 @@ jobs:
       - name: Check links with lychee
         uses: lycheeverse/lychee-action@v1
         with:
-          args: "http://localhost:8080 --recursive --verbose"
+          args: http://localhost:8080 --recursive --verbose
           fail: true
+          format: markdown
+          jobSummary: true
+          lycheeVersion: lastest
+          output: lychee/out.md
           
 #jobs:
 #  link-check:
