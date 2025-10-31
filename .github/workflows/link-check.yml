@@ -9,29 +9,49 @@ on:
   pull_request:
     paths-ignore:
       - 'docs/Events/**'
-
 jobs:
   link-check:
     runs-on: ubuntu-latest
-
+    
     steps:
-      # Step 1: Check out the repository
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
-      # Step 2: Install a static file server and the link checker
-      - name: Install Tools
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Start local server
         run: |
-          sudo npm install -g http-server
-          sudo npm install -g broken-link-checker
-
-      # Step 3: Serve the file locally
-      - name: Serve the Site
-        run: http-server ./docs -p 8080 &
-
-      # Step 4: Run Link Checker
-      - name: Run HTML Link Checker
-        run: blc http://127.0.0.1:8080/index.html --recursive --verbose
+          python -m http.server 8080 --directory ./docs &
+          sleep 5  # Wait for server to start
+      - name: Check links with lychee
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: "http://localhost:8080 --recursive --verbose"
+          fail: true
+          
+#jobs:
+#  link-check:
+#   runs-on: ubuntu-latest
+#
+#    steps:
+#      # Step 1: Check out the repository
+#      - name: Checkout Code
+#        uses: actions/checkout@v3
+#
+#      # Step 2: Install a static file server and the link checker
+#      - name: Install Tools
+#        run: |
+#          sudo npm install -g http-server
+#          sudo npm install -g broken-link-checker
+#
+#      # Step 3: Serve the file locally
+#      - name: Serve the Site
+#        run: http-server ./docs -p 8080 &
+#
+#      # Step 4: Run Link Checker
+#      - name: Run HTML Link Checker
+#        run: blc http://127.0.0.1:8080/index.html --recursive --verbose
 
 #jobs:
 #  link-check:
