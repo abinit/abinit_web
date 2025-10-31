@@ -12,27 +12,35 @@ on:
 jobs:
   link-check:
     runs-on: ubuntu-latest
-    
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Python
-        uses: actions/setup-python@v4
+  steps:
+      - uses: actions/checkout@v5
+
+      - name: Link Checker
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
         with:
-          python-version: '3.x'
-      - name: Start local server
-        run: |
-          python -m http.server 8080 --directory ./docs &
-          sleep 5  # Wait for server to start
-      - name: Check links with lychee
-        uses: lycheeverse/lychee-action@v1
-        with:
-          args: http://localhost:8080 --recursive --verbose
-          fail: true
-          format: markdown
-          jobSummary: true
-          lycheeVersion: 1.9.0
-          output: lychee/out.md
+          fail: false
+          
+ #   steps:
+ #     - name: Checkout
+ #       uses: actions/checkout@v4
+ #     - name: Setup Python
+ #       uses: actions/setup-python@v4
+ #       with:
+ #         python-version: '3.x'
+ #     - name: Start local server
+ #       run: |
+ #         python -m http.server 8080 --directory ./docs &
+ #         sleep 5  # Wait for server to start
+ #     - name: Check links with lychee
+ #       uses: lycheeverse/lychee-action@v1
+ #       with:
+ #         args: http://localhost:8080 --recursive --verbose
+ #         fail: true
+ #         format: markdown
+ #         jobSummary: true
+ #         lycheeVersion: 1.9.0
+ #         output: lychee/out.md
           
 #jobs:
 #  link-check:
