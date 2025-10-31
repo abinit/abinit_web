@@ -31,7 +31,7 @@ jobs:
           fail: true
           format: markdown
           jobSummary: true
-          lycheeVersion: lastest
+          lycheeVersion: 1.9.0
           output: lychee/out.md
           
 #jobs:
