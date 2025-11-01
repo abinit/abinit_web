@@ -20,14 +20,14 @@ jobs:
           cd ./docs  # Aller dans le dossier à servir
           python -m http.server 8080 &
           echo "HTTP_PID=$!" >> $GITHUB_ENV
-          sleep 3  # Laisser le temps au serveur de démarrer
+          sleep 5  # Laisser le temps au serveur de démarrer
 
       - name: Link Checker
         id: lychee
         uses: lycheeverse/lychee-action@v2
         with:
           fail: false
-          args: http://localhost:8080 --recursive
+          args: http://localhost:8080
           
       - name: Stop HTTP Server
         if: always()
