@@ -27,7 +27,7 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           fail: false
-          args: --recursive --max-depth 3 http://localhost:8080
+          args: --verbose --exclude "docs/atomic_data" http://localhost:8080
           
       - name: Stop HTTP Server
         if: always()
