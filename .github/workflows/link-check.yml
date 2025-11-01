@@ -14,13 +14,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+      
+      - name: Start HTTP Server
+        run: |
+          cd ./docs  # Aller dans le dossier à servir
+          python -m http.server 8080 &
+          echo "HTTP_PID=$!" >> $GITHUB_ENV
+          sleep 3  # Laisser le temps au serveur de démarrer
 
       - name: Link Checker
         id: lychee
         uses: lycheeverse/lychee-action@v2
         with:
           fail: false
-          args: ./docs --exclude ./docs/atomic_data 
+          args: http://localhost:8080
+          
+      - name: Stop HTTP Server
+        if: always()
+        run: kill ${{ env.HTTP_PID }}
+
+ #         args: ./docs --exclude ./docs/atomic_data 
           
  #   steps:
  #     - name: Checkout
