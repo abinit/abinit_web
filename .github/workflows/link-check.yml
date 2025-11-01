@@ -20,7 +20,7 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           fail: false
-          args: --skip-fragments --method basic --exclude docs/atomic_data ./docs
+          args: ./docs --exclude ./docs/atomic_data 
           
  #   steps:
  #     - name: Checkout
