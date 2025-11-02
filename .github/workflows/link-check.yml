@@ -27,12 +27,14 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           fail: false
-          args: --verbose --exclude "docs/atomic_data" --exclude "docs/Events" 
+          args:  --verbose --base ./docs --exclude "atomic_data" --exclude "Events"
           
       - name: Stop HTTP Server
         if: always()
         run: kill ${{ env.HTTP_PID }}
 
+ #         args: --verbose --exclude "docs/atomic_data" --exclude "docs/Events" 
+        
  #         args: ./docs --exclude ./docs/atomic_data 
           
  #   steps:
