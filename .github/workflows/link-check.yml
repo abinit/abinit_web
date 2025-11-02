@@ -22,19 +22,19 @@ jobs:
           echo "HTTP_PID=$!" >> $GITHUB_ENV
           sleep 5  # Laisser le temps au serveur de démarrer
 
-      #- name: Link Checker
-      #  id: lychee
-      #  uses: lycheeverse/lychee-action@v2
-      #  with:
-      #    fail: false
-      #    args: --verbose --exclude "atomic_data" --exclude "Events"
-
-      - name: Link Checker Debug
+      - name: Link Checker
         id: lychee
         uses: lycheeverse/lychee-action@v2
         with:
           fail: false
-          args: --verbose --dump > lychee_debug.txt
+          args: --verbose --exclude "atomic_data" --exclude "Events" --dump > lychee_debug.txt http://localhost:8080
+
+      #- name: Link Checker Debug
+      #  id: lychee
+      #  uses: lycheeverse/lychee-action@v2
+      #  with:
+      #    fail: false
+      #    args: --verbose --dump > lychee_debug.txt
 
       - name: Show debug info
         run: cat lychee_debug.txt
