@@ -27,7 +27,7 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           fail: false
-          args:  --verbose --base ./docs --exclude "atomic_data" --exclude "Events"
+          args:  --verbose --base docs --exclude "atomic_data" --exclude "Events"
           
       - name: Stop HTTP Server
         if: always()
