@@ -9,29 +9,29 @@ on:
   pull_request:
     paths-ignore:
       - 'docs/Events/**'
-jobs:
-  link-check:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v5
-      
-      - name: Start HTTP Server
-        run: |
-          cd ./docs  # Aller dans le dossier à servir
-          python -m http.server 8080 &
-          echo "HTTP_PID=$!" >> $GITHUB_ENV
-          sleep 5  # Laisser le temps au serveur de démarrer
-
-      - name: Link Checker
-        id: lychee
-        uses: lycheeverse/lychee-action@v2
-        with:
-          fail: false
-          args: --verbose --exclude "./docs/atomic_data" --exclude "./docs/Events" http://localhost:8080
-        
-      - name: Stop HTTP Server
-        if: always()
-        run: kill ${{ env.HTTP_PID }}
+#jobs:
+#  link-check:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v5
+#      
+#     - name: Start HTTP Server
+#        run: |
+#          cd ./docs  # Aller dans le dossier à servir
+#          python -m http.server 8080 &
+#          echo "HTTP_PID=$!" >> $GITHUB_ENV
+#          sleep 5  # Laisser le temps au serveur de démarrer
+#
+#      - name: Link Checker
+#        id: lychee
+#        uses: lycheeverse/lychee-action@v2
+#        with:
+#          fail: false
+#          args: --verbose --exclude "./docs/atomic_data" --exclude "./docs/Events" http://localhost:8080
+#        
+#      - name: Stop HTTP Server
+#        if: always()
+#        run: kill ${{ env.HTTP_PID }}
 
  #         args: --verbose --exclude "docs/atomic_data" --exclude "docs/Events" 
         
@@ -58,28 +58,28 @@ jobs:
  #         lycheeVersion: 1.9.0
  #         output: lychee/out.md
           
-#jobs:
-#  link-check:
-#   runs-on: ubuntu-latest
-#
-#    steps:
-#      # Step 1: Check out the repository
-#      - name: Checkout Code
-#        uses: actions/checkout@v3
-#
-#      # Step 2: Install a static file server and the link checker
-#      - name: Install Tools
-#        run: |
-#          sudo npm install -g http-server
-#          sudo npm install -g broken-link-checker
-#
-#      # Step 3: Serve the file locally
-#      - name: Serve the Site
-#        run: http-server ./docs -p 8080 &
-#
-#      # Step 4: Run Link Checker
-#      - name: Run HTML Link Checker
-#        run: blc http://127.0.0.1:8080/index.html --recursive --verbose
+jobs:
+  link-check:
+   runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Step 2: Install a static file server and the link checker
+      - name: Install Tools
+        run: |
+          sudo npm install -g http-server
+          sudo npm install -g broken-link-checker
+
+      # Step 3: Serve the file locally
+      - name: Serve the Site
+        run: http-server ./docs -p 8080 &
+
+      # Step 4: Run Link Checker
+      - name: Run HTML Link Checker
+        run: blc http://127.0.0.1:8080/index.html --recursive --verbose
 
 #jobs:
 #  link-check:
