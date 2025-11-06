@@ -62,7 +62,7 @@ jobs:
   link-check:
    runs-on: ubuntu-latest
 
-    steps:
+   steps:
       # Step 1: Check out the repository
       - name: Checkout Code
         uses: actions/checkout@v3
