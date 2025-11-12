@@ -37,7 +37,7 @@ Also, some other bots provide additional unique services :
 
 ### Matrix of builders 
 
-| Slave  | #Nightly | Builder                     | Nightly | Compiler     | MPI           | Linear Algebra     | Libs Tested     | Departure from Ref                          |
+| Worker | #Nightly | Builder                     | Nightly | Compiler     | MPI           | Linear Algebra     | Libs Tested     | Departure from Ref                          |
 |--------|---------|------------------------------|---------|--------------|---------------|--------------------|----------------|---------------------------------------------|
 | alps   | 3       | alps_gnu_9.5_sdebug          | yes      | gnu-9.5      | mpich-4.2.3   | OpenBLAS<br>fftw3 | ABPW | -fno-frontend-optimize<br>-ffpe-trap=i,z,o |
 |        |         | alps_gnu_14.2_cov            | yes      | gnu-14.2     | mpich-4.2.3   | mkl 2025.0         | ABW |          | coverage                        |
@@ -57,6 +57,8 @@ Also, some other bots provide additional unique services :
 |        |         | scope_gnu_12.2_mpich         | yes      | gnu-12.2     | mpich-4.0.3   | OpenBLAS           | PW             | enable_memory_profiling                    |
 |        |         | scope_gnu_12.2_abipy         | yes      | gnu-12.2     | mpich-4.0.3   | OpenBLAS           | PW             | check abipy                                |
 |        |         | scope_gnu_10.2_s64           | odonly   | gnu-10.2     | mpich-3.2     | OpenBLAS           | PW             | tutoparal with np=64                       |
+| manneback | 1    | manneback_gnu_14.2_hpc       | yes      | gnu-14.2     | openmpi 4     | MKL                |                | cluster keira                              |
+| haicgu | 1       | haicgu_gnu_14.1_hpc          | yes      | gnu-14.1     | openmpi 4     | MKL                |                | cluster guoehi-dev                         |
 
 *Caption for external fallbacks : A= AtomPAW, B= BigDFT, P= PSML+XMLF90, W= Wannier90
 
