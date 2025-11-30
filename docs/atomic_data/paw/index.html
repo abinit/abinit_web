@@ -138,7 +138,7 @@
 <hr style="width: 100%; height: 2px;">
 
 <div style="text-align: left; font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: rgb(51, 102, 102);">
-    <big><big>JTH PAW atomic datasets table - v1.1</big></big><br>
+    <big><big>JTH PAW atomic datasets table - v2.0</big></big><br>
     &nbsp;
 </div>
 
@@ -155,7 +155,7 @@
 
 <div style="text-align: left; font-style: italic;">
     Clicking on a green cell in the periodic table will bring you into a directory corresponding to the selected chemical element.<br>
-    The size of a dataset file may vary between 500 kB and 1 MB.
+    The size of a dataset file may vary between 500 kB and 1.5 MB.
 </div>
 <br>
 <p style="text-align: center;">
@@ -287,24 +287,46 @@
 </p>
 
 <div style="text-align: left;">
-    Current version of the library : <b>JTH - v1.1</b><br><br>
+Current version of the library : <b>JTH - v2.0</b><br>
+ <small><i>Release date: dec. 1, 2025 (see release notes below)</i></small>
+</div>
+
+<br>
+<div style="text-align: left;">
 Quality indicator (comparison to all-electron data using <a
         href="https://molmod.ugent.be/deltacodesdft" target="_blank" style="color: #F18F34;">delta package</a> v3.1):<br><a
-        href="https://molmod.ugent.be/deltacodesdft" target="_blank" style="color: #F18F34;">Δ-value</a>=0.4 meV, <a href="http://www.sciencedirect.com/science/article/pii/S0010465513004359" target="_blank" style="color: #F18F34;">Δ<sub>1</sub>-value</a>=1.0 meV</div>
+        href="https://molmod.ugent.be/deltacodesdft" target="_blank" style="color: #F18F34;">Δ-value</a>=0.41 meV, <a href="http://www.sciencedirect.com/science/article/pii/S0010465513004359" target="_blank" style="color: #F18F34;">Δ<sub>1</sub>-value</a>=1.04 meV
+</div>
+
+<br>
 
 <b>Consult these
-<a href="./ATOMICDATA/JTH-Benchmark-1.1.pdf" target="_blank"
-style="color: #F18F34;">notes</a>
-for full details on the JTH v1.1 PAW atomic dataset library validation results.</b>
-<br>
-<br>
+<a href="./ATOMICDATA/JTH-PBE-v2.0.pdf" target="_blank" style="color: #F18F34;">notes</a>
+for full details on the JTH v2.0 PAW atomic dataset library validation results.</b><br>
 
-<p style="text-align: left;">Download the entire dataset table:
-<a href="https://github.com/abinit/paw_jth_datasets/raw/main/pseudos/JTH-PBE-v1.1/JTH-v1.1-GGA-PBE-atomicdata.tar.gz"
-        style="color: #F18F34;">PBE</a>,
-<a href="https://github.com/abinit/paw_jth_datasets/raw/main/pseudos/JTH-LDA-v1.1/JTH-v1.1-LDA-PW-atomicdata.tar.gz"
-        style="color: #F18F34;">LDA</a>
+<br>
+    <!-- INSERT HERE TARBALLS TO FULL XML TABLE - START -->
+<p style="text-align: left;">Download the entire PAW dataset table (XML format):
+&nbsp;<a href="https://github.com/abinit/paw_jth_datasets/raw/main/pseudos/JTH-PBE-v2.0/JTH-v2.0-GGA-PBE-atomicdata-xml.tar.gz" target="_blank">GGA-PBE table</a>
+&nbsp;<a href="https://github.com/abinit/paw_jth_datasets/raw/main/pseudos/JTH-LDA-v2.0/JTH-v2.0-LDA-PW-atomicdata-xml.tar.gz" target="_blank">LDA-PW table</a>
+    <!-- INSERT HERE TARBALLS TO FULL XML TABLE - END -->
+
+    <!-- INSERT HERE TARBALLS TO FULL UPF TABLE - START -->
+</p><p style="text-align: left;">Download the entire PAW dataset table (UPF format):
+&nbsp;<a href="https://github.com/abinit/paw_jth_datasets/raw/main/pseudos/JTH-PBE-v2.0/JTH-v2.0-GGA-PBE-atomicdata-upf.tar.gz" target="_blank">GGA-PBE table</a>
+&nbsp;<a href="https://github.com/abinit/paw_jth_datasets/raw/main/pseudos/JTH-LDA-v2.0/JTH-v2.0-LDA-PW-atomicdata-upf.tar.gz" target="_blank">LDA-PW table</a>
+    <!-- INSERT HERE TARBALLS TO FULL UPF TABLE - END -->
+
+    <!-- INSERT HERE TARBALLS TO XML CORE WAVEFUNCTIONS - START -->
+</p><p style="text-align: left;">Download the entire core wavefunction table (XML format):
+&nbsp;<a href="https://github.com/abinit/paw_jth_datasets/raw/main/pseudos/JTH-PBE-v2.0/JTH-v2.0-GGA-PBE-corewf-xml.tar.gz" target="_blank">GGA-PBE corewf</a>
+&nbsp;<a href="https://github.com/abinit/paw_jth_datasets/raw/main/pseudos/JTH-LDA-v2.0/JTH-v2.0-LDA-PW-corewf-xml.tar.gz" target="_blank">LDA-PW corewf</a>
+    <!-- INSERT HERE TARBALLS TO XML CORE WAVEFUNCTIONS - END -->
+
+    <!-- INSERT HERE TARBALLS TO UPF CORE WAVEFUNCTIONS - START -->
+    <!-- INSERT HERE TARBALLS TO UPF CORE WAVEFUNCTIONS - END -->
 </p>
+<br>
 
 <!-- =========================== END JTH TABLE ================================ -->
 
@@ -314,12 +336,6 @@ for full details on the JTH v1.1 PAW atomic dataset library validation results.<
         <br>&nbsp;
     </div>
     <ul>
-        <li>
-            <b>Consult these <a
-                    href="https://github.com/abinit/paw_jth_datasets/raw/main/pseudos/JTH-PBE-v1.1/JTH-PBE-v1.1.pdf" target="_blank"
-                    style="color: #F18F34;">notes</a> for full details on the JTH v1.1 PAW atomic dataset library validation results.</b>
-            <br>&nbsp;
-        </li>
         <li>
             The JTH atomic datasets library has been tested by means of the
             <a href="https://molmod.ugent.be/deltacodesdft" target="_blank"
@@ -378,8 +394,6 @@ for full details on the JTH v1.1 PAW atomic dataset library validation results.<
         <dd>
             <b>AtomPAW</b> is a PAW atomic data generator whose main authors
             are <a href="http://www.wfu.edu/%7Enatalie" target="_blank" style="color: #F18F34;">N. Holzwarth</a>, M. Torrent and F. Jollet.
-            <br>
-            Since ABINIT v6.8, it is integrated in ABINIT package as a <i>plugin</i>.
             <br><br>
             Follow the <a href="./tools/atompaw/atompawgenerator-ABINIT.html"
                           style="font-weight: bold; color: #F18F34;" target="_self">guidelines</a> to generate your own atomic datasets with <b>ATOMPAW</b>.
@@ -418,12 +432,73 @@ for full details on the JTH v1.1 PAW atomic dataset library validation results.<
     </div>
     <ul>
         <li>
-            <span>- <strong><u>March 12, 2018</u></strong></span>
+            <strong><u>December 1, 2025</u></strong>
             <br>
-            JTH version 1.1 is available. Compared to v1.0 version, the following changes have been made:
+            <b>JTH version 2.0</b> is available.
+            It has been generated with
+            <a href="https://github.com/atompaw" target="_blank" style="color: #F18F34;">ATOMPAW</a>
+            code v4.2.0.4. This new version follows the
+            <a href="https://esl.cecam.org/en/data/paw-xml/" target="_blank" style="color: #F18F34;">
+            PAW-XML format</a>.<br>
+            Relative to JTH table v1.1, the following updates have been introduced:
+            <ul>
+                <li>
+                All datasets are generated on a radial grid with 1500 or 2000 points.
+                Among these, only Cu, Rh, Re, and Os
+                have been re-optimized due to convergence issues related to the number of
+                radial grid points.
+                For the other elements, only the number of points was adjusted in the
+                ATOMPAW input file.
+                </li>
+                <li>
+                In the LDA table, LDA-1/2 --- i.e.
+                <a href="https://doi.org/10.1103/PhysRevB.78.125116" style="color: #F18F34;">
+                half-occupation method</a>
+                --- data are provided for C, N, O, Si, P, S, Zn, Ga, Ge, As, and In,
+                generated according to
+                <a href="https://doi.org/10.1103/PhysRevB.78.125116">[1]</a> and
+                <a href="https://doi.org/10.48550/arXiv.1603.01300">[2]</a>
+                (note that for Si and Ge, LDA-1/4 is actually used).
+                </li>
+                <li>
+                3 elements (Si, Se, and Lu) have been slightly modified to avoid a
+                non-positive definite overlap matrix.
+                </li>
+                <li>
+                14 elements (La, Cl, S, Kr, Y, Rn, Sr, Ar, B, P, Ba, Ce, Pr, Rb) have been
+                modified to ensure a positive density when the compensation density is added
+                to the density for the exchange-correlation term calculation
+                (Kresse-Joubert approach). This approach is not used in ABINIT,
+                which employs the Bloechl approach.
+                </li>
+            </ul>
+            In addition to the "recommended" version, all datasets are also available
+            in a lighter variant, where all radial functions (including partial waves
+            and projectors) are discretized on a reduced grid of 500 points.<br>
+            The <a href="https://molmod.ugent.be/deltacodesdft"
+                   target="_blank" style="color: #F18F34;">delta calculation</a>
+            package v3.1 was employed to validate the JTH-v2.0 atomic datasets.<br>
+            Following the <a href="http://www.physics.rutgers.edu/gbrv"
+                             target="_blank" style="color: #F18F34;">GBRV</a>
+            test suite protocol, we computed the structural parameters for <i>
+            fcc</i>, <i>bcc</i>, <i>rocksalt</i>, <i>perovskite</i>,
+            <i>half-heusler</i> and <i>zinc-blende</i> structures.<br>
+            All results are documented in these
+            <a href="https://github.com/abinit/paw_jth_datasets/raw/main/pseudos/JTH-PBE-v2.0/JTH-PBE-v2.0.pdf"
+            target="_blank" style="color: #F18F34;">notes</a>.<br>
+            Using a plane-wave cut-off of 20 Ha, we obtained the following mean
+            &Delta; values:
+            &Delta;=0.44 meV, &Delta;<sub>1</sub>=1.03 meV.<br>
+            <i>Authors: F. Jollet, M. Torrent (CEA-Bruyères-le-Chatel)</i>
+            <br>&nbsp;
+        </li>
+        <li>
+            <strong><u>March 12, 2018</u></strong>
+            <br>
+            <a href="./old_versions/JTH_1.1.html" style="color: #F18F34;">JTH version 1.1</a> is available. Compared to v1.0 version, the following changes have been made:
             <ul>
                 <li>The datasets of the following species have been slightly changed: H, Li, Si, Cu, Zn, Ga, Cd, Sb, Lu, Os, Ir and Bi.
-                    <br>These changes have been made to improve numerical stability (instability was generally due to big ratios between the amplitude of projectors and the amplitude of wavefunctions).
+                    <br>Changes made to improve numerical stability (instability was generally due to big ratios between the amplitude of projectors and the amplitude of wavefunctions).
                 </li>
             </ul>
             The <a href="https://molmod.ugent.be/deltacodesdft"
@@ -431,16 +506,18 @@ for full details on the JTH v1.1 PAW atomic dataset library validation results.<
             <br>Following <a href="http://www.physics.rutgers.edu/gbrv"
                              target="_blank" style="color: #F18F34;">GBRV</a>
             test suite, we have calculated the structural parameters for <i>
-            fcc</i>, <i>bcc</i>, <i>rocksalt</i>, <i>perovskite</i>, <i>half
-            -heusler</i> and <i>zinc-blende</i> structures. All results can
+            fcc</i>, <i>bcc</i>, <i>rocksalt</i>, <i>perovskite</i>,
+            <i>half-heusler</i> and <i>zinc-blende</i> structures.
+            <br>All results can
             be found in these <a href="https://github.com/abinit/paw_jth_datasets/raw/main/pseudos/JTH-PBE-v1.1/JTH-PBE-v1.1.pdf"
                                  target="_blank" style="color: #F18F34;">notes</a>.
             <br>These results are very similar to those of the JTH-v1.0 table.
-            <br>We obtain the mean values (plane-wave cut-off: 20 Ha): Δ=0.44 meV, Δ<sub>1</sub>=1.03 meV. Authors: F. Jollet, M. Torrent (CEA-Bruyères-le-Chatel).
+            <br>We obtain the mean values (plane-wave cut-off: 20 Ha): &Delta;=0.44 meV, &Delta;<sub>1</sub>=1.03 meV.
+            <br>Authors: F. Jollet, M. Torrent (CEA-Bruyères-le-Chatel).
             <br>&nbsp;
         </li>
         <li>
-            <span>- <strong><u>March 30, 2016</u></strong></span>
+            <strong><u>March 30, 2016</u></strong>
             <br>
             <a href="./old_versions/JTH_1.0.html" style="color: #F18F34;">JTH version 1.0</a> is available. Compared with the v0.2, the following changes have been made:
             <ul>
@@ -460,7 +537,7 @@ for full details on the JTH v1.1 PAW atomic dataset library validation results.<
             <br>&nbsp;
         </li>
         <li>
-            <span>- <strong><u>September 15, 2014</u></strong></span>
+            <strong><u>September 15, 2014</u></strong>
             <br><a href="./old_versions/JTH_0.2.html" style="color: #F18F34;">JTH version 0.2</a> is available. With respect to v0.1, several
             datasets have been updated, taking into account the comparisons done by the <a href="http://www.physics.rutgers.edu/gbrv" style="color: #F18F34;">GBRV</a> group.
             <br>In addition to <a
@@ -471,7 +548,7 @@ for full details on the JTH v1.1 PAW atomic dataset library validation results.<
             <br>&nbsp;
         </li>
         <li>
-            <span>- <strong>September 26, 2013</strong></span>
+            <strong>September 26, 2013</strong>
             <br><a href="./old_versions/JTH_0.1.html" style="color: #F18F34;">JTH version 0.1</a> is available. Full details on this first official version of the JTH library are given in this Computer Physics Communications <a href="http://dx.doi.org/10.1016/j.cpc.2013.12.023" style="color: #F18F34;">paper</a>, including design procedure, theoretical background and testing thanks to the <a href="https://molmod.ugent.be/deltacodesdft" style="color: #F18F34;">Delta package</a>.
             <br>Note that this is the first ABINIT PAW library published in
             the <a href="https://esl.cecam.org/en/data/paw-xml/" style="color: #F18F34;">PAW-XML</a> format.
@@ -479,7 +556,7 @@ for full details on the JTH v1.1 PAW atomic dataset library validation results.<
             <br>&nbsp;
         </li>
         <li>
-            <span>- <strong><u>July 1, 2009</u></strong></span>
+            <strong><u>July 1, 2009</u></strong>
             <br>
             This <a
                 href="./old_versions/paw2009.zip" style="color: #F18F34;">2009 version of
@@ -490,7 +567,7 @@ for full details on the JTH v1.1 PAW atomic dataset library validation results.<
             <br>&nbsp;
         </li>
         <li>
-            <span>- <u><strong>September 3, 2007</strong></u></span>
+            <u><strong>September 3, 2007</strong></u>
             <br>
             New version of the <a
                 href="./old_versions/paw2007.html" style="color: #F18F34;">ABINIT PAW dataset
@@ -500,21 +577,21 @@ for full details on the JTH v1.1 PAW atomic dataset library validation results.<
             <br>&nbsp;
         </li>
         <li>
-            <span>- <strong><u>December 22, 2006</u></strong></span>
+            <strong><u>December 22, 2006</u></strong>
             <br>
             Some PAW datasets have been added to the "recommended" table.
             <br>Contributions from CEA-Bruyères-le-Chatel group.
             <br>&nbsp;
         </li>
         <li>
-            <span>- <strong><u>September 14, 2005</u></strong></span>
+            <strong><u>September 14, 2005</u></strong>
             <br>
             A brand new set of PAW atomic data is published, using improved versions of the <em>Atompaw2Abinit</em> and <em>USPP2Abinit</em> generators. Now these tools are mature and can produce reference data.
             <br>Authors: M. Torrent, F. Jollet (CEA-Bruyères-le-Chatel).
             <br>&nbsp;
         </li>
         <li>
-            <span>- <strong><u>October 10, 2003</u></strong></span>
+            <strong><u>October 10, 2003</u></strong>
             <br>
             The very first version of the <a
                 href="./old_versions/paw2003.zip"
@@ -527,7 +604,14 @@ for full details on the JTH v1.1 PAW atomic dataset library validation results.<
         </li>
     </ul>
 
+<br>
+<div style="width: 363px; text-align: left;">
+ <small><i>Last modification : december 1, 2025</i></small>
 </div>
+
+</div>
+
+<br><br>
 
     <div id="tooltip" class="tooltip"></div>
     <script>
