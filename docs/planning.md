@@ -7,7 +7,7 @@ Note : there is a unique version number (and associated git tag) for the frozen 
 
 **For new developments**
 
-:red_circle: December 5, 2025:
+:red_circle: December 18, 2025:
 Merge ABINITv10.5.8 contributions, as well as merge ABINITv10.4.7, to reach frozen v10.5.9. v10.5.9 will be the last revision of the v10.5.X series, followed by the launches of v10.6 and v10.7.
 
 [DONE] October 20, 2025:
