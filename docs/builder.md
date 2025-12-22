@@ -7,7 +7,7 @@ In order to understand the rationale behind the set of the different builders le
 
 eos_gnu_13.2_mpich (EOF) is characterized by the following elements :
   * The compiler is gcc 13.2 with<br>"-O2 -Wno-maybe-uninitialized -ffpe-trap=invalid,zero,overflow -fcheck=all,no-pointer -fallow-argument-mismatch<br>-g -Wall -fbacktrace -lcurl" flags.
-  * The MPI is MPICH version 4.2.2.
+  * The MPI is MPICH version 4.2.3.
   * The compilation is done with "make -j 8", with the external libraries : NetCDF-C(-Fortran), HDF5, LibXC, OpenBLAS, Wannier90, BigDFT and PSML, build with MPI and with MPI_IO .
   * GW is compiled with double precision
   * The tests are executed with "./runtests.py" (and the list of tests is coherent with the fallbacks and flags)
