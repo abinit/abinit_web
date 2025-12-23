@@ -17,3 +17,7 @@ The current reference [builder](https://github.com/abinit/abinit_web/blob/main/d
 #cores = # of Cores (hardware term that describes the number of independent central processing units)
 
 #THD = # of Threads (software term for the basic ordered sequence of instructions that can be passed through or processed by a single CPU core) 
+
+### Notes
+
+(1) Quite often, atlas fails with message "No space left on device". This is not understood. Solution : reboot ...
