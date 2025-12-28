@@ -3,12 +3,32 @@
 Note : there is a unique version number (and associated git tag) for the frozen versions, different from the version number for versions “in progress”. In the X.Y.Z chain, the “Z” of versions “in progress” is even, and the “Z” of frozen versions is odd.
 
 
+### ABINITv10.7 planning 
+
+**For new developments**
+
+:red_circle: February 16, 2026:
+Merge ABINITv10.7.0 contributions, as well as merge ABINITv10.6.0, to reach frozen v10.7.1. Start ABINITv10.7.2, for further new developments.
+
+[DONE] December 28, 2025:
+Start ABINITv10.7.0 (15eab38d), for new developments, from v10.5.8.
+
+### ABINITv10.6 planning 
+
+**For bug fixes and releases**
+
+:red_circle: January 16, 2026:
+Merge ABINITv10.6.0, and freeze ABINITv10.6.1. Start ABINITv10.6.2, for examination of release notes, improvement of documentation, and fixing bugs.
+
+[DONE] December 28, 2025:
+Start ABINITv10.6.0 (1ada66f6), for bug fixes and documentation, including preparation of the release notes, from v10.5.8.
+
 ### ABINITv10.5 planning 
 
 **For new developments**
 
-:red_circle: December 18, 2025:
-Merge ABINITv10.5.8 contributions, as well as merge ABINITv10.4.7, to reach frozen v10.5.9. v10.5.9 will be the last revision of the v10.5.X series, followed by the launches of v10.6 and v10.7.
+[DONE] December 28, 2025:
+Merge ABINITv10.5.8 contributions, as well as merge ABINITv10.4.7, to reach frozen v10.5.9 (4c4f1363). v10.5.9 is the last revision of the v10.5.X series, followed by the launches of v10.6 and v10.7.
 
 [DONE] October 20, 2025:
 Merge ABINITv10.5.6 contributions (4048452d9f), as well as merge ABINITv10.4.7, to reach frozen v10.5.7 (bf19584a0b). Start ABINITv10.5.8 (811ed2c095), for further new developments.
