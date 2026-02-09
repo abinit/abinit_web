@@ -95,152 +95,23 @@
 <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"style="margin-left: 15%; margin-right: 10%;">
     <div class="separator">&nbsp;</div>
 
-    <h2>ABINIT external dependencies (aka Plugins / External Libraries)</h2>
+    <h2>Old versions of ABINIT</h2>
 
-    <p> The <a href="https://github.com/abinit/abinit-fallbacks" style="color: #F18F34;">abinit-fallbacks project</a> 
-      is a package builder for the external libraries (on which Abinit relies) 
-   in development environments lacking these, on which the user/developer might "fall back" in order to build these libraries. 
-   You will find on the <a href="https://github.com/abinit/abinit-fallbacks" style="color: #F18F34;">Web site of the project</a> all the information on how to build and install fallbacks from source. 
-   The <a href="https://github.com/abinit/abinit-fallbacks/blob/develop/config/specs/fallbacks.cfg" style="color: #F18F34;">list of dependencies</a> is mentioned below.
-   </p>
-
-   <p> In versions of ABINIT prior to ABINIT 5.6, the external libraries were shipped with the sources, and managed by the build system. 
-Then, from ABINIT 5.6 and up to ABINIT 8.10.3 these were automatically downloaded at configure time. This proved too difficult to maintain. 
-Starting with ABINIT 9, external libraries are no longer managed by the ABINIT build system. 
-It is supposed that these libraries are already available at compile time in development environments. The abinit-fallbacks package builder can help to achieve proper set up of the external dependencies.</p>
+    <p> From the latest version of the ABINIT package, a git clone then git checkout <tag> allows one to get all versions starting from 8.1.3 (July 2016 - when ABINIT started to be under git control).
+    <p> Earlier, ABINIT had been placed under bzr control, and this service has been discontinued. Nevertheless, several ABINIT packages can be downloaded from the ABINIT forge using the links below.
 
   <hr>
-    <h2>For ABINIT 10.6.x </h2>
 
-    <ul>
-        <li><a href="https://forge.abinit.org/atompaw-4.2.0.3.tar.gz" target="_self"
-               title="AtomPAW" style="color: #F18F34;">AtomPAW 4.2.0.3</a> <em>(it is compatible with Abinit but it no longer has abinit dependency status)</em></li>
-        <li><a href="https://forge.abinit.org/bigdft-abinit-1.7.1.32.tar.gz" target="_self" title="BigDFT" style="color: #F18F34;">BigDFT abinit-1.7.1.32</a></li>
-        <li><a href="https://forge.abinit.org/hdf5-1.14.6.tar.gz" target="_self" title="HDF5" style="color: #F18F34;">HDF5 1.14.6</a></li>
-        <li><a href="https://forge.abinit.org/libpsml-2.0.1.tar.gz" target="_self" title="libPSML" style="color: #F18F34;">libPSML 2.0.1</a></li>
-        <li><a href="https://forge.abinit.org/libxc-7.0.0.tar.gz" target="_self" title="libXC" style="color: #F18F34;">LibXC 7.0.0</a></li>
-        <li><a href="https://forge.abinit.org/lapack-abinit_6.10.tar.gz" target="_self" title="lapack" style="color: #F18F34;">LAPACK for Abinit ≥ 6.10</a> (<strong><em>deprecated</em></strong>)</li>
-        <li><a href="https://forge.abinit.org/netcdf-c-4.9.3.tar.gz" target="_self" title="NetCDF4" style="color: #F18F34;">NetCDF4 4.9.3</a></li>
-        <li><a href="https://forge.abinit.org/netcdf-fortran-4.6.2.tar.gz" target="_self" title="NetCDF4" style="color: #F18F34;">NetCDF4_fortran 4.6.2</a></li>
-        <li><a href="https://forge.abinit.org/wannier90-3.1.0.tar.gz" target="_self" title="Wannier90" style="color: #F18F34;">Wannier90 3.1.0</a></li>
-        <li><a href="https://forge.abinit.org/xmlf90-1.6.3.tar.gz" target="_self" title="xmlf90" style="color: #F18F34;">XMLF90 1.6.3</a></li>
+  <ul>
+        <li><a href="https://forge.abinit.org/abinit-7.10.5.tar.gz" target="_self" style="color: #F18F34;">abinit-7.10.5.tar.gz</a>
+            <em>- 2016 (The version of ABINIT linked to the <a href="https://docs.abinit.org/theory/bibliography/#gonze2016" target="_self" style="color: #F18F34;">ABINIT2016 paper</a>)</em></li>
+        <li><a href="https://forge.abinit.org/abinit-7.10.5.tar.gz" target="_self" style="color: #F18F34;">abinit-7.10.5.tar.gz</a> 
+            <em>- 2013 </em></li> 
+        <li><a href="https://forge.abinit.org/abinit-7.10.5.tar.gz" target="_self" style="color: #F18F34;">abinit-7.10.5.tar.gz</a>
+            <em>- 2009 (The version of ABINIT linked to the <a href="https://docs.abinit.org/theory/bibliography/#gonze2009" target="_self" style="color: #F18F34;">ABINIT2009 paper</a>)</em></li>
   </ul>
 
-  <hr>
-    <h2>For ABINIT 10.2.x ... 10.4.x </h2>
-
-    <ul>
-        <li><a href="https://forge.abinit.org/atompaw-4.2.0.3.tar.gz" target="_self"
-               title="AtomPAW" style="color: #F18F34;">AtomPAW 4.2.0.3</a> <em>(it is compatible with Abinit but it no longer has abinit dependency status)</em></li>
-        <li><a href="https://forge.abinit.org/bigdft-abinit-1.7.1.31.tar.gz" target="_self" title="BigDFT" style="color: #F18F34;">BigDFT abinit-1.7.1.31</a></li>
-        <li><a href="https://forge.abinit.org/hdf5-1.14.6.tar.gz" target="_self" title="HDF5" style="color: #F18F34;">HDF5 1.14.6</a></li>
-        <li><a href="https://forge.abinit.org/libpsml-2.0.1.tar.gz" target="_self" title="libPSML" style="color: #F18F34;">libPSML 2.0.1</a></li>
-        <li><a href="https://forge.abinit.org/libxc-6.2.2.tar.gz" target="_self" title="libXC" style="color: #F18F34;">LibXC 6.2.2</a></li>
-        <li><a href="https://forge.abinit.org/lapack-abinit_6.10.tar.gz" target="_self" title="lapack" style="color: #F18F34;">LAPACK for Abinit ≥ 6.10</a> (<strong><em>deprecated</em></strong>)</li>
-        <li><a href="https://forge.abinit.org/netcdf-c-4.9.3.tar.gz" target="_self" title="NetCDF4" style="color: #F18F34;">NetCDF4 4.9.3</a></li>
-        <li><a href="https://forge.abinit.org/netcdf-fortran-4.6.1.tar.gz" target="_self" title="NetCDF4" style="color: #F18F34;">NetCDF4_fortran 4.6.1</a></li>
-        <li><a href="https://forge.abinit.org/wannier90-3.1.0.tar.gz" target="_self" title="Wannier90" style="color: #F18F34;">Wannier90 3.1.0</a></li>
-        <li><a href="https://forge.abinit.org/xmlf90-1.6.3.tar.gz" target="_self" title="xmlf90" style="color: #F18F34;">XMLF90 1.6.3</a></li>
-    </ul>
-
-    <hr>
-    <h2>For ABINIT 10.0.x </h2>
-
-    <ul>
-        <li><a href="https://forge.abinit.org/atompaw-4.2.0.3.tar.gz" target="_self"
-               title="AtomPAW" style="color: #F18F34;">AtomPAW 4.2.0.3</a> <em>(it is compatible with Abinit but it no longer has abinit dependency status)</em></li>
-        <li><a href="https://forge.abinit.org/bigdft-abinit-1.7.1.30.tar.gz" target="_self" title="BigDFT" style="color: #F18F34;">BigDFT abinit-1.7.1.30</a></li>
-        <li><a href="https://forge.abinit.org/hdf5-1.14.4-2.tar.gz" target="_self" title="HDF5" style="color: #F18F34;">HDF5 1.14.4-2</a></li>
-        <li><a href="https://forge.abinit.org/libpsml-2.0.1.tar.gz" target="_self" title="libPSML" style="color: #F18F34;">libPSML 2.0.1</a></li>
-        <li><a href="https://forge.abinit.org/libxc-6.2.2.tar.gz" target="_self" title="libXC" style="color: #F18F34;">LibXC 6.2.2</a></li>
-        <li><a href="https://forge.abinit.org/lapack-abinit_6.10.tar.gz" target="_self" title="lapack" style="color: #F18F34;">LAPACK for Abinit ≥ 6.10</a> (<strong><em>deprecated</em></strong>)</li>
-        <li><a href="https://forge.abinit.org/netcdf-c-4.9.2.tar.gz" target="_self" title="NetCDF4" style="color: #F18F34;">NetCDF4 4.9.2</a></li>
-        <li><a href="https://forge.abinit.org/netcdf-fortran-4.6.1.tar.gz" target="_self" title="NetCDF4" style="color: #F18F34;">NetCDF4_fortran 4.6.1</a></li>
-        <li><a href="https://forge.abinit.org/wannier90-3.1.0.tar.gz" target="_self" title="Wannier90" style="color: #F18F34;">Wannier90 3.1.0</a></li>
-        <li><a href="https://forge.abinit.org/xmlf90-1.6.3.tar.gz" target="_self" title="xmlf90" style="color: #F18F34;">XMLF90 1.6.3</a></li>
-    </ul>
-
-    <hr>
-    <h2>For ABINIT 9.8.x </h2>
-
-    <ul>
-        <li><a href="https://forge.abinit.org/atompaw-4.2.0.2.tar.gz" target="_self"
-               title="AtomPAW" style="color: #F18F34;">AtomPAW 4.2.0.2</a> <em>(it is compatible with Abinit but it no longer has abinit dependency status)</em></li>
-        <li><a href="https://forge.abinit.org/bigdft-abinit-1.7.1.30.tar.gz" target="_self" title="BigDFT" style="color: #F18F34;">BigDFT abinit-1.7.1.30</a></li>
-        <li><a href="https://forge.abinit.org/hdf5-1.10.8.tar.gz" target="_self" title="HDF5" style="color: #F18F34;">HDF5 1.10.8</a></li>
-        <li><a href="https://forge.abinit.org/libpsml-1.1.12.tar.gz" target="_self" title="libPSML" style="color: #F18F34;">libPSML 1.1.12</a></li>
-        <li><a href="https://forge.abinit.org/libxc-6.0.0.tar.gz" target="_self" title="libXC" style="color: #F18F34;">LibXC 6.0.0</a></li>
-        <li><a href="https://forge.abinit.org/lapack-abinit_6.10.tar.gz" target="_self" title="lapack" style="color: #F18F34;">LAPACK for Abinit ≥ 6.10</a> (<strong><em>deprecated</em></strong>)</li>
-        <li><a href="https://forge.abinit.org/netcdf-c-4.9.0.tar.gz" target="_self" title="NetCDF4" style="color: #F18F34;">NetCDF4 4.9.0</a></li>
-        <li><a href="https://forge.abinit.org/netcdf-fortran-4.6.0.tar.gz" target="_self" title="NetCDF4" style="color: #F18F34;">NetCDF4_fortran 4.6.0</a></li>
-        <li><a href="https://forge.abinit.org/wannier90-3.1.0.tar.gz" target="_self" title="Wannier90" style="color: #F18F34;">Wannier90 3.1.0</a></li>
-        <li><a href="https://forge.abinit.org/xmlf90-1.5.6.tar.gz" target="_self" title="xmlf90" style="color: #F18F34;">XMLF90 1.5.6</a></li>
-    </ul>
-
-    <hr>
-    <h2>For ABINIT 9.0.4... 9.6.x</h2>
-
-    <ul>
-        <li><a href="https://forge.abinit.org/atompaw-4.1.0.6.tar.gz" target="_self" title="AtomPAW" style="color: #F18F34;">AtomPAW 4.1.0.6</a> <em>(it is compatible with Abinit but it no longer has abinit dependency status)</em></li>
-        <li><a href="https://forge.abinit.org/bigdft-abinit-1.7.1.28.tar.gz" target="_self" title="BigDFT" style="color: #F18F34;">BigDFT abinit-1.7.1.28</a></li>
-        <li><a href="https://forge.abinit.org/hdf5-1.10.6.tar.gz" target="_self" title="HDF5" style="color: #F18F34;">HDF5 1.10.6</a></li>
-        <li><a href="https://forge.abinit.org/libpsml-1.1.7.tar.gz" target="_self" title="libPSML" style="color: #F18F34;">libPSML 1.1.7</a></li>
-        <li><a href="https://forge.abinit.org/libxc-4.3.4.tar.gz" target="_self" title="libXC" style="color: #F18F34;">LibXC 4.3.4</a></li>
-        <li><a href="https://forge.abinit.org/lapack-abinit_6.10.tar.gz" target="_self" title="lapack" style="color: #F18F34;">LAPACK for Abinit ≥ 6.10</a> (<strong><em>deprecated</em></strong>)</li>
-        <li><a href="https://forge.abinit.org/netcdf-c-4.6.3.tar.gz" target="_self" title="NetCDF4" style="color: #F18F34;">NetCDF4 4.6.3</a></li>
-        <li><a href="https://forge.abinit.org/netcdf-fortran-4.5.2.tar.gz" target="_self" title="NetCDF4" style="color: #F18F34;">NetCDF4_fortran 4.5.2</a></li>
-        <li><a href="https://forge.abinit.org/wannier90-2.0.1.1.tar.gz" target="_self" title="Wannier90" style="color: #F18F34;">Wannier90 2.0.1.1</a></li>
-        <li><a href="https://forge.abinit.org/xmlf90-1.5.3.1.tar.gz" target="_self" title="xmlf90" style="color: #F18F34;">XMLF90 1.5.3.1</a></li>
-    </ul>
-
-    <h2>For ABINIT 8.4.4 ... 8.10.x</h2>
-
-    <ul>
-        <li><a href="https://forge.abinit.org/atompaw-4.0.1.0.tar.gz" target="_self" title="AtomPAW" style="color: #F18F34;">AtomPAW 4.0.1.0</a></li>
-        <li><a href="https://forge.abinit.org/bigdft-1.7.1.25.tar.gz" target="_self" title="BigDFT" style="color: #F18F34;">BigDFT 1.7.1.25</a></li>
-        <li><a href="https://forge.abinit.org/lapack-abinit_6.10.tar.gz" target="_self" title="lapack" style="color: #F18F34;">LAPACK for Abinit ≥ 6.10</a></li>
-        <li><a href="https://forge.abinit.org/libxc-2.2.3.tar.gz" target="_self" title="libXC" style="color: #F18F34;">LibXC 2.2.3</a> or <a href="https://forge.abinit.org/libxc-3.0.0.tar.gz" target="_self" title="libXC" style="color: #F18F34;">LibXC 3.0.0</a></li>
-        <li><a href="https://forge.abinit.org/netcdf-4.1.1.tar.gz" title="NetCDF" style="color: #F18F34;">NetCDF 4.1.1</a></li>
-        <li><a href="https://forge.abinit.org/wannier90-2.0.1.1.tar.gz" target="_self" title="Wannier90" style="color: #F18F34;">Wannier90 2.0.1.1</a></li>
-    </ul>
-
-    <h2>For ABINIT 8.4.1 ... 8.4.3</h2>
-
-    <ul>
-        <li><a href="https://forge.abinit.org/atompaw-4.0.0.14.tar.gz" target="_self" title="" style="color: #F18F34;">AtomPAW 4.0.0.14</a></li>
-        <li><a href="https://forge.abinit.org/bigdft-1.7.1.24.tar.gz" target="_self" title="" style="color: #F18F34;">BigDFT 1.7.1.24</a></li>
-        <li><a href="https://forge.abinit.org/lapack-abinit_6.10.tar.gz" style="color: #F18F34;">LAPACK for Abinit ≥ 6.10</a></li>
-        <li><a href="https://forge.abinit.org/libxc-2.2.3.tar.gz" target="_self" title="" style="color: #F18F34;">LibXC 2.2.3</a></li>
-        <li><a href="https://forge.abinit.org/netcdf-4.1.1.tar.gz" style="color: #F18F34;">NetCDF 4.1.1</a></li>
-        <li><a href="https://forge.abinit.org/wannier90-2.0.1.1.tar.gz" target="_self" title="" style="color: #F18F34;">Wannier90 2.0.1.1</a></li>
-    </ul>
-
-    <h2>For ABINIT 8.2</h2>
-
-    <ul>
-        <li><a href="https://forge.abinit.org/atompaw-4.0.0.14.tar.gz" target="_self" title="" style="color: #F18F34;">AtomPAW 4.0.0.14</a></li>
-        <li><a href="https://forge.abinit.org/bigdft-1.7.1.23.tar.gz" target="_self" title="" style="color: #F18F34;">BigDFT 1.7.1.23</a></li>
-        <li><a href="https://forge.abinit.org/etsf_io-1.0.4.tar.gz" style="color: #F18F34;">ETSF_IO 1.0.4</a></li>
-        <li><a href="https://forge.abinit.org/lapack-abinit_6.10.tar.gz" style="color: #F18F34;">LAPACK for Abinit ≥ 6.10</a></li>
-        <li><a href="https://forge.abinit.org/libxc-2.2.1.tar.gz" target="_self" title="" style="color: #F18F34;">LibXC 2.2.1</a></li>
-        <li><a href="https://forge.abinit.org/netcdf-4.1.1.tar.gz" style="color: #F18F34;">NetCDF 4.1.1</a></li>
-        <li><a href="https://forge.abinit.org/wannier90-2.0.1.1.tar.gz" target="_self" title="" style="color: #F18F34;">Wannier90 2.0.1.1</a></li>
-    </ul>
-
-    <h2>For ABINIT 8.0</h2>
-
-    <ul>
-        <li><a href="https://forge.abinit.org/atompaw-4.0.0.13.tar.gz" target="_self" title="" style="color: #F18F34;">AtomPAW 4.0.0.13</a></li>
-        <li><a href="https://forge.abinit.org/bigdft-1.7.1.23.tar.gz" target="_self" title="" style="color: #F18F34;">BigDFT 1.7.1.23</a></li>
-        <li><a href="https://forge.abinit.org/etsf_io-1.0.4.tar.gz" style="color: #F18F34;">ETSF_IO 1.0.4</a></li>
-        <li><a href="https://forge.abinit.org/lapack-abinit_6.10.tar.gz" style="color: #F18F34;">LAPACK for Abinit ≥ 6.10</a></li>
-        <li><a href="https://forge.abinit.org/libxc-2.2.1.tar.gz" target="_self" title="" style="color: #F18F34;">LibXC 2.2.1</a></li>
-        <li><a href="https://forge.abinit.org/netcdf-4.1.1.tar.gz" style="color: #F18F34;">NetCDF 4.1.1</a></li>
-        <li><a href="https://forge.abinit.org/wannier90-2.0.1.1.tar.gz" target="_self" title="" style="color: #F18F34;">Wannier90 2.0.1.1</a></li>
-    </ul>
 </div>
-
-
 
 <script src="abinit_info_download.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
