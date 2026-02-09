@@ -17,8 +17,11 @@ Start ABINITv10.7.0 (15eab38d), for new developments, from v10.5.8.
 
 **For bug fixes and releases**
 
-:red_circle: February 9, 2026:
-Merge ABINITv10.6.2, and freeze ABINITv10.6.3 for public release. Start ABINITv10.6.4, for fixing bugs.
+:red_circle: March 9, 2026:
+Merge ABINITv10.6.4 and freeze ABINITv10.6.5 (84d89d29) for public release. Start ABINITv10.6.6, for fixing further bugs, improve documentation.
+
+[DONE] February 9, 2026:
+Merge ABINITv10.6.2 (774f039a), and freeze ABINITv10.6.3 (84d89d29) for public release. Start ABINITv10.6.4 (2b624677), for fixing bugs, improve documentation.
 
 [DONE] January 22, 2026:
 Merge ABINITv10.6.0 (448d5cca), and freeze ABINITv10.6.1 (8a3219e7). Start ABINITv10.6.2 (01d7cf1a), for examination of release notes, improvement of documentation, and fixing bugs.
