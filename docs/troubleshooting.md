@@ -6,7 +6,7 @@ Something going wrong ? Better to realize this than to think everything is OK ..
 In this page, the user will find some tips to fix several problems with ABINIT.   
 
 Many other tips might be found on the [forum](https://discourse.abinit.org), or in the 
-[standard ABINIT documentation](https://docs.abinit.org|standard ABINIT documentation).
+[standard ABINIT documentation](https://docs.abinit.org).
 
 These tips are not about configure or install problems, but about problems that can be fixed at the level of the input file written by the user.
 
@@ -41,7 +41,7 @@ Many mistakes done by beginners are related to incorrect starting geometry.
 
 Here is a check list :
 
-  * Check that the **units** are correct for your cell parameters and atomic positions. __ABINIT uses atomic unit by default__, but can use several other units if specified by the user, see (ABINIT input parameters)[https://docs.abinit.org/guide/abinit/#parameters).
+  * Check that the **units** are correct for your cell parameters and atomic positions. __ABINIT uses atomic unit by default__, but can use several other units if specified by the user, see [ABINIT input parameters](https://docs.abinit.org/guide/abinit/#parameters).
   * Check that the [typat](https://docs.abinit.org/variables/basic/#typat) atom types are correct with respect to [xred](https://docs.abinit.org/variables/basic/#xred) or [xcart](https://docs.abinit.org/variables/basic/#xcart).
   * Check that the **number of atoms** [natom](https://docs.abinit.org/variables/basic/#natom) is coherent with your list of coordinates, [xred](https://docs.abinit.org/variables/basic/#xred) or [xcart](https://docs.abinit.org/variables/basic/#xcart). __ABINIT reads only the coordinates of [natom](https://docs.abinit.org/variables/basic/#natom) nuclei, and **ignore others**__.
   * Relax first the atomic positions **at fixed primitive vectors** before optimizing the cell. Explicitly, use a first datadet with [optcell](https://docs.abinit.org/variables/rlx/#optcell) = 0, then a second dataset with non-zero [optcell](https://docs.abinit.org/variables/rlx/#optcell), in which you tell ABINIT to read optimized atomic positions using [getxred](https://docs.abinit.org/variables/rlx/#getxred) or [getxcart](https://docs.abinit.org/variables/rlx/#getxcart). In this second dataset, do not forget to use [dilatmx](https://docs.abinit.org/variables/rlx/#dilatmx) bigger than 1 if you expect the volume of the cell to increase during the optimization. Possibly after the atomic position relaxation, make a run with [chkdilatmx](https://docs.abinit.org/variables/rlx/#chkdilatmx)=0, then a third run with [dilatmx](https://docs.abinit.org/variables/rlx/#dilatmx)=1. See the additional suggestions in the documentation of [optcell](https://docs.abinit.org/variables/rlx/#optcell) . 
