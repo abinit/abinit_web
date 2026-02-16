@@ -59,7 +59,6 @@ Also, some other bots provide additional unique services :
 |        |         | scope_gnu_12.2_abipy         | yes      | gnu-12.2     | mpich-4.0.3   | OpenBLAS           | PW             | check abipy                                |
 |        |         | scope_gnu_10.2_s64           | odonly   | gnu-10.2     | mpich-3.2     | OpenBLAS           | PW             | tutoparal with np=64                       |
 | manneback | 1    | manneback_gnu_14.2_hpc       | yes      | gnu-14.2     | openmpi 4     | MKL                |                | cluster keira                              |
-| haicgu | 1       | haicgu_gnu_14.1_hpc          | yes      | gnu-14.1     | openmpi 4     | MKL                |                | cluster guoehi-dev                         |
 
 *Caption for external fallbacks : A= AtomPAW, B= BigDFT, P= PSML+XMLF90, W= Wannier90
 
