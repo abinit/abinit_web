@@ -12,7 +12,6 @@ The current reference [builder](https://github.com/abinit/abinit_web/blob/main/d
 | minimac|  Apple M1 Ultra          | 16+4             | 64       | macOS-15.5 | gcc12                                | openmpi-3.1<br>mpich-3.2     | OpenBLAS                        | py37<br>conda      | 2/23 3Yrs        | Apple studio M1        |
 | scope  |  AMD 7502        | 2×32 (128)       | 96       | Ubuntu-18.04 | gnu10.2/12.2<br>gnu13.2                   | openmpi-4<br>mpich-3.3        | MKL 2020                        | py36               | 6/20 3Yrs        | HP DL385G10<br>CZJ520082V |
 | manneback | Milan,EPYC,7763 | 40 | 2 | Rocky 8 | gnu 14.2 | OpenMPI 4 | MKL  |  py 3.11 |  | cluster keira |
-| haicgu | ARM<br>Kunpeng 920 | 20 | 110 | Rocky 8 | gnu 14.1 | OpenMPI 4 | MKL  |  py 3.11 |  | cluster guoehi-dev |
 
 #cores = # of Cores (hardware term that describes the number of independent central processing units)
 
