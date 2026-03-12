@@ -11,7 +11,7 @@ Note : there is a unique version number (and associated git tag) for the frozen 
 Merge ABINITv10.7.2 contributions, as well as merge ABINITv10.6.7, to reach frozen v10.7.3. Start ABINITv10.7.4, for further new developments.
 
 [DONE] March 12, 2026:
-Merge ABINITv10.7.0 contributions, as well as merge ABINITv10.6.6, to reach frozen v10.7.1 (1126b41c). Start ABINITv10.7.2 (9b2c5ac2), for further new developments.
+Merge ABINITv10.7.0 contributions (a884705b), as well as merge ABINITv10.6.6, to reach frozen v10.7.1 (1126b41c). Start ABINITv10.7.2 (9b2c5ac2), for further new developments.
 
 [DONE] December 28, 2025:
 Start ABINITv10.7.0 (15eab38d), for new developments, from v10.5.8.
