@@ -7,7 +7,7 @@ Note : there is a unique version number (and associated git tag) for the frozen 
 
 **For new developments**
 
-:red_circle: April 15, 2026:
+:red_circle: May 9, 2026 (or earlier if Manneback is up again):
 Merge ABINITv10.7.2 contributions, as well as merge ABINITv10.6.7, to reach frozen v10.7.3. Start ABINITv10.7.4, for further new developments.
 
 [DONE] March 12, 2026:
