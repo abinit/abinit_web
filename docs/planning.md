@@ -21,7 +21,7 @@ Start ABINITv10.8.0, for bug fixes and documentation, including preparation of t
 
 **For new developments**
 
-:red_circle: May 20, 2026 (or earlier if Manneback is up again):
+:red_circle: May 20, 2026 :
 Merge ABINITv10.7.2 contributions, as well as merge ABINITv10.6.7, to reach frozen v10.7.3. v10.7.3 is the last revision of the v10.7.X series, followed by the launches of v10.8 and v10.9.
 
 [DONE] March 12, 2026:
