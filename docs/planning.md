@@ -3,12 +3,26 @@
 Note : there is a unique version number (and associated git tag) for the frozen versions, different from the version number for versions “in progress”. In the X.Y.Z chain, the “Z” of versions “in progress” is even, and the “Z” of frozen versions is odd.
 
 
+### ABINITv10.9 planning 
+
+:red_circle: May 20, 2026 
+Start ABINITv10.9.0, for new developments, from v10.7.3.
+
+
+### ABINITv10.8 planning 
+
+**For bug fixes and releases**
+
+:red_circle: May 20, 2026 :
+Start ABINITv10.8.0, for bug fixes and documentation, including preparation of the release notes, as well as beta release for the EPW school, from v10.7.3.
+
+
 ### ABINITv10.7 planning 
 
 **For new developments**
 
-:red_circle: May 9, 2026 (or earlier if Manneback is up again):
-Merge ABINITv10.7.2 contributions, as well as merge ABINITv10.6.7, to reach frozen v10.7.3. Start ABINITv10.7.4, for further new developments.
+:red_circle: May 20, 2026 (or earlier if Manneback is up again):
+Merge ABINITv10.7.2 contributions, as well as merge ABINITv10.6.7, to reach frozen v10.7.3. v10.7.3 is the last revision of the v10.7.X series, followed by the launches of v10.8 and v10.9.
 
 [DONE] March 12, 2026:
 Merge ABINITv10.7.0 contributions (a884705b), as well as merge ABINITv10.6.6, to reach frozen v10.7.1 (1126b41c). Start ABINITv10.7.2 (9b2c5ac2), for further new developments.
