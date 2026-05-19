@@ -254,7 +254,7 @@ The first part of the name of the bot is the name_of_the_machine.</div>
 <li class="level1"><div class="li">  Use the command “module load NAME_OF_BUILDER” to select the compiler that you want to use (type “module avail” to see the list of options). <br>
 Try to solve your problem … ! You can modify the files, recompile, etc …</div>
 </li>
-<li class="level1"><div class="li">  The server can handle usual git commands. So you might make modifications, commit and push to your branch. Note however that by default, buildbot is in a “detached HEAD” state. You can check this by issuing <strong>git branch -a</strong>. You need to checkout your branch, with the command <strong>git checkout &lt;name_of_your_branch&gt;</strong>. Also, you nedd to checkout the file config/specs/testfarm.conf, with the command <strong>git checkout config/specs/testfarm.conf</strong> </div>
+<li class="level1"><div class="li">  The server can handle usual git commands. So you might make modifications, commit and push to your branch. Note however that by default, buildbot is in a “detached HEAD” state. You can check this by issuing <strong>git branch -a</strong>. You need to checkout your branch, with the command <strong>git checkout &lt;name_of_your_branch&gt;</strong>. Also, you need to checkout the file config/specs/testfarm.conf, with the command <strong>git checkout config/specs/testfarm.conf</strong> </div>
 </li>
 <li class="level1"><div class="li"> Of course, after commit and push, it is also advised to test your modifications on your own machine, before using again the test farm, although this is not mandatory.</div>
 </li>
@@ -266,22 +266,28 @@ Try to solve your problem … ! You can modify the files, recompile, etc …</di
 <div class="level2">
 
 <p>In 2026 (late spring or summer ?), most servers of the ABINIT test farm will be physically migrated to the 
-<a href="https://www.uclouvain.be/en/technology-platforms/center-for-high-performance-computing-and-mass-storage-cism" style="color: #F18F34;">CISM</a>, the High-Performance Computing (HPC) center of UCLouvain.
+<a href="https://www.uclouvain.be/en/technology-platforms/center-for-high-performance-computing-and-mass-storage-cism" style="color: #F18F34;">CISM</a>, 
+the High-Performance Computing (HPC) center of UCLouvain.
 The CISM will take care of the physical maintenance of the servers, also the OS upgrades, while the ABINIT team will be responsible of the ABINIT software stack and related libraries, 
-and of course, managing the daily/nightly ABINIT tests. The CISM is a member of the Belgian (French side) Consorium of University HPC centers, with acronym 
-<a href="https://www.ceci-hpc.be" style="color: #F18F34;">CECI</a>. Please, have a look at CISM and CECI Web sites ...
+and of course, managing the daily/nightly ABINIT tests. The CISM is a member of the Belgian (French side) Consortium of University HPC centers, with acronym 
+<a href="https://www.ceci-hpc.be" style="color: #F18F34;">CECI</a>. 
+Please, have a look at 
+<a href="https://www.uclouvain.be/en/technology-platforms/center-for-high-performance-computing-and-mass-storage-cism" style="color: #F18F34;">CISM</a>  
+ and 
+CECI 
+<a href="https://www.ceci-hpc.be" style="color: #F18F34;">CECI</a>  
+Web sites ...
 </p>
 
-<p>In order to have access to the machines of the test farm, the first step is to obtain a CECI login. 
+<p>In order to have access to the CISM machines of the ABINIT test farm, the first step is to obtain a CECI login. 
 The ABINIT developers working in a Belgian university (or being officially scientific collaborators in a Belgian university) can obtain such an account directly from the 
 <a href="https://login.ceci-hpc.be/init/" style="color: #F18F34;">CECI login portal</a>.
-The other ABINIT developers can obtain a CECI guest login, by contacting one of the ABINIT developer team with a permanent position at UCLouvain or ULg. For the time being (2026), contact Xavier or He Xu.
+The other ABINIT developers can obtain a CECI guest login, by contacting one member of the ABINIT developer team with a permanent position at UCLouvain or ULg. 
+For the time being (2026), contact Xavier or He Xu. Needed: your first and last name and preferred ID.
 The <a href="https://login.ceci-hpc.be/init/" style="color: #F18F34;">CECI login portal</a> allows one to ask for such CECI guest login. The procedure might take a few days.
 </p>
 
-If you have a CECI login, then
-<ol>
-<li class="level1"><div class="li">  Login on "manneback". This might be as simple as 
+If you have a CECI login (guest or from your Belgian institution), then login on "manneback". This might be as simple as 
 
 <pre class="code">ssh manneback</pre>
 
@@ -289,7 +295,9 @@ If you have a CECI login, then
 
 <pre class="code"> [xgonze@mbackf1 ~]$ </pre>
 
-</li>
+Then, send to your Belgian CECI ABINIT contact the file .ssh/id_ecdsa.pub that you have on Manneback . 
+This public SSH key has been automatically created when your Manneback account has been created. It has nothing to do with the CECI SSH public key.
+Your contact will place it in the `~/.ssh/authorized_keys` file of the abinitbot generic user of the mb-mil016 machine, part of Manneback.
 
 <li class="level1"><div class="li">  Then, impersonate as abinitbot :<br>
 
@@ -297,9 +305,35 @@ If you have a CECI login, then
 
 <p>At this stage, this gives you an access to the MANN bot (manneback_gnu_14.2_hpc) </p>
 
-</li>
+In order to make the abinitbot@mb-mil016 access more straightforward, e.g. from your own laptop (or preferred machine in your institution), 
+insert in the `~/.ssh/config` of your laptop the following information
+
+<pre class="code">
+Host manneback
+    Hostname manneback.cism.ucl.ac.be
+    forwardagent yes
+Host mb-mil016
+    user abinitbot
+    proxyjump manneback
+    forwardagent yes
+    identityfile ~/.ssh/id_ecdsa_manneback
+</pre>
+
+Also, copy the private SSH key of your Manneback user `~/.ssh/id_ecdsa` to your laptop, e.g. with 
+
+<pre class="code"> scp manneback:.ssh/id_ecdsa ~/.ssh/id_ecdsa_manneback </pre>
+
+At this stage, the following command should also work from your laptop:
+<pre class="code">ssh abinitbot@mb-mil016</pre>
+
+Now comes the usual (everytime that you want to debug) procedure. When you have logged as abinitbot@mb-mil016, for the MANN bot (manneback_gnu_14.2_hpc):
+<ol>
+<li class="level1"><div class="li">  <strong>cd</strong> /home/ucl/modl/abinitbot ; source modules.sh ; cd run </div>
+</li>  
 <li class="level1"><div class="li">  <strong>cd</strong>    to the directory for the particular branch that you want to debug (the one bearing your name)  ( ex : cd trunk_develop )</div>
 </li>
+<li class="level1"><div class="li">  You can proceed now like for the other machines of the test farm, see the corresponding step 8 and step 9 !</div>
+</li> 
 </ol>
 
 <hr>  
