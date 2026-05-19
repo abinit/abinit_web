@@ -291,14 +291,15 @@ The <a href="https://login.ceci-hpc.be/init/" style="color: #F18F34;">CECI login
 
 <pre class="code">ssh manneback</pre>
 
-<p>This will give you a prompt like the following :</p>
+<p>This command allows you to access manneback through the gwceci.cism.ucl.ac.be gateway (but this step should be transparent to you).</p> 
+<p>It will give you a prompt like the following :</p>
 
 <pre class="code"> [xgonze@mbackf1 ~]$ </pre>
 
-<p> Then, send the file .ssh/id_ecdsa.pub that you have on Manneback to your Belgian CECI ABINIT contact. 
-This public SSH key has been automatically created when your Manneback account has been created. It has nothing to do with your CECI SSH public key.
-Your contact will place this Manneback public key in the `~/.ssh/authorized_keys` file of the abinitbot generic user of the mb-mil016 machine, part of Manneback. 
-Then, impersonate as abinitbot :
+<p> Then, send the file .ssh/id_ecdsa.pub that you have in your manneback account to Xavier or He Xu.
+This public SSH key has been automatically created when your manneback account has been created. It has nothing to do with your CECI SSH public key.
+This manneback public SSH key will be placed in the `~/.ssh/authorized_keys` file of the abinitbot generic user of the mb-mil016 machine, part of manneback. 
+When you will be told that this is done, impersonate as abinitbot on the specific machine mb-mil016 of the manneback cluster:
 </p>
 
 <pre class="code">ssh abinitbot@mb-mil016</pre>
@@ -306,8 +307,8 @@ Then, impersonate as abinitbot :
 <p>Now you have access to the CISM ABINIT testfarm working directories ! 
 </p>
 
-<p>In order to make the abinitbot@mb-mil016 access more straightforward, e.g. from your own laptop (or preferred machine in your institution), 
-insert in the `~/.ssh/config` of your laptop the following information </p>
+<p>In order to make the abinitbot@mb-mil016 access more straightforward, e.g. from your own laptop (or your preferred machine in your institution), 
+insert the following information in the `~/.ssh/config` of your laptop </p>
 
 <pre class="code">
 Host manneback
