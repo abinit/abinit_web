@@ -274,7 +274,6 @@ and of course, managing the daily/nightly ABINIT tests. The CISM is a member of 
 Please, have a look at 
 <a href="https://www.uclouvain.be/en/technology-platforms/center-for-high-performance-computing-and-mass-storage-cism" style="color: #F18F34;">CISM</a>  
  and 
-CECI 
 <a href="https://www.ceci-hpc.be" style="color: #F18F34;">CECI</a>  
 Web sites ...
 </p>
@@ -287,7 +286,8 @@ For the time being (2026), contact Xavier or He Xu. Needed: your first and last 
 The <a href="https://login.ceci-hpc.be/init/" style="color: #F18F34;">CECI login portal</a> allows one to ask for such CECI guest login. The procedure might take a few days.
 </p>
 
-If you have a CECI login (guest or from your Belgian institution), then login on "manneback". This might be as simple as 
+<p>If you have a CECI login (guest or from your Belgian institution), then login on "manneback". This might be as simple as </p>
+
 
 <pre class="code">ssh manneback</pre>
 
@@ -295,18 +295,19 @@ If you have a CECI login (guest or from your Belgian institution), then login on
 
 <pre class="code"> [xgonze@mbackf1 ~]$ </pre>
 
-Then, send to your Belgian CECI ABINIT contact the file .ssh/id_ecdsa.pub that you have on Manneback . 
+<p> Then, send to your Belgian CECI ABINIT contact the file .ssh/id_ecdsa.pub that you have on Manneback . 
 This public SSH key has been automatically created when your Manneback account has been created. It has nothing to do with the CECI SSH public key.
-Your contact will place it in the `~/.ssh/authorized_keys` file of the abinitbot generic user of the mb-mil016 machine, part of Manneback.
-
-<li class="level1"><div class="li">  Then, impersonate as abinitbot :<br>
+Your contact will place it in the `~/.ssh/authorized_keys` file of the abinitbot generic user of the mb-mil016 machine, part of Manneback. 
+Then, impersonate as abinitbot :
+</p>
 
 <pre class="code">ssh abinitbot@mb-mil016</pre>
 
-<p>At this stage, this gives you an access to the MANN bot (manneback_gnu_14.2_hpc) </p>
+<p>Now you have access to the partition where you can see the CISM ABINIT bot working directories ! 
+</p>
 
-In order to make the abinitbot@mb-mil016 access more straightforward, e.g. from your own laptop (or preferred machine in your institution), 
-insert in the `~/.ssh/config` of your laptop the following information
+<p>In order to make the abinitbot@mb-mil016 access more straightforward, e.g. from your own laptop (or preferred machine in your institution), 
+insert in the `~/.ssh/config` of your laptop the following information </p>
 
 <pre class="code">
 Host manneback
@@ -319,14 +320,20 @@ Host mb-mil016
     identityfile ~/.ssh/id_ecdsa_manneback
 </pre>
 
-Also, copy the private SSH key of your Manneback user `~/.ssh/id_ecdsa` to your laptop, e.g. with 
+<p>Also, copy the private SSH key of your Manneback user `~/.ssh/id_ecdsa` to your laptop, e.g. with 
+</p>
 
 <pre class="code"> scp manneback:.ssh/id_ecdsa ~/.ssh/id_ecdsa_manneback </pre>
 
-At this stage, the following command should also work from your laptop:
+<p>At this stage, the following command should also work from your laptop:
+</p>
+
 <pre class="code">ssh abinitbot@mb-mil016</pre>
 
-Now comes the usual (everytime that you want to debug) procedure. When you have logged as abinitbot@mb-mil016, for the MANN bot (manneback_gnu_14.2_hpc):
+<p>This finishes the initialisation of your access to the CISM ABINIT test farm.
+</p>
+
+<p>Then comes the usual (everytime that you want to debug) procedure. When you have logged as abinitbot@mb-mil016, for the MANN bot (manneback_gnu_14.2_hpc):
 <ol>
 <li class="level1"><div class="li">  <strong>cd</strong> /home/ucl/modl/abinitbot ; source modules.sh ; cd run </div>
 </li>  
@@ -335,6 +342,7 @@ Now comes the usual (everytime that you want to debug) procedure. When you have 
 <li class="level1"><div class="li">  You can proceed now like for the other machines of the test farm, see the corresponding step 8 and step 9 !</div>
 </li> 
 </ol>
+</p>
 
 <hr>  
 
