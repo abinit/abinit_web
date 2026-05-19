@@ -308,18 +308,18 @@ When you will be told that this is done, impersonate as abinitbot on the specifi
 </p>
 
 <p>In order to make the abinitbot@mb-mil016 access more straightforward, e.g. from your own laptop (or your preferred machine in your institution), 
-insert the following information in the `~/.ssh/config` of your laptop (changing <CECI_USER_ID> by your CECI user ID) </p>
+insert the following information in the `~/.ssh/config` of your laptop (changing CECI_USER_ID by your CECI user ID) </p>
 
 <pre class="code">
  Host gwceci
    HostName gwceci.cism.ucl.ac.be
-   User <CECI_USER_ID>
+   User CECI_USER_ID
    IdentityFile ~/.ssh/id_rsa.ceci
    IdentitiesOnly yes
 
  Host manneback
    HostName manneback.cism.ucl.ac.be
-   User <CECI_USER_ID>
+   User CECI_USER_ID
    ProxyJump gwceci
    IdentityFile ~/.ssh/id_rsa.ceci
    IdentitiesOnly yes
