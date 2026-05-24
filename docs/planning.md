@@ -10,7 +10,7 @@ Merge ABINITv10.9.0 contributions, as well as merge ABINITv10.6.7, to reach froz
 for further developments.
 
 [DONE] May 22, 2026 
-Start ABINITv10.9.0, for new developments, from v10.8.1.
+Start ABINITv10.9.0 (823e6d21), for new developments, from v10.8.1.
 
 ### ABINITv10.8 planning 
 
@@ -22,9 +22,9 @@ for bug fixes and documentation, including preparation of the release notes. The
 availability of the release notes ...
 
 [DONE] May 22, 2026 :
-Merge ABINITv10.8.0 contributions, to reach frozen v10.8.1. This is a beta release for the EPW school. Start ABINITv10.8.2 
+Merge ABINITv10.8.0 contributions, to reach frozen v10.8.1 (e10f401a). This is a beta release for the EPW school. Start ABINITv10.8.2 (6726daa0) 
 for bug fixes and documentation, including preparation of the release notes (late June ?!), as well as beta release for the EPW school.
-Star ABINITv10.9.0 for new developments.
+Use the initial ABINITv10.8.2 to start ABINITv10.9.0.
 ABINITv10.8.1 is not advertized on the ABINIT Web main page, but is accessible as a beta release on Github.
 
 [DONE] May 20, 2026 :
