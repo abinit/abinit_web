@@ -5,24 +5,38 @@ Note : there is a unique version number (and associated git tag) for the frozen 
 
 ### ABINITv10.9 planning 
 
-:red_circle: May 20, 2026 
-Start ABINITv10.9.0, for new developments, from v10.7.3.
+:red_circle: July XY, 2026 :
+Merge ABINITv10.9.0 contributions, as well as merge ABINITv10.6.7, to reach frozen v10.9.1. Start ABINITv10.9.2 
+for further developments.
 
+[DONE] May 22, 2026 
+Start ABINITv10.9.0 (823e6d21), for new developments, from v10.8.1.
 
 ### ABINITv10.8 planning 
 
 **For bug fixes and releases**
 
-:red_circle: May 20, 2026 :
-Start ABINITv10.8.0, for bug fixes and documentation, including preparation of the release notes, as well as beta release for the EPW school, from v10.7.3.
+:red_circle: July XY, 2026 :
+Merge ABINITv10.8.2 contributions, to reach frozen v10.8.3. Start ABINITv10.8.2 
+for bug fixes and documentation, including preparation of the release notes. The first v10.8 public release will depend on the
+availability of the release notes ...
+
+[DONE] May 22, 2026 :
+Merge ABINITv10.8.0 contributions, to reach frozen v10.8.1 (e10f401a). This is a beta release for the EPW school. Start ABINITv10.8.2 (6726daa0) 
+for bug fixes and documentation, including preparation of the release notes (late June ?!), as well as beta release for the EPW school.
+Use the initial ABINITv10.8.2 to start ABINITv10.9.0.
+ABINITv10.8.1 is not advertized on the ABINIT Web main page, but is accessible as a beta release on Github.
+
+[DONE] May 20, 2026 :
+Start ABINITv10.8.0 (796dda48), for bug fixes and documentation, as well as beta release for the EPW school, still also for new developments.
 
 
 ### ABINITv10.7 planning 
 
 **For new developments**
 
-:red_circle: May 20, 2026 :
-Merge ABINITv10.7.2 contributions, as well as merge ABINITv10.6.7, to reach frozen v10.7.3. v10.7.3 is the last revision of the v10.7.X series, followed by the launches of v10.8 and v10.9.
+[DONE] May 20, 2026 :
+Merge ABINITv10.7.2 contributions, as well as merge ABINITv10.6.7, to reach frozen v10.7.3 (f0405588). v10.7.3 is the last revision of the v10.7.X series, followed by the launch of v10.8 (and later, v10.9).
 
 [DONE] March 12, 2026:
 Merge ABINITv10.7.0 contributions (a884705b), as well as merge ABINITv10.6.6, to reach frozen v10.7.1 (1126b41c). Start ABINITv10.7.2 (9b2c5ac2), for further new developments.
