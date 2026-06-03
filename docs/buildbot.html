@@ -265,10 +265,10 @@ Try to solve your problem … ! You can modify the files, recompile, etc …</di
 <h2 class="sectionedit4" id="accessing_directly_some_CISM_server">Accessing directly some server in the CISM environment.</h2>
 <div class="level2">
 
-<p>In 2026 (late spring or summer ?), most servers of the ABINIT test farm will be physically migrated to the 
+<p>In 2026 (summer), most servers of the ABINIT test farm will be physically migrated to the 
 <a href="https://www.uclouvain.be/en/technology-platforms/center-for-high-performance-computing-and-mass-storage-cism" style="color: #F18F34;">CISM</a>, 
 the High-Performance Computing (HPC) center of UCLouvain.
-The CISM will take care of the physical maintenance of the servers, also the OS upgrades, while the ABINIT team will be responsible of the ABINIT software stack and related libraries, 
+The CISM will take care of the physical maintenance of the servers, the OS upgrades, installation of part of the software stack (compilers/MPI/NetCDF/NetCDF-Fortran/HDF5/libxc/linear algebra) while the ABINIT team will be responsible of the specific ABINIT software stack and related libraries (PSML, Wannier90, AtomPAW, Bigdft), 
 and of course, managing the daily/nightly ABINIT tests. The CISM is a member of the Belgian (French side) Consortium of University HPC centers, with acronym 
 <a href="https://www.ceci-hpc.be" style="color: #F18F34;">CECI</a>. 
 Please, have a look at 
@@ -281,22 +281,27 @@ Web sites ...
 <p>In order to have access to the CISM machines of the ABINIT test farm, the first step is to obtain a CECI login. 
 The ABINIT developers working in a Belgian university (or being officially scientific collaborators in a Belgian university) can obtain such an account directly from the 
 <a href="https://login.ceci-hpc.be/init/" style="color: #F18F34;">CECI login portal</a>.
-The other ABINIT developers can obtain a CECI guest login, by contacting one member of the ABINIT developer team with a permanent position at UCLouvain or ULg. 
-For the time being (2026), contact Xavier or He Xu. Needed: your first and last name and preferred ID.
-The <a href="https://login.ceci-hpc.be/init/" style="color: #F18F34;">CECI login portal</a> allows one to ask for such CECI guest login. The procedure might take a few days.
+The other ABINIT developers can obtain a CECI guest login. Taking into account the further access to the test farm, one ABINIT developer with a permanent position at UCLouvain should be contacted. 
+For the time being (2026), contact Xavier. Needed: your first and last name and preferred ID.
+The <a href="https://login.ceci-hpc.be/init/" style="color: #F18F34;">CECI login portal</a> allows the permanent UCLouvain ABINIT developers to ask for such CECI guest login for you. 
+The procedure might take a few days.
 </p>
 
-<p>If you have a CECI login (guest or from your Belgian institution), then login on "manneback". This might be as simple as </p>
+<p>If you have a UCLouvain CECI login (possibly a guest one), then login on "manneback". This might be as simple as </p>
 
 
 <pre class="code">ssh manneback</pre>
 
 <p>This command allows you to access manneback through the gwceci.cism.ucl.ac.be gateway (but this step should be transparent to you).</p> 
-<p>It will give you a prompt like the following :</p>
+
+<p> If you hve a ULiege CECI login, then you will be able to access manneback from lemaitre4.cism.ucl.ac.be (to which you have access from the ULiege gateway). 
+However, your manneback account will need to be created by the CISM people first. Hence, contact also the above ABINIT developer with a permanent position at UCLouvain, who will relay to CISM.
+
+<p>Anyhow, when you will have an access to manneback, you will have a prompt like the following :</p>
 
 <pre class="code"> [xgonze@mbackf1 ~]$ </pre>
 
-<p> Then, send the file .ssh/id_ecdsa.pub that you have in your manneback account to Xavier or He Xu.
+<p> Then, send the file .ssh/id_ecdsa.pub that you have in your manneback account to the ABINIT developer.
 This public SSH key has been automatically created when your manneback account has been created. It has nothing to do with your CECI SSH public key.
 This manneback public SSH key will be placed in the `~/.ssh/authorized_keys` file of the abinitbot generic user of the mb-mil016 machine, part of manneback. 
 When you will be told that this is done, impersonate as abinitbot on the specific machine mb-mil016 of the manneback cluster:
@@ -308,7 +313,7 @@ When you will be told that this is done, impersonate as abinitbot on the specifi
 </p>
 
 <p>In order to make the abinitbot@mb-mil016 access more straightforward, e.g. from your own laptop (or your preferred machine in your institution), 
-insert the following information in the `~/.ssh/config` of your laptop (changing CECI-USER-ID by your CECI user ID) </p>
+insert the following information in the `~/.ssh/config` of your laptop (changing CECI-USER-ID by your CECI user ID) in case you are from UCLouvain or have a guest UCLouvain CECI account</p>
 
 <pre class="code">
  Host gwceci
@@ -331,7 +336,11 @@ insert the following information in the `~/.ssh/config` of your laptop (changing
    IdentitiesOnly yes
 </pre>
 
-<p>Also, copy the private SSH key `~/.ssh/id_ecdsa` of your Manneback account (not the abinitbot@mb-mil016 one) to your laptop, e.g. by issuing on your laptop 
+<p>If you are from ULiege, and access Lemaitre4 through the ULiege gateway, insert the following information in the `~/.ssh/config` of your laptop (changing CECI-USER-ID by your CECI user ID).
+
+<p>He Xu, could you complete ?
+
+<p>In both cases, copy the private SSH key `~/.ssh/id_ecdsa` of your Manneback account (not the abinitbot@mb-mil016 one) to your laptop, e.g. by issuing on your laptop 
 </p>
 
 <pre class="code"> scp manneback:.ssh/id_ecdsa ~/.ssh/id_ecdsa_manneback </pre>
