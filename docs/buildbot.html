@@ -284,7 +284,7 @@ Web sites ...
 <li>The ABINIT developers working in a Belgian university (or being officially scientific collaborators in a Belgian university) can obtain such an account directly from the 
 <a href="https://login.ceci-hpc.be/init/" style="color: #F18F34;">CECI login portal</a></li>.
 <li>
-The other ABINIT developers can obtain a CECI guest login. An ABINIT developer with a permanent position at UCLouvain should be contacted. 
+The other ABINIT developers can obtain a CECI guest login. An ABINIT developer with a permanent position at UCLouvain should be contacted. This person will be referred as CISM-ABINIT contact in what follows.
 For the time being (2026), contact Xavier. Needed: your first and last name and preferred ID.
 The <a href="https://login.ceci-hpc.be/init/" style="color: #F18F34;">CECI login portal</a> allows the permanent UCLouvain ABINIT developers to ask for such CECI guest login for you. 
 The procedure might take a few days.
@@ -299,14 +299,14 @@ The procedure might take a few days.
 
 <p>This command allows you to access manneback through the gwceci.cism.ucl.ac.be gateway (but this step should be transparent to you).</p> 
 
-<p>If you hve a ULiege CECI login, then you will be able to access manneback from lemaitre4.cism.ucl.ac.be (to which you have access from the ULiege gateway). 
-However, your manneback account will need to be created by the CISM people first. Hence, contact also the above ABINIT developer with a permanent position at UCLouvain, who will relay to CISM.
+<p>If you have a ULiege CECI login, then you will be able to access manneback from lemaitre4.cism.ucl.ac.be (to which you have access from the ULiege gateway). 
+However, your manneback account will need to be created by the CISM people first. Hence, contact also the CISM-ABINIT contact, who will relay to CISM.
 
 <p>Anyhow, when you will have an access to manneback, you will have a prompt like the following :</p>
 
 <pre class="code"> [xgonze@mbackf1 ~]$ </pre>
 
-<p> Then, send the file .ssh/id_ecdsa.pub that you have in your manneback account to the ABINIT developer.
+<p> Then, send the file .ssh/id_ecdsa.pub that you have in your manneback account to the CISM-ABINIT contact.
 This public SSH key has been automatically created when your manneback account has been created. It has nothing to do with your CECI SSH public key.
 This manneback public SSH key will be placed in the `~/.ssh/authorized_keys` file of the abinitbot generic user of the mb-mil016 machine, part of manneback. 
 When you will be told that this is done, impersonate as abinitbot on the specific machine mb-mil016 of the manneback cluster:
@@ -316,6 +316,25 @@ When you will be told that this is done, impersonate as abinitbot on the specifi
 
 <p>Now you have access to the CISM ABINIT testfarm working directories ! 
 </p>
+
+<p>This finishes the initialisation of your access to the CISM part of the ABINIT test farm. For some shortcut, see the next section, though...
+</p>
+
+<p>Then comes the usual (everytime that you want to debug) procedure. Log in as abinitbot@mb-mil016. To debug on the the MANN bot (manneback_gnu_14.2_hpc - the only one currently located at CISM):
+<ol>
+<li class="level1"><div class="li">  <strong>cd</strong> /home/ucl/modl/abinitbot ; source modules.sh ; cd run </div>
+</li> 
+<li class="level1"><div class="li">  <strong>cd</strong>    to the directory for the particular branch that you want to debug (the one bearing your name)  ( ex : cd trunk_develop )</div>
+</li>
+<li class="level1"><div class="li">  You can proceed now like for the other machines of the test farm, see the step 8 and step 9 of
+<a href="https://www.abinit.org/buildbot.html#accessing_directly_some_server" style="color: #F18F34;">the previous section</a> !
+</li>
+</ol>
+</p>
+
+
+<h2 class="sectionedit4" id="accessing_some_CISM_server_shortcut">Accessing some server in the CISM environment: shortcut.</h2>
+<div class="level2">
 
 <p>In order to make the abinitbot@mb-mil016 access more straightforward, e.g. from your own laptop (or your preferred machine in your institution), 
 insert the following information in the `~/.ssh/config` of your laptop (changing CECI-USER-ID by your CECI user ID) in case you are from UCLouvain or have a guest UCLouvain CECI account</p>
@@ -354,21 +373,6 @@ insert the following information in the `~/.ssh/config` of your laptop (changing
 </p>
 
 <pre class="code">ssh abinitbot@mb-mil016</pre>
-
-<p>This finishes the initialisation of your access to the CISM part of the ABINIT test farm.
-</p>
-
-<p>Then comes the usual (everytime that you want to debug) procedure. Log in as abinitbot@mb-mil016. To debug on the the MANN bot (manneback_gnu_14.2_hpc - the only one currently located at CISM):
-<ol>
-<li class="level1"><div class="li">  <strong>cd</strong> /home/ucl/modl/abinitbot ; source modules.sh ; cd run </div>
-</li>  
-<li class="level1"><div class="li">  <strong>cd</strong>    to the directory for the particular branch that you want to debug (the one bearing your name)  ( ex : cd trunk_develop )</div>
-</li>
-<li class="level1"><div class="li">  You can proceed now like for the other machines of the test farm, see the step 8 and step 9 of 
-<a href="https://www.abinit.org/buildbot.html#accessing_directly_some_server" style="color: #F18F34;">the previous section</a> !
-</li> 
-</ol>
-</p>
 
 <hr>  
 
