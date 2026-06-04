@@ -265,7 +265,7 @@ Try to solve your problem … ! You can modify the files, recompile, etc …</di
 <h2 class="sectionedit4" id="accessing_directly_some_CISM_server">Accessing directly some server in the CISM environment.</h2>
 <div class="level2">
 
-<p>In 2026 (summer), most servers of the ABINIT test farm will be physically migrated to the 
+<p>In 2026 (summer), most workers (=physical machines) of the ABINIT test farm will be physically migrated to the 
 <a href="https://www.uclouvain.be/en/technology-platforms/center-for-high-performance-computing-and-mass-storage-cism" style="color: #F18F34;">CISM</a>, 
 the High-Performance Computing (HPC) center of UCLouvain.
 The CISM will take care of the physical maintenance of the servers, the OS upgrades, installation of part of the software stack (compilers/MPI/NetCDF/NetCDF-Fortran/HDF5/libxc/linear algebra) while the ABINIT team will be responsible of the specific ABINIT software stack and related libraries (PSML, Wannier90, AtomPAW, Bigdft), 
@@ -278,23 +278,28 @@ Please, have a look at
 Web sites ...
 </p>
 
-<p>In order to have access to the CISM machines of the ABINIT test farm, the first step is to obtain a CECI login. 
-The ABINIT developers working in a Belgian university (or being officially scientific collaborators in a Belgian university) can obtain such an account directly from the 
-<a href="https://login.ceci-hpc.be/init/" style="color: #F18F34;">CECI login portal</a>.
-The other ABINIT developers can obtain a CECI guest login. Taking into account the further access to the test farm, one ABINIT developer with a permanent position at UCLouvain should be contacted. 
+<p>In order to have access to the CISM machines of the ABINIT test farm, e.g. for debugging purposes, the first step is to obtain a CECI login. 
+<p>
+<ul>
+<li>The ABINIT developers working in a Belgian university (or being officially scientific collaborators in a Belgian university) can obtain such an account directly from the 
+<a href="https://login.ceci-hpc.be/init/" style="color: #F18F34;">CECI login portal</a></li>.
+<li>
+The other ABINIT developers can obtain a CECI guest login. An ABINIT developer with a permanent position at UCLouvain should be contacted. 
 For the time being (2026), contact Xavier. Needed: your first and last name and preferred ID.
 The <a href="https://login.ceci-hpc.be/init/" style="color: #F18F34;">CECI login portal</a> allows the permanent UCLouvain ABINIT developers to ask for such CECI guest login for you. 
 The procedure might take a few days.
+</li>
+</ul>
+</p>
 </p>
 
 <p>If you have a UCLouvain CECI login (possibly a guest one), then login on "manneback". This might be as simple as </p>
-
 
 <pre class="code">ssh manneback</pre>
 
 <p>This command allows you to access manneback through the gwceci.cism.ucl.ac.be gateway (but this step should be transparent to you).</p> 
 
-<p> If you hve a ULiege CECI login, then you will be able to access manneback from lemaitre4.cism.ucl.ac.be (to which you have access from the ULiege gateway). 
+<p>If you hve a ULiege CECI login, then you will be able to access manneback from lemaitre4.cism.ucl.ac.be (to which you have access from the ULiege gateway). 
 However, your manneback account will need to be created by the CISM people first. Hence, contact also the above ABINIT developer with a permanent position at UCLouvain, who will relay to CISM.
 
 <p>Anyhow, when you will have an access to manneback, you will have a prompt like the following :</p>
