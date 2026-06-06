@@ -359,9 +359,36 @@ insert the following information in the `~/.ssh/config` of your laptop (changing
    IdentitiesOnly yes
 </pre>
 
-<p>If you are from ULiege, and access Lemaitre4 through the ULiege gateway, insert the following information in the `~/.ssh/config` of your laptop (changing CECI-USER-ID by your CECI user ID).
+<p>If you are from ULiege, and can access Lemaitre4 through the ULiege gateway, insert the following information in the `~/.ssh/config` of your laptop (changing CECI-USER-ID by your CECI user ID).</p>
 
-<p>He Xu, could you complete ?
+<pre class="code">
+ Host gwceci
+   HostName gwceci.uliege.be
+   User CECI-USER-ID
+   IdentityFile ~/.ssh/id_rsa.ceci
+   IdentitiesOnly yes
+
+ Host lemaitre4
+   HostName lemaitre4.cism.ucl.ac.be
+   User CECI-USER-ID
+   ProxyJump gwceci
+   IdentityFile ~/.ssh/id_rsa.ceci
+   IdentitiesOnly yes
+
+ Host manneback
+   HostName manneback.cism.ucl.ac.be
+   User CECI-USER-ID
+   ProxyJump lemaitre4
+   IdentityFile ~/.ssh/id_rsa.ceci
+   IdentitiesOnly yes
+
+ Host mb-mil016
+   HostName mb-mil016
+   User abinitbot
+   ProxyJump manneback
+   IdentityFile ~/.ssh/id_ecdsa_manneback
+   IdentitiesOnly yes
+</pre>
 
 <p>In both cases, copy the private SSH key `~/.ssh/id_ecdsa` of your Manneback account (not the abinitbot@mb-mil016 one) to your laptop, e.g. by issuing on your laptop 
 </p>
