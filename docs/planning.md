@@ -16,14 +16,12 @@ Start ABINITv10.9.0 (823e6d21), for new developments, from v10.8.1.
 
 **For bug fixes and releases**
 
-:red_circle: July XY, 2026 :
-Merge ABINITv10.8.2 contributions, to reach frozen v10.8.3. Start ABINITv10.8.2 
-for bug fixes and documentation, including preparation of the release notes. The first v10.8 public release will depend on the
-availability of the release notes ...
+:red_circle: August XY, 2026 :
+Merge ABINITv10.8.2 contributions, to reach frozen v10.8.3 for public release. Start ABINITv10.8.4 to fix bugs and improve documentation.
 
 [DONE] May 22, 2026 :
 Merge ABINITv10.8.0 contributions, to reach frozen v10.8.1 (e10f401a). This is a beta release for the EPW school. Start ABINITv10.8.2 (6726daa0) 
-for bug fixes and documentation, including preparation of the release notes (late June ?!), as well as beta release for the EPW school.
+to fix bugs and improve documentation, including preparation of the release notes (July), as well as beta release for the EPW school (June).
 Use the initial ABINITv10.8.2 to start ABINITv10.9.0.
 ABINITv10.8.1 is not advertized on the ABINIT Web main page, but is accessible as a beta release on Github.
 
@@ -52,10 +50,10 @@ Start ABINITv10.7.0 (15eab38d), for new developments, from v10.5.8.
 Merge ABINITv10.6.6 (f6dcb226e9) and freeze ABINITv10.6.7 (d79a69b771) for public release. v10.6.7 is the last release of the v10.6 series.
 
 [DONE] March 11, 2026:
-Merge ABINITv10.6.4 (cbfe19df) and freeze ABINITv10.6.5 (319ea1fe) for public release. Start ABINITv10.6.6 (14cb23da), for fixing further bugs, improve documentation.
+Merge ABINITv10.6.4 (cbfe19df) and freeze ABINITv10.6.5 (319ea1fe) for public release. Start ABINITv10.6.6 (14cb23da), to fix further bugs and improve documentation.
 
 [DONE] February 9, 2026:
-Merge ABINITv10.6.2 (774f039a), and freeze ABINITv10.6.3 (84d89d29) for public release. Start ABINITv10.6.4 (2b624677), for fixing bugs, improve documentation.
+Merge ABINITv10.6.2 (774f039a), and freeze ABINITv10.6.3 (84d89d29) for public release. Start ABINITv10.6.4 (2b624677), to fix bugs and improve documentation.
 
 [DONE] January 22, 2026:
 Merge ABINITv10.6.0 (448d5cca), and freeze ABINITv10.6.1 (8a3219e7). Start ABINITv10.6.2 (01d7cf1a), for examination of release notes, improvement of documentation, and fixing bugs.
