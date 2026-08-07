@@ -5,7 +5,7 @@ Note : there is a unique version number (and associated git tag) for the frozen 
 
 ### ABINITv10.9 planning 
 
-:red_circle: August XX, 2026 :
+August XX, 2026 :
 Start v10.9.4, being the filtered, migrated version of v10.9.3. Merge ABINITv10.9.4 contributions, to be done carefully, as the gitlab will be now hosted at ULiege, and only filtered contributions will be accepted.
 
 :red_circle: August 7, 2026 :
@@ -19,8 +19,8 @@ Start ABINITv10.9.0 (823e6d21), for new developments, from v10.8.1.
 
 **For bug fixes and releases**
 
-:red_circle: August 7, 2026 :
-Merge ABINITv10.8.2 contributions, to reach frozen v10.8.3 for public release. Due to the forthcoming migration, this is the last release of the v10.8 series.
+[DONE] August 7, 2026 :
+Merge ABINITv10.8.2 contributions, to reach frozen v10.8.3 (9f5ce3f7ef) for public release. Due to the forthcoming migration, this is the last release of the v10.8 series.
 
 [DONE] May 22, 2026 :
 Merge ABINITv10.8.0 contributions, to reach frozen v10.8.1 (e10f401a). This is a beta release for the EPW school. Start ABINITv10.8.2 (6726daa0) 
