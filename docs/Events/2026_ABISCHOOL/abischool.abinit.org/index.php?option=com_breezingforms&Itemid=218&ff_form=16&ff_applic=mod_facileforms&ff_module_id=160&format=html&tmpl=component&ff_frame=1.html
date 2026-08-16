@@ -1,0 +1,1335 @@
+<!doctype html>
+<html lang="en-gb" dir="ltr">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta charset="utf-8">
+	<meta name="generator" content="Joomla! - Open Source Content Management">
+	<title>ABINIT SCHOOL - Registration</title>    <link rel="preconnect" href="index.html">
+    <link rel="dns-prefetch" href="index.html">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://ajax.googleapis.com">
+	<link href="images/logos/abischool_icon.ico" rel="icon" type="image/vnd.microsoft.icon">
+<link href="components/com_breezingforms/libraries/jquery/tooltip.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin&amp;display=swap" rel="stylesheet" media="none" onload="media=&quot;all&quot;">
+	<link href="templates/shaper_helixultimate/css/bootstrap.min.css" rel="stylesheet">
+	<link href="plugins/system/helixultimate/assets/css/system-j4.min.css" rel="stylesheet">
+	<link href="media/system/css/joomla-fontawesome.min.css%3Ff51120.css" rel="stylesheet">
+	<style>
+
+.bfClearfix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+.bfInline{
+float:left;
+}
+.bfFadingClass{
+display:none;
+}</style>
+	<style>body{font-family: 'Raleway', sans-serif;font-size: 15px;color: #f6f6f6;text-decoration: none;}
+</style>
+	<style>h1{font-family: 'Raleway', sans-serif;font-size: 40px;font-weight: 700;color: #f6f6f6;text-decoration: none;}
+</style>
+	<style>h2{font-family: 'Raleway', sans-serif;font-size: 28px;font-weight: 700;color: #f6f6f6;text-decoration: none;}
+</style>
+	<style>h3{font-family: 'Raleway', sans-serif;font-size: 22px;font-weight: 700;color: #f6f6f6;text-decoration: none;}
+</style>
+	<style>h4{font-family: 'Raleway', sans-serif;font-size: 18px;font-weight: 600;color: #f6f6f6;text-decoration: none;}
+</style>
+	<style>h5{font-family: 'Raleway', sans-serif;font-size: 18px;font-weight: 600;color: #f6f6f6;text-decoration: none;}
+</style>
+	<style>h6{font-family: 'Raleway', sans-serif;font-weight: 400;color: #f6f6f6;text-decoration: none;}
+</style>
+	<style>.sp-megamenu-parent > li > a, .sp-megamenu-parent > li > span, .sp-megamenu-parent .sp-dropdown li.sp-menu-item > a{font-family: 'Raleway', sans-serif;font-size: 15px;text-decoration: none;}
+</style>
+	<style>.menu.nav-pills > li > a, .menu.nav-pills > li > span, .menu.nav-pills .sp-dropdown li.sp-menu-item > a{font-family: 'Raleway', sans-serif;font-size: 15px;text-decoration: none;}
+</style>
+<script type="application/json" class="joomla-script-options new">{"data":{"breakpoints":{"tablet":991,"mobile":480},"header":{"stickyOffset":"100"}},"system.paths":{"root":"","rootFull":"https:\/\/abischool.abinit.org\/","base":"","baseFull":"https:\/\/abischool.abinit.org\/"},"csrf.token":"8fc65e10b7ffaec3bd213b5dfbe871a8"}</script>
+	<script src="media/system/js/core.min.js%3F2cb912"></script>
+	<script src="media/vendor/jquery/js/jquery.min.js%3F3.7.1"></script>
+	<script src="media/legacy/js/jquery-noconflict.min.js%3F504da4"></script>
+	<script src="media/vendor/bootstrap/js/alert.min.js%3F5.3.3" type="module"></script>
+	<script src="media/vendor/bootstrap/js/button.min.js%3F5.3.3" type="module"></script>
+	<script src="media/vendor/bootstrap/js/carousel.min.js%3F5.3.3" type="module"></script>
+	<script src="media/vendor/bootstrap/js/collapse.min.js%3F5.3.3" type="module"></script>
+	<script src="media/vendor/bootstrap/js/dropdown.min.js%3F5.3.3" type="module"></script>
+	<script src="media/vendor/bootstrap/js/modal.min.js%3F5.3.3" type="module"></script>
+	<script src="media/vendor/bootstrap/js/offcanvas.min.js%3F5.3.3" type="module"></script>
+	<script src="media/vendor/bootstrap/js/popover.min.js%3F5.3.3" type="module"></script>
+	<script src="media/vendor/bootstrap/js/scrollspy.min.js%3F5.3.3" type="module"></script>
+	<script src="media/vendor/bootstrap/js/tab.min.js%3F5.3.3" type="module"></script>
+	<script src="media/vendor/bootstrap/js/toast.min.js%3F5.3.3" type="module"></script>
+	<script src="media/system/js/showon.min.js%3Fe51227" type="module"></script>
+	<script src="components/com_breezingforms/libraries/jquery/jq.min.js"></script>
+	<script src="components/com_breezingforms/libraries/jquery/tooltip.js"></script>
+	<script><!--</script>
+	<script>
+	    
+	        JQuery(document).ready(function(){
+	            JQuery(".ff_elem").closest(".input-group").removeClass("input-group");
+	            JQuery(".ff_elem").next(".input-group-append").removeClass("input-group-append");
+	            JQuery(".ff_elem").removeClass("form-control");
+	            JQuery(".js-calendar").closest(".bfElemWrap").css("overflow","visible");
+	            JQuery(".js-calendar").each(function(){
+	                let elem_id = JQuery(this).closest(".bfElemWrap").find(".ff_elem").attr("id");
+	                let _this = this;
+	                JQuery("#"+elem_id+"_btn").on("click", function(){
+	                    JQuery(_this).closest(".bfElemWrap").removeClass("bfRolloverBg");
+	                    JQuery(_this).css("left", jQuery("#"+elem_id).position().left);
+	                });
+	            });
+	        });
+	    </script>
+	<script>
+			var inlineErrorElements = new Array();
+			var bfSummarizers = new Array();
+			var bfDeactivateField = new Array();
+			var bfDeactivateSection = new Array();
+			
+			var toggleFieldsArray = [{ action: "turn", state: "off", tCat: "section", tName: "unregistered", statement: "if", sName: "userid", condition: "isnot", value: "0" },{ action: "turn", state: "off", tCat: "section", tName: "registered", statement: "if", sName: "userid", condition: "is", value: "0" },{ action: "turn", state: "on", tCat: "section", tName: "registered", statement: "if", sName: "userid", condition: "isnot", value: "0" },{ action: "turn", state: "on", tCat: "section", tName: "unregistered", statement: "if", sName: "userid", condition: "is", value: "0" }];
+String.prototype.beginsWith = function(t, i) {
+  if (i == false) {
+    return (t == this.substring(0, t.length));
+  } else {
+    return (t.toLowerCase() ==
+      this.substring(0, t.length).toLowerCase());
+  }
+}
+
+function bfDeactivateSectionFields() {
+  for (var i = 0; i < bfDeactivateSection.length; i++) {
+    bfSetFieldValue(bfDeactivateSection[i], "off");
+    JQuery("#" + bfDeactivateSection[i] + " .ff_elem").each(function(i) {
+      if (JQuery(this).get(0).name && JQuery(this).get(0).name.beginsWith("ff_nm_", true)) {
+        bfDeactivateField[JQuery(this).get(0).name] = true;
+      }
+    });
+  }
+  for (var i = 0; i < toggleFieldsArray.length; i++) {
+    if (toggleFieldsArray[i].state == "turn") {
+      bfSetFieldValue(toggleFieldsArray[i].tName, "off");
+    }
+  }
+  
+  bfSectionFieldsDeactivated = true;
+}
+
+function bfToggleFields(state, tCat, tName, thisBfDeactivateField) {
+  if (state == "on") {
+    if (tCat == "element") {
+      JQuery("[name=\"ff_nm_" + tName + "[]\"]").closest(".bfElemWrap").css("display", "");
+      thisBfDeactivateField["ff_nm_" + tName + "[]"] = false;
+      bfSetFieldValue(tName, "on");
+    } else {
+      JQuery("#" + tName).css("display", "");
+      bfSetFieldValue(tName, "on");
+      JQuery("#" + tName).find(".ff_elem").each(function(i) {
+        if (JQuery(this).get(0).name && JQuery(this).get(0).name.beginsWith("ff_nm_", true)) {
+          thisBfDeactivateField[JQuery(this).get(0).name] = false;
+        }
+      });
+    }
+  } else {
+    if (tCat == "element") {
+      JQuery("[name=\"ff_nm_" + tName + "[]\"]").closest(".bfElemWrap").css("display", "none");
+      thisBfDeactivateField["ff_nm_" + tName + "[]"] = true;
+      bfSetFieldValue(tName, "off");
+    } else {
+      JQuery("#" + tName).css("display", "none");
+      bfSetFieldValue(tName, "off");
+      JQuery("#" + tName + " .ff_elem").each(function(i) {
+        if (JQuery(this).get(0).name && JQuery(this).get(0).name.beginsWith("ff_nm_", true)) {
+          thisBfDeactivateField[JQuery(this).get(0).name] = true;
+        }
+      });
+    }
+  }
+  if (typeof bfRefreshAll != "undefined") {
+    bfRefreshAll();
+  }
+}
+
+function bfSetFieldValue(name, condition) {
+  for (var i = 0; i < toggleFieldsArray.length; i++) {
+    if (toggleFieldsArray[i].action == "if") {
+      if (name == toggleFieldsArray[i].tCat && condition == toggleFieldsArray[i].statement) {
+
+        var element = JQuery("[name=\"ff_nm_" + toggleFieldsArray[i].condition + "[]\"]");
+
+        switch (element.get(0).type) {
+          case "text":
+          case "textarea":
+            if (toggleFieldsArray[i].value == "!empty") {
+              element.val("");
+            } else {
+              element.val(toggleFieldsArray[i].value);
+            }
+            element.trigger("change");
+            break;
+          case "select-multiple":
+          case "select-one":
+            if (toggleFieldsArray[i].value == "!empty") {
+              for (var j = 0; j < element.get(0).options.length; j++) {
+                element.get(0).options[j].selected = false;
+                JQuery(element.get(0).options[j]).trigger("change");
+              }
+            }
+            for (var j = 0; j < element.get(0).options.length; j++) {
+              if (element.get(0).options[j].value == toggleFieldsArray[i].value) {
+                element.get(0).options[j].selected = true;
+                JQuery(element.get(0).options[j]).trigger("change");
+              }
+            }
+            break;
+          case "radio":
+          case "checkbox":
+            var radioLength = element.size();
+            if (toggleFieldsArray[i].value == "!empty") {
+              for (var j = 0; j < radioLength; j++) {
+                element.get(j).checked = false;
+                JQuery(element.get(j)).trigger("change");
+              }
+            }
+            for (var j = 0; j < radioLength; j++) {
+              if (element.get(j).value == toggleFieldsArray[i].value) {
+                element.get(j).checked = true;
+                JQuery(element.get(j)).trigger("change");
+              }
+            }
+            break;
+        }
+      }
+    }
+  }
+}
+
+function bfRegisterToggleFields() {
+
+  var offset = 0;
+  var last_offset = 0;
+  var limit = 10;
+  var limit_cnt = 0;
+
+  if (arguments.length == 1) {
+    offset = arguments[0];
+  }
+
+  var thisToggleFieldsArray = toggleFieldsArray;
+  var thisBfDeactivateField = bfDeactivateField;
+  var thisBfToggleFields = bfToggleFields;
+
+  for (var i = offset; limit_cnt < limit && i < toggleFieldsArray.length; i++) {
+    // console.log(toggleFieldsArray[i]);
+    //  for( var i = 0; i < toggleFieldsArray.length; i++ ){
+    if (toggleFieldsArray[i].action == "turn" && (toggleFieldsArray[i].tCat == "element" || toggleFieldsArray[i].tCat == "section")) {
+      var toggleField = toggleFieldsArray[i];
+      var element = JQuery("[name=\"ff_nm_" + toggleFieldsArray[i].sName + "[]\"]");
+      if (element.get(0)) {
+        switch (element.get(0).type) {
+          case "text":
+          case "textarea":
+            JQuery("[name=\"ff_nm_" + toggleField.sName + "[]\"]").unbind("blur");
+            JQuery("[name=\"ff_nm_" + toggleField.sName + "[]\"]").blur(
+              function() {
+                for (var k = 0; k < thisToggleFieldsArray.length; k++) {
+                  var regExp = "";
+                  var testRegExp = null;
+                  if (thisToggleFieldsArray[k].value.beginsWith("!", true) && JQuery(this).get(0).name == "ff_nm_" + thisToggleFieldsArray[k].sName + "[]") {
+                    regExp = thisToggleFieldsArray[k].value.substring(1, thisToggleFieldsArray[k].value.length);
+                    testRegExp = new RegExp(regExp);
+                  }
+
+                  if (thisToggleFieldsArray[k].condition == "isnot") {
+                    if (
+                      ((regExp != "" && testRegExp.test(JQuery(this).val()) == false) || JQuery(this).val() != thisToggleFieldsArray[k].value) && JQuery(this).get(0).name == "ff_nm_" + thisToggleFieldsArray[k].sName + "[]"
+                    ) {
+                      var names = thisToggleFieldsArray[k].tName.split(",");
+                      for (var n = 0; n < names.length; n++) {
+                        thisBfToggleFields(thisToggleFieldsArray[k].state, thisToggleFieldsArray[k].tCat, JQuery.trim(names[n]), thisBfDeactivateField);
+                      }
+                      //break;
+                    }
+                  } else if (thisToggleFieldsArray[k].condition == "is") {
+                    if (
+                      ((regExp != "" && testRegExp.test(JQuery(this).val()) == true) || JQuery(this).val() == thisToggleFieldsArray[k].value) && JQuery(this).get(0).name == "ff_nm_" + thisToggleFieldsArray[k].sName + "[]"
+                    ) {
+                      var names = thisToggleFieldsArray[k].tName.split(",");
+                      for (var n = 0; n < names.length; n++) {
+                        thisBfToggleFields(thisToggleFieldsArray[k].state, thisToggleFieldsArray[k].tCat, JQuery.trim(names[n]), thisBfDeactivateField);
+                      }
+                      //break;
+                    }
+                  }
+                }
+              }
+            );
+            break;
+          case "select-multiple":
+          case "select-one":
+            JQuery("[name=\"ff_nm_" + toggleField.sName + "[]\"]").unbind("change");
+            JQuery("[name=\"ff_nm_" + toggleField.sName + "[]\"]").change(
+              function() {
+                var res = JQuery.isArray(JQuery(this).val()) == false ? [JQuery(this).val()] : JQuery(this).val();
+                for (var k = 0; k < thisToggleFieldsArray.length; k++) {
+
+                  // The or-case in lists
+                  var found = false;
+                  var chkGrpValues = new Array();
+                  if (thisToggleFieldsArray[k].value.beginsWith("#", true) && JQuery(this).get(0).name == "ff_nm_" + thisToggleFieldsArray[k].sName + "[]") {
+                    chkGrpValues = thisToggleFieldsArray[k].value.substring(1, thisToggleFieldsArray[k].value.length).split("|");
+                    for (var l = 0; l < chkGrpValues.length; l++) {
+                      if (JQuery.inArray(chkGrpValues[l], res) != -1) {
+                        found = true;
+                        break;
+                      }
+                    }
+                  }
+                  // the and-case in lists
+                  var foundCount = 0;
+                  chkGrpValues2 = new Array();
+                  if (thisToggleFieldsArray[k].value.beginsWith("#", true) && JQuery(this).get(0).name == "ff_nm_" + thisToggleFieldsArray[k].sName + "[]") {
+                    chkGrpValues2 = thisToggleFieldsArray[k].value.substring(1, thisToggleFieldsArray[k].value.length).split(";");
+                    for (var l = 0; l < res.length; l++) {
+                      if (JQuery.inArray(res[l], chkGrpValues2) != -1) {
+                        foundCount++;
+                      }
+                    }
+                  }
+
+                  if (thisToggleFieldsArray[k].condition == "isnot") {
+
+                    if (
+                      (!JQuery.isArray(res) && JQuery(this).val() != thisToggleFieldsArray[k].value && JQuery(this).get(0).name == "ff_nm_" + thisToggleFieldsArray[k].sName + "[]") ||
+                      (
+                        JQuery.isArray(res) && (JQuery.inArray(thisToggleFieldsArray[k].value, res) == -1 || !found || (foundCount == 0 || foundCount != chkGrpValues2.length)) && JQuery(this).get(0).name == "ff_nm_" + thisToggleFieldsArray[k].sName + "[]"
+                      )
+                    ) {
+                      var names = thisToggleFieldsArray[k].tName.split(",");
+                      for (var n = 0; n < names.length; n++) {
+                        thisBfToggleFields(thisToggleFieldsArray[k].state, thisToggleFieldsArray[k].tCat, JQuery.trim(names[n]), thisBfDeactivateField);
+                      }
+                      //break;
+                    }
+                  } else if (thisToggleFieldsArray[k].condition == "is") {
+                    if (
+                      (!JQuery.isArray(res) && JQuery(this).val() == thisToggleFieldsArray[k].value && JQuery(this).get(0).name == "ff_nm_" + thisToggleFieldsArray[k].sName + "[]") ||
+                      (
+                        JQuery.isArray(res) && (JQuery.inArray(thisToggleFieldsArray[k].value, res) != -1 || found || (foundCount != 0 && foundCount == chkGrpValues2.length)) && JQuery(this).get(0).name == "ff_nm_" + thisToggleFieldsArray[k].sName + "[]"
+                      )
+                    ) {
+                      var names = thisToggleFieldsArray[k].tName.split(",");
+                      for (var n = 0; n < names.length; n++) {
+                        thisBfToggleFields(thisToggleFieldsArray[k].state, thisToggleFieldsArray[k].tCat, JQuery.trim(names[n]), thisBfDeactivateField);
+                      }
+                      //break;
+                    }
+                  }
+                }
+              }
+            );
+            break;
+          case "radio":
+          case "checkbox": // needs revision
+            var radioLength = JQuery("[name=\"ff_nm_" + toggleField.sName + "[]\"]").size();
+            for (var j = 0; j < radioLength; j++) {
+              JQuery("#" + JQuery("[name=\"ff_nm_" + toggleField.sName + "[]\"]").get(j).id).off("click");
+              JQuery("#" + JQuery("[name=\"ff_nm_" + toggleField.sName + "[]\"]").get(j).id).on("click",
+                function() {
+                  // NOT O(n^2) since its ony executed on click event!
+                  var tarElem = JQuery(this).get(0);
+
+                  for (var k = 0; k < thisToggleFieldsArray.length; k++) {
+
+                    if (tarElem.name == "ff_nm_" + thisToggleFieldsArray[k].sName + "[]" && (tarElem.type == "checkbox" || tarElem.type == "radio")) {
+                      var checkedOpts = JQuery("[name=\"" + JQuery(this).get(0).name + "\"]:checked");
+                      var selectedVals = [];
+                      for (var i = 0; i < checkedOpts.length; i++) {
+                        selectedVals.push(checkedOpts[i].value);
+                      }
+
+                      var thisGrpVals = [];
+                      var found = false;
+                      var foundCount = 0;
+                      var delimiter = "";
+
+                      if (thisToggleFieldsArray[k].value.beginsWith("#", true)) {
+                        if (thisToggleFieldsArray[k].value.indexOf("|") > -1) {
+                          delimiter = "|";
+                        } else if (thisToggleFieldsArray[k].value.indexOf(";") > -1) {
+                          delimiter = ";";
+                        }
+                        thisGrpVals = thisToggleFieldsArray[k].value.substring(1, thisToggleFieldsArray[k].value.length).split(delimiter);
+
+                        for (var l = 0; l < selectedVals.length; l++) {
+                          if (JQuery.inArray(selectedVals[l], thisGrpVals) != -1) {
+                            foundCount++;
+                            found = true;
+                            continue;
+                          }
+                        }
+                      }
+                      var names = thisToggleFieldsArray[k].tName.split(",");
+                      var n = names.length;
+
+                      if (thisToggleFieldsArray[k].condition == "isnot" && // check the condition 
+                        (
+                          ( // The simple checked or unchecked
+                            (thisToggleFieldsArray[k].value == "!checked" && tarElem.checked == false) ||
+                            (thisToggleFieldsArray[k].value == "!unchecked" && tarElem.checked)
+                          ) ||
+                          ( // simple check using only single value
+                            JQuery.inArray(thisToggleFieldsArray[k].value, selectedVals) == -1 ||
+                            (JQuery.inArray(thisToggleFieldsArray[k].value, selectedVals) != -1 && selectedVals.length != 1)
+                          ) ||
+                          ( // multiple values rule using either OR or AND
+                            thisToggleFieldsArray[k].value.beginsWith("#", true) &&
+                            (
+                              (delimiter == "|" && found == false) || (delimiter == ";" && foundCount == thisGrpVals.length)
+                            )
+                          )
+                        )) {
+                        n = 0;
+                      } else if (thisToggleFieldsArray[k].condition == "is" && // check the condition
+                        (
+                          ( // the simple checked or unchecked for a single checkbox
+                            (thisToggleFieldsArray[k].value == "!checked" && tarElem.checked) ||
+                            (thisToggleFieldsArray[k].value == "!unchecked" && tarElem.checked == false)
+                          ) ||
+                          ( // the simple check using only single value
+                            JQuery.inArray(thisToggleFieldsArray[k].value, selectedVals) != -1
+                          ) ||
+                          ( // multiple values rule using either OR or AND
+                            thisToggleFieldsArray[k].value.beginsWith("#", true) &&
+                            (
+                              delimiter == "|" && found || (delimiter == ";" && foundCount == thisGrpVals.length)
+                            )
+                          )
+                        )
+                      ) {
+                        n = 0;
+                      }
+                      for (n; n < names.length; n++) {
+                        thisBfToggleFields(thisToggleFieldsArray[k].state, thisToggleFieldsArray[k].tCat, JQuery.trim(names[n]), thisBfDeactivateField);
+                      }
+                    }
+                  }
+                });
+            }
+            break;
+        }
+      }
+    }
+
+    limit_cnt++;
+    last_offset = i;
+  }
+
+  if (last_offset + 1 < toggleFieldsArray.length) {
+    setTimeout("bfRegisterToggleFields( " + last_offset + " )", 100);
+  }
+  if (last_offset + 1 == toggleFieldsArray.length) {
+    bfTriggerRules();
+  }
+}
+
+function bfTriggerRules() {
+  for (var i = 0; i < toggleFieldsArray.length; i++) {
+    var curElem = toggleFieldsArray[i];
+    if (curElem.action == "turn") {
+      if (JQuery("[name=\"ff_nm_" + curElem.sName + "[]\"]").length < 1) {
+        break;
+      } 
+
+      var elemType = JQuery("[name=\"ff_nm_" + curElem.sName + "[]\"]")[0].type;
+
+      switch (elemType) {
+        case "text":
+        case "textarea":
+          JQuery("[name=\"ff_nm_" + curElem.sName + "[]\"]").triggerHandler("blur");
+          break;
+        case "radio":
+          JQuery("[name=\"ff_nm_" + curElem.sName + "[]\"]").triggerHandler("click");
+          break;
+        case "checkbox":
+          var el = (JQuery("[name=\"ff_nm_" + curElem.sName + "[]\"]"));
+          for (count = 0; count < el.length; count++) {
+            if (count == 0) {
+              JQuery("#" + el.get(0).id).triggerHandler("click");
+            } else {
+              JQuery("#" + el.get(0).id + "_" + count).triggerHandler("click");
+            }
+          }
+          break;
+        case "select-one":
+        case "select-multiple":
+          JQuery("[name=\"ff_nm_" + curElem.sName + "[]\"]").triggerHandler("change");
+          break;
+      }
+    }
+  }
+  
+  bfToggleFieldsLoaded = true;
+}
+         
+
+                        function bf_validate_nextpage(element, action)
+                        {
+                            if(typeof bfUseErrorAlerts != "undefined"){
+                             JQuery(".bfErrorMessage").html("");
+                             JQuery(".bfErrorMessage").css("display","none");
+                            }
+
+                            error = ff_validation(ff_currentpage);
+                            if (error != "") {
+                               if(typeof bfUseErrorAlerts == ""){
+                                   alert(error);
+                                } else {
+                                   bfShowErrors(error);
+                                }
+                                ff_validationFocus("");
+                            } else {
+                                ff_switchpage(ff_currentpage+1);
+                                self.scrollTo(0,0);
+                            }
+                        }
+
+			function bfCheckMaxlength(id, maxlength, showMaxlength){
+				if( JQuery("#ff_elem"+id).val().length > maxlength ){
+					JQuery("#ff_elem"+id).val( JQuery("#ff_elem"+id).val().substring(0, maxlength) );
+				}
+				if(showMaxlength){
+					JQuery("#bfMaxLengthCounter"+id).text( "(" + (maxlength - JQuery("#ff_elem"+id).val().length) + " chars left)" );
+				}
+			}
+			function bfRegisterSummarize(id, connectWith, type, emptyMessage, hideIfEmpty){
+				bfSummarizers.push( { id : id, connectWith : connectWith, type : type, emptyMessage : emptyMessage, hideIfEmpty : hideIfEmpty } );
+			}
+			function bfField(name){
+				var value = "";
+				switch(ff_getElementByName(name).type){
+					case "radio":
+						if(JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val() != "" && typeof JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val() != "undefined"){
+							value = JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val();
+							if(!isNaN(value)){
+								value = Number(value);
+							}
+						}
+						break;
+					case "checkbox":
+					case "select-one":
+					case "select-multiple":
+						var nodeList = document["ff_form16"][""+ff_getElementByName(name).name+""];
+						if(ff_getElementByName(name).type == "checkbox" && typeof nodeList.length == "undefined"){
+							if(typeof JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val() != "undefined"){
+								value = JQuery("[name=\""+ff_getElementByName(name).name+"\"]:checked").val();
+								if(!isNaN(value)){
+									value = Number(value);
+								}
+							}
+						} else {
+							var val = "";
+							for(var j = 0; j < nodeList.length; j++){
+								if(nodeList[j].checked || nodeList[j].selected){
+									val += nodeList[j].value + ", ";
+								}
+							}
+							if(val != ""){
+								value = val.substr(0, val.length - 2);
+								if(!isNaN(value)){
+									value = Number(value);
+								}
+							}
+						}
+						break;
+					default:
+						if(!isNaN(ff_getElementByName(name).value)){
+							value = Number(ff_getElementByName(name).value);
+						} else {
+							value = ff_getElementByName(name).value;
+						}
+				}
+				return value;
+			}
+			function populateSummarizers(){
+				// cleaning first
+
+				for(var i = 0; i < bfSummarizers.length; i++){
+					JQuery("#"+bfSummarizers[i].id).parent().css("display", "");
+					JQuery("#"+bfSummarizers[i].id).html("<span class=\"bfNotAvailable\">"+bfSummarizers[i].emptyMessage+"</span>");
+				}
+				for(var i = 0; i < bfSummarizers.length; i++){
+					var summVal = "";
+					switch(bfSummarizers[i].type){
+						case "bfTextfield":
+						case "bfTextarea":
+						case "bfHidden":
+						case "bfCalendar":
+						case "bfNumberInput":
+                        case "bfCalendarResponsive":
+						case "bfFile":
+							if(JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]").val() != ""){
+								JQuery("#"+bfSummarizers[i].id).text( JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]").val() ).html();
+								var breakableText = JQuery("#"+bfSummarizers[i].id).html().replace(/\r/g, "").replace(/\n/g, "<br/>");
+
+								if(breakableText != ""){
+									var calc = null;
+									eval( "calc = typeof bfFieldCalc"+bfSummarizers[i].id+" != \"undefined\" ? bfFieldCalc"+bfSummarizers[i].id+" : null" );
+									if(calc){
+										breakableText = calc(breakableText);
+									}
+								}
+
+								JQuery("#"+bfSummarizers[i].id).html(breakableText);
+								summVal = breakableText;
+							}
+						break;
+						case "bfRadioGroup":
+						case "bfCheckbox":
+							if(JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]:checked").val() != "" && typeof JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]:checked").val() != "undefined"){
+								var theText = JQuery("[name=\"ff_nm_"+bfSummarizers[i].connectWith+"[]\"]:checked").val();
+								if(theText != ""){
+									var calc = null;
+									eval( "calc = typeof bfFieldCalc"+bfSummarizers[i].id+" != \"undefined\" ? bfFieldCalc"+bfSummarizers[i].id+" : null" );
+									if(calc){
+										theText = calc(theText);
+									}
+								}
+								JQuery("#"+bfSummarizers[i].id).html( theText );
+								summVal = theText;
+							}
+						break;
+						case "bfCheckboxGroup":
+						case "bfSelect":
+							var val = "";
+							var nodeList = document["ff_form16"]["ff_nm_"+bfSummarizers[i].connectWith+"[]"];
+
+							for(var j = 0; j < nodeList.length; j++){
+								if(nodeList[j].checked || nodeList[j].selected){
+									val += nodeList[j].value + ", ";
+								}
+							}
+							if(val != ""){
+								var theText = val.substr(0, val.length - 2);
+								if(theText != ""){
+									var calc = null;
+									eval( "calc = typeof bfFieldCalc"+bfSummarizers[i].id+" != \"undefined\" ? bfFieldCalc"+bfSummarizers[i].id+" : null" );
+									if(calc){
+										theText = calc(theText);
+									}
+								}
+								JQuery("#"+bfSummarizers[i].id).html( theText );
+								summVal = theText;
+							}
+						break;
+					}
+
+					if( ( bfSummarizers[i].hideIfEmpty && summVal == "" ) || ( typeof bfDeactivateField != "undefined" && bfDeactivateField["ff_nm_"+bfSummarizers[i].connectWith+"[]"] ) ){
+                        JQuery("#"+bfSummarizers[i].id).parent().css("display", "none");
+					} else {
+                        JQuery("#"+bfSummarizers[i].id).parent().css("display", "block");
+					}
+				}
+			}
+</script>
+	<script>var bfUseErrorAlerts = false;
+</script>
+	<script>
+				function bfShowErrors(error){
+                                        JQuery(".bfErrorMessage").html("");
+					JQuery(".bfErrorMessage").css("display","none");
+					JQuery(".bfErrorMessage").fadeIn(1500);
+					var allErrors = "";
+					var errors = error.split("\n");
+					for(var i = 0; i < errors.length; i++){
+						allErrors += "<div class=\"bfError\">" + errors[i] + "</div>";
+					}
+					JQuery(".bfErrorMessage").html(allErrors);
+					JQuery(".bfErrorMessage").css("display","");
+
+                                        if(JQuery.bfvalidationEngine)
+                                        {
+                                            JQuery("#ff_form16").bfvalidationEngine({
+                                              promptPosition: "bottomLeft",
+                                              success :  false,
+                                              failure : function() {}
+                                            });
+
+                                            for(var i = 0; i < inlineErrorElements.length; i++)
+                                            {
+                                                if(inlineErrorElements[i][1] != "")
+                                                {
+                                                    var prompt = null;
+
+                                                    if(inlineErrorElements[i][0] == "bfCaptchaEntry"){
+                                                        prompt = JQuery.bfvalidationEngine.buildPrompt("#bfCaptchaEntry",inlineErrorElements[i][1],"error");
+                                                    }
+                                                    else if(inlineErrorElements[i][0] == "bfReCaptchaEntry"){
+                                                        // nothing here yet for recaptcha, alert is default
+                                                        alert(inlineErrorElements[i][1]);
+                                                    }
+                                                    else if(typeof JQuery("#bfUploader"+inlineErrorElements[i][0]).get(0) != "undefined")
+                                                    {
+                                                        alert(inlineErrorElements[i][1]);
+                                                        //prompt = JQuery.bfvalidationEngine.buildPrompt("#"+JQuery("#bfUploader"+inlineErrorElements[i][0]).val(),inlineErrorElements[i][1],"error");
+                                                    }
+                                                    else if(typeof JQuery(".bfSignature"+inlineErrorElements[i][0]).get(0) != "undefined")
+                                                    {
+                                                    	//alert(inlineErrorElements[i][1]);
+                                                    	prompt = JQuery.bfvalidationEngine.buildPrompt(".bfSignature",inlineErrorElements[i][1],"error");
+                                                    }
+                                                    else
+                                                    {
+                                                        if(ff_getElementByName(inlineErrorElements[i][0])){
+                                                            prompt = JQuery.bfvalidationEngine.buildPrompt("#"+ff_getElementByName(inlineErrorElements[i][0]).id,inlineErrorElements[i][1],"error");
+                                                        }else{
+                                                            alert(inlineErrorElements[i][1]);
+                                                        }
+                                                    }
+
+                                                    JQuery(prompt).mouseover(
+                                                        function(){
+                                                            var inlineError = JQuery(this).attr("class").split(" ");
+                                                            if(inlineError && inlineError.length && inlineError.length == 2){
+                                                                var result = inlineError[1].split("formError");
+                                                                if(result && result.length && result.length >= 1){
+                                                                    JQuery.bfvalidationEngine.closePrompt("#"+result[0]);
+                                                                }
+                                                            }
+                                                        }
+                                                    );
+                                                }
+                                                else
+                                                {
+                                                    if(typeof JQuery("#bfUploader"+inlineErrorElements[i][0]).get(0) != "undefined")
+                                                    {
+                                                        //JQuery.bfvalidationEngine.closePrompt("#"+JQuery("#bfUploader"+inlineErrorElements[i][0]).val());
+                                                    }
+                                                    else
+                                                    {
+                                                        if(ff_getElementByName(inlineErrorElements[i][0])){
+                                                            JQuery.bfvalidationEngine.closePrompt("#"+ff_getElementByName(inlineErrorElements[i][0]).id);
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            inlineErrorElements = new Array();
+                                        }
+				}</script>
+	<script>
+					var bfElemWrapBg = "";
+					function bfSetElemWrapBg(){
+						bfElemWrapBg = JQuery(".bfElemWrap").css("background-color");
+					}
+					function bfRollover() {
+						JQuery(".ff_elem").focus(
+							function(){
+							    if(!JQuery(this).closest(".bfElemWrap").find(".js-calendar").is(":visible")){
+								    var parent = JQuery(this).closest(".bfElemWrap");
+								    parent.css("background","#0762bd");
+                                    parent.addClass("bfRolloverBg");
+                                }
+							}
+						).blur(
+							function(){
+								var parent = JQuery(this).closest(".bfElemWrap");
+								parent.css("background",bfElemWrapBg);
+                                parent.removeClass("bfRolloverBg");
+							}
+						);
+					}
+					function bfRollover2() {
+						JQuery(".bfElemWrap").mouseover(
+							function(e){
+							    if(!JQuery(this).find(".js-calendar").is(":visible")){
+								    JQuery(this).css("background","#0762bd");
+                                    JQuery(this).addClass("bfRolloverBg");
+                                }
+							}
+						);
+						JQuery(".bfElemWrap").mouseout(
+							function(e){
+							    if(JQuery(e.currentTarget).hasClass("js-calendar")) return;
+								JQuery(this).css("background",bfElemWrapBg);
+                                JQuery(this).removeClass("bfRolloverBg");
+							}
+						);
+					}
+				</script>
+	<script>
+		    bfToggleFieldsLoaded = false;
+		    bfSectionFieldsDeactivated = false;
+			JQuery(document).ready(function() {
+				if(typeof bfFade != "undefined")bfFade();
+				if(typeof bfSetElemWrapBg != "undefined")bfSetElemWrapBg();
+				if(typeof bfRollover != "undefined")bfRollover();
+				if(typeof bfRollover2 != "undefined")bfRollover2();
+				if(typeof bfRegisterToggleFields != "undefined"){ 
+				    bfRegisterToggleFields(); 
+                }else{
+                    bfToggleFieldsLoaded = true;
+                }
+				if(typeof bfDeactivateSectionFields != "undefined"){ 
+				    bfDeactivateSectionFields(); 
+				}else{
+				    bfSectionFieldsDeactivated = true;
+				}
+                if(JQuery.bfvalidationEngine)
+                {
+                    JQuery.bfvalidationEngineLanguage.newLang();
+                    JQuery(".ff_elem").change(
+                        function(){
+                            JQuery.bfvalidationEngine.closePrompt(this);
+                        }
+                    );
+                }
+				JQuery(".bfQuickMode .hasTip").css("color","inherit"); // fixing label text color issue
+				JQuery(".bfQuickMode .bfTooltip").css("color","inherit"); // fixing label text color issue
+                JQuery("input[type=text]").bind("keypress", function(evt) {
+                    if(evt.keyCode == 13) {
+                        evt.preventDefault();
+                    }
+                });
+			});
+		</script>
+	<script>//--></script>
+	<script>template="shaper_helixultimate";</script>
+	<link rel="stylesheet" href="components/com_breezingforms/themes/quickmode/system.css" />
+	<!--[if IE 7]>
+<link rel="stylesheet" href="/components/com_breezingforms/themes/quickmode/system.ie7.css" />
+<![endif]-->
+	<!--[if IE 6]>
+<link rel="stylesheet" href="/components/com_breezingforms/themes/quickmode/system.ie6.css" />
+<![endif]-->
+	<!--[if IE]>
+<link rel="stylesheet" href="/components/com_breezingforms/themes/quickmode/system.ie.css" />
+<![endif]-->
+	<link rel="stylesheet" href="media/breezingforms/themes/default/theme.css" />
+	</head>
+
+	<body class="site helix-ultimate hu com_breezingforms com-breezingforms view-page layout-default task-none itemid-218 en-gb ltr sticky-header layout-fluid offcanvas-init offcanvs-position-right contentpane">
+		<!-- BreezingForms V1.9.1 Stable (build 943) Copyright(c) 2008-2013 by Markus Bopp | FacileForms Copyright 2004-2006 by Peter Koch, Chur, Switzerland.  All rights reserved. -->
+<script type="text/javascript">
+<!--
+ff_processor=new Object();ff_processor.okrun=true;ff_processor.ip='132.166.183.83';ff_processor.agent='Wget/1.25.0';ff_processor.browser='Wget/1.25.0';ff_processor.opsys='unix';ff_processor.provider='Unknown';ff_processor.submitted='2026-08-16 21:06:31';
+ff_processor.form=16;ff_processor.form_id='ff_form16';ff_processor.page=1;ff_processor.target=1;ff_processor.runmode=0;ff_processor.inframe=1;ff_processor.inline=0;ff_processor.template=0;ff_processor.homepage='https://abischool.abinit.org';ff_processor.mossite='https://abischool.abinit.org';
+ff_processor.images='https://abischool.abinit.org/components/com_breezingforms/images';ff_processor.border=0;ff_processor.align=1;ff_processor.top=0;ff_processor.suffix='';ff_processor.status=null;ff_processor.message=null;ff_processor.record_id=null;
+ff_processor.showgrid=false;ff_processor.traceBuffer=null;
+//-->
+</script>
+<script type="text/javascript" src="components/com_breezingforms/facileforms.js"></script>
+<table style="display:none;width:100%;" id="bfReCaptchaWrap"><tr><td><div id="bfReCaptchaDiv"></div></td></tr></table><div id="ff_formdiv16" class="bfFormDiv"><div class="bfPage-tl"><div class="bfPage-tr"><div class="bfPage-t"></div></div></div><div class="bfPage-l"><div class="bfPage-r"><div class="bfPage-m bfClearfix">
+ <style>
+body  {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.0) !important;
+  //This makes the background of iframe transparent
+}
+</style>
+
+<style type="text/css">
+.bfQuickMode .btn-primary, .btn-info, .btn-inverse {
+    background-color: #FFC300 !important;
+}
+</style>
+<script type="text/javascript">
+<!--
+
+function checkFileExtensions(){
+			return true;
+		}
+		function bfCheckCaptcha(){if(checkFileExtensions())ff_submitForm2();}function ff_initialize(condition)
+{if(condition=='formentry'){ff_abischool_registration_form_init();}}
+onload=function()
+{ff_initialize('formentry');ff_initialize('pageentry');if(ff_processor&&ff_processor.traceBuffer)ff_traceWindow();}
+function ff_abischool_registration_form_init(){}
+var ff_currentpage=1;
+function ff_switchpage(page){if(document.getElementById("bfPage1"))document.getElementById("bfPage1").style.display="none";if(document.getElementById("bfPage2"))document.getElementById("bfPage2").style.display="none";if(document.getElementById("bfPage3"))document.getElementById("bfPage3").style.display="none";
+if(document.getElementById("bfPage"+page))document.getElementById("bfPage"+page).style.display="";ff_currentpage=page;ff_initialize("pageentry");}
+function ff_abischool_registration_form_submitted(status,message){if(status==0){ff_switchpage(3);}else{alert(message);}}
+function ff_submitForm()
+{if(document.getElementById('bfSubmitButton')){document.getElementById('bfSubmitButton').disabled=true;}if(typeof JQuery!='undefined'){JQuery('.bfCustomSubmitButton').prop('disabled',true);}bfCheckCaptcha();}function ff_submitForm2()
+{if(document.getElementById('bfSubmitButton')){document.getElementById('bfSubmitButton').disabled=true;}if(typeof JQuery!='undefined'){JQuery('.bfCustomSubmitButton').prop('disabled',true);}if(typeof bf_ajax_submit!='undefined'){bf_ajax_submit()}else{document.ff_form16.submit();}
+}
+var ff_validationFocusName='';
+var ff_elements=[['ff_elem1670','ff_div1670','bfFakeName',1,1670],['ff_elem1671','ff_div1671','bfFakeName2',1,1671],['ff_elem1672','ff_div1672','bfFakeName3',1,1672],['ff_elem1673','ff_div1673','bfFakeName4',1,1673],['ff_elem1618','ff_div1618','userid',1,1618],
+['ff_elem1619','ff_div1619','register_title',1,1619],['ff_elem1620','ff_div1620','register_firstname',1,1620],['ff_elem1621','ff_div1621','register_lastname',1,1621],['ff_elem1640','ff_div1640','register_nationality',1,1640],['ff_elem1622','ff_div1622','register_institution',1,1622],
+['ff_elem1623','ff_div1623','register_email',1,1623],['ff_elem1627','ff_div1627','register_address',1,1627],['ff_elem1624','ff_div1624','register_perso_description_text',1,1624],['ff_elem1636','ff_div1636','register_abi_description_text',1,1636],['ff_elem1626','ff_div1626','register_agreement',1,1626],
+['ff_elem1634','ff_div1634','register_reset',1,1634],['ff_elem1635','ff_div1635','register_next',1,1635],['ff_elem1628','ff_div1628','register_summary_1',2,1628],['ff_elem1641','ff_div1641','register_summary_2b',2,1641],['ff_elem1629','ff_div1629','register_summary_2',2,1629],
+['ff_elem1630','ff_div1630','register_summary_3',2,1630],['ff_elem1637','ff_div1637','register_summary_4',2,1637],['ff_elem1631','ff_div1631','register_previous',2,1631],['ff_elem1632','ff_div1632','register_submit',2,1632],['ff_elem1633','ff_div1633','register_reload',3,1633]
+];
+function ff_getElementByName(name)
+{if(name.substr(0,6)=='ff_nm_')name=name.substring(6,name.length-2);for(var i=0;i<ff_elements.length;i++)
+if(ff_elements[i][2]==name)
+return eval('document.ff_form16.'+ff_elements[i][0]);return null;}
+function ff_getPageByName(name)
+{if(name.substr(0,6)=='ff_nm_')name=name.substring(6,name.length-2);for(var i=0;i<ff_elements.length;i++)
+if(ff_elements[i][2]==name)
+return ff_elements[i][3];return 0;}
+function ff_validationFocus(name)
+{if(name==undefined||name==''){if(ff_validationFocusName!=''){ff_switchpage(ff_getPageByName(ff_validationFocusName));if(ff_getElementByName(ff_validationFocusName).focus){ff_getElementByName(ff_validationFocusName).focus();}}}else{if(ff_validationFocusName=='')
+ff_validationFocusName=name;}}
+function ff_getElementByIndex(index)
+{if(index>=0&&index<ff_elements.length)
+return eval('document.ff_form16.'+ff_elements[index][0]);return null;}
+function ff_anychecked(element,message)
+{var name='';if(!element.name){if(element.length&&element.length!=0){name=element[0].name;var cnt=0;for(var i=0;i<element.length;i++)
+if(element[i].name==name)
+if(element[i].checked)cnt++;if(cnt==0){ff_validationFocus(element[0].name);if(message=='')message="Please check or select "+name+".\n";return message;}}else{return '';}}else{name=element.name;if(name.substr(0,6)=='ff_nm_')name=name.substring(6,name.length-2);
+var cnt=0;for(var i=0;i<ff_elements.length;i++)
+if(ff_elements[i][2]==name)
+if(ff_getElementByIndex(i).checked)cnt++;if(cnt==0){ff_validationFocus(element.name);if(message=='')message="Please check or select "+name+".\n";return message;}}return '';}
+function ff_valuenotempty(element,message)
+{if(element.value!='')return '';if(message=='')message="Please enter "+element.name+".\n";ff_validationFocus(element.name);return message;}
+function ff_validation(page)
+{if(typeof inlineErrorElements!='undefined')inlineErrorElements=new Array();error='';ff_validationFocusName='';if(page==1||page==0){if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_register_title[]']){errorout=ff_valuenotempty(document.ff_form16['ff_nm_register_title[]'],"Please fill the \"Title\" field!\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["register_title",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_register_firstname[]']){errorout=ff_valuenotempty(document.ff_form16['ff_nm_register_firstname[]'],"Please fill the \"First name\" field!\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["register_firstname",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_register_lastname[]']){errorout=ff_valuenotempty(document.ff_form16['ff_nm_register_lastname[]'],"Please fill the \"Last name\" field!\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["register_lastname",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_register_nationality[]']){errorout=ff_valuenotempty(document.ff_form16['ff_nm_register_nationality[]'],"Please fill in the \"Nationality\" field!\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["register_nationality",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_register_institution[]']){errorout=ff_valuenotempty(document.ff_form16['ff_nm_register_institution[]'],"Please fill in the \"Institution\" field!\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["register_institution",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_register_email[]']){errorout=ff_valuenotempty(document.ff_form16['ff_nm_register_email[]'],"Please fill in the \"email\" field!\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["register_email",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_register_address[]']){errorout=ff_valuenotempty(document.ff_form16['ff_nm_register_address[]'],"Please fill in the \"Address\" field!\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["register_address",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_register_perso_description_text[]']){errorout=ff_valuenotempty(document.ff_form16['ff_nm_register_perso_description_text[]'],"Please fill in the \"Personal description\" field!\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["register_perso_description_text",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_register_abi_description_text[]']){errorout=ff_valuenotempty(document.ff_form16['ff_nm_register_abi_description_text[]'],"Please fill in the \"ABINIT usage description\" field!\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["register_abi_description_text",errorout]);}}if(typeof bfDeactivateField=='undefined'||!bfDeactivateField['ff_nm_register_agreement[]']){errorout=ff_anychecked(document.ff_form16['ff_nm_register_agreement[]'],"Please check the box to acknowledge that your data might be used for the purpose of organising the school\n");
+error+=errorout
+if(typeof inlineErrorElements!='undefined'){inlineErrorElements.push(["register_agreement",errorout]);}}}if(error!=""&&document.getElementById('ff_capimgValue')){document.getElementById('ff_capimgValue').src='/components/com_breezingforms/images/captcha/securimage_show.php?bfMathRandom='+Math.random();
+document.getElementById('bfCaptchaEntry').value="";}if(error!=""&&document.getElementById("bfSubmitButton")){document.getElementById("bfSubmitButton").disabled=false;}if(error!=""&&typeof JQuery!="undefined"){JQuery(".bfCustomSubmitButton").prop("disabled",false);}
+return error;}
+function ff_validate_submit(element,action)
+{if(typeof bfUseErrorAlerts!='undefined'){JQuery(".bfErrorMessage").html('');JQuery(".bfErrorMessage").css("display","none");}error=ff_validation(0);if(error!=''){if(typeof bfUseErrorAlerts=='undefined'){alert(error);}else{bfShowErrors(error);}ff_validationFocus();
+}else
+ff_submitForm();}
+function ff_resetForm(element,action)
+{eval('document.'+ff_processor.form_id).reset();}
+function ff_validate_prevpage(element,action)
+{if(typeof bfUseErrorAlerts!='undefined'){JQuery(".bfErrorMessage").html('');JQuery(".bfErrorMessage").css("display","none");}error=ff_validation(ff_currentpage);if(error!=''){if(typeof bfUseErrorAlerts=='undefined'){alert(error);}else{bfShowErrors(error);
+}ff_validationFocus('');}else{if(ff_currentpage>1){ff_switchpage(ff_currentpage-1);self.scrollTo(0,0);}}}
+function ff_validate_nextpage(element,action)
+{if(typeof bfUseErrorAlerts!='undefined'){JQuery(".bfErrorMessage").html('');JQuery(".bfErrorMessage").css("display","none");}error=ff_validation(ff_currentpage);if(error!=''){if(typeof bfUseErrorAlerts=='undefined'){alert(error);}else{bfShowErrors(error);
+}ff_validationFocus('');}else{ff_switchpage(ff_currentpage+1);self.scrollTo(0,0);}}
+function ff_validate_nextpage_notop(element,action)
+{if(typeof bfUseErrorAlerts!='undefined'){JQuery(".bfErrorMessage").html('');JQuery(".bfErrorMessage").css("display","none");}error=ff_validation(ff_currentpage);if(error!=''){if(typeof bfUseErrorAlerts=='undefined'){alert(error);}else{bfShowErrors(error);
+}ff_validationFocus('');}else{ff_switchpage(ff_currentpage+1);}}
+function ff_previouspage(element,action)
+{if(ff_currentpage>1){ff_switchpage(ff_currentpage-1);self.scrollTo(0,0);}}
+function ff_previouspage_notop(element,action)
+{if(ff_currentpage>1){ff_switchpage(ff_currentpage-1);}}
+function ff_register_reload_action(element,action)
+{switch(action){case 'click':ff_resetForm();ff_switchpage(1);break;default:;}}
+//-->
+</script>
+<form data-ajax="false"  action="https://abischool.abinit.org/index.php?format=html&tmpl=component" method="post" name="ff_form16" id="ff_form16" enctype="multipart/form-data" accept-charset="utf-8" onsubmit="return false;" class="bfQuickMode">
+<div id="bfPage1" class="bfPage">
+<span class="bfErrorMessage" style="display:none"></span>
+<section style="display:none" class="bfElemWrap bfLabelTop" id="bfElemWrap1618">
+<label id="bfLabel1618" for="ff_elem1618">userid<span class="bfRequired">*</span> 
+</label>
+<input class="ff_elem" type="text" name="ff_nm_userid[]" value="0" id="ff_elem1618"/>
+<script type="text/javascript"><!--
+bfDeactivateField["ff_nm_userid[]"]=true;
+//--></script>
+</section>
+<div class="bfNoSection" id="unregistered">
+<section class="bfSectionDescription">
+<h4>To display the registration form you must be logged in!</h4>
+<p><i>Click on <strong>Login menu</strong>, log in and reload this page...</i></p>
+</section>
+</div>
+<div class="bfNoSection" id="registered">
+<section class="bfSectionDescription">
+<h4><span style="color: #ff9c00;">Registration form</span></h4>
+</section>
+<div class="bfNoSection" id="register_personal_section">
+<div class="bfClearfix">
+<span class="bfElemWrap bfLabelTop" id="bfElemWrap1619">
+<label id="bfLabel1619" for="ff_elem1619">Title<span class="bfRequired">*</span> 
+</label>
+<select data-chosen="no-chzn" class="ff_elem chzn-done" name="ff_nm_register_title[]" id="ff_elem1619">
+<option value=""></option>
+<option value="Mr">Mr.</option>
+<option value="Mrs">Mrs.</option>
+<option value="Ms">Ms</option>
+<option value="M.">M.</option>
+<option value="Dr">Dr.</option>
+<option value="Pr">Pr.</option>
+</select>
+</span>
+<span class="bfElemWrap bfLabelTop" id="bfElemWrap1620">
+<label id="bfLabel1620" for="ff_elem1620">First name<span class="bfRequired">*</span> 
+</label>
+<input class="ff_elem" type="text" name="ff_nm_register_firstname[]" value="" id="ff_elem1620"/>
+</span>
+<span class="bfElemWrap bfLabelTop" id="bfElemWrap1621">
+<label id="bfLabel1621" for="ff_elem1621">Last name<span class="bfRequired">*</span> 
+</label>
+<input class="ff_elem" type="text" name="ff_nm_register_lastname[]" value="" id="ff_elem1621"/>
+</span>
+<span class="bfElemWrap bfLabelLeft" id="bfElemWrap1640">
+<label id="bfLabel1640" for="ff_elem1640">Nationality<span class="bfRequired">*</span> 
+</label>
+<select data-chosen="no-chzn" class="ff_elem chzn-done" name="ff_nm_register_nationality[]" id="ff_elem1640">
+<option value=""></option>
+<option value="afghanistan">Afghanistan</option>
+<option value="albania">Albania</option>
+<option value="algeria">Algeria</option>
+<option value="andorra">Andorra</option>
+<option value="angola">Angola</option>
+<option value="antigua_and_barbuda">Antigua and Barbuda</option>
+<option value="argentina">Argentina</option>
+<option value="armenia">Armenia</option>
+<option value="australia">Australia</option>
+<option value="austria">Austria</option>
+<option value="azerbaijan">Azerbaijan</option>
+<option value="bahamas,_the">Bahamas, The</option>
+<option value="bahrain">Bahrain</option>
+<option value="bangladesh">Bangladesh</option>
+<option value="barbados">Barbados</option>
+<option value="belarus">Belarus</option>
+<option value="belgium">Belgium</option>
+<option value="belize">Belize</option>
+<option value="benin">Benin</option>
+<option value="bhutan">Bhutan</option>
+<option value="bolivia">Bolivia</option>
+<option value="bosnia_and_herzegovina">Bosnia and Herzegovina</option>
+<option value="botswana">Botswana</option>
+<option value="brazil">Brazil</option>
+<option value="brunei_darussalam">Brunei Darussalam</option>
+<option value="bulgaria">Bulgaria</option>
+<option value="burkina_faso">Burkina Faso</option>
+<option value="burma">Burma</option>
+<option value="burundi">Burundi</option>
+<option value="cambodia">Cambodia</option>
+<option value="cameroon">Cameroon</option>
+<option value="canada">Canada</option>
+<option value="cape_verde">Cape Verde</option>
+<option value="central_african_republic">Central African Republic</option>
+<option value="chad">Chad</option>
+<option value="chile">Chile</option>
+<option value="china">China</option>
+<option value="colombia">Colombia</option>
+<option value="comoros">Comoros</option>
+<option value="congo_brazzaville">Congo (Brazzaville)</option>
+<option value="congo_kinshasa">Congo (Kinshasa)</option>
+<option value="costa_rica">Costa Rica</option>
+<option value="cote_d&#039;ivoire">Cote d&#039;Ivoire</option>
+<option value="croatia">Croatia</option>
+<option value="cuba">Cuba</option>
+<option value="cyprus">Cyprus</option>
+<option value="czech_republic">Czech Republic</option>
+<option value="denmark">Denmark</option>
+<option value="djibouti">Djibouti</option>
+<option value="dominica">Dominica</option>
+<option value="dominican_republic">Dominican Republic</option>
+<option value="Timor-leste">Timor-Leste</option>
+<option value="ecuador">Ecuador</option>
+<option value="egypt">Egypt</option>
+<option value="el_salvador">El Salvador</option>
+<option value="equatorial_guinea">Equatorial Guinea</option>
+<option value="eritrea">Eritrea</option>
+<option value="estonia">Estonia</option>
+<option value="ethiopia">Ethiopia</option>
+<option value="fiji">Fiji</option>
+<option value="finland">Finland</option>
+<option value="france">France</option>
+<option value="gabon">Gabon</option>
+<option value="gambia,_the">Gambia, The</option>
+<option value="georgia">Georgia</option>
+<option value="germany">Germany</option>
+<option value="ghana">Ghana</option>
+<option value="greece">Greece</option>
+<option value="grenada">Grenada</option>
+<option value="guatemala">Guatemala</option>
+<option value="guinea">Guinea</option>
+<option value="guinea-bissau">Guinea-Bissau</option>
+<option value="guyana">Guyana</option>
+<option value="haiti">Haiti</option>
+<option value="holy_see">Holy See</option>
+<option value="honduras">Honduras</option>
+<option value="hong_kong">Hong Kong</option>
+<option value="hungary">Hungary</option>
+<option value="iceland">Iceland</option>
+<option value="india">India</option>
+<option value="indonesia">Indonesia</option>
+<option value="iran">Iran</option>
+<option value="iraq">Iraq</option>
+<option value="ireland">Ireland</option>
+<option value="israel">Israel</option>
+<option value="italy">Italy</option>
+<option value="jamaica">Jamaica</option>
+<option value="japan">Japan</option>
+<option value="jordan">Jordan</option>
+<option value="kazakhstan">Kazakhstan</option>
+<option value="kenya">Kenya</option>
+<option value="kiribati">Kiribati</option>
+<option value="korea,_north">Korea, North</option>
+<option value="korea,_south">Korea, South</option>
+<option value="kosovo">Kosovo</option>
+<option value="kuwait">Kuwait</option>
+<option value="kyrgyzstan">Kyrgyzstan</option>
+<option value="laos">Laos</option>
+<option value="latvia">Latvia</option>
+<option value="lebanon">Lebanon</option>
+<option value="lesotho">Lesotho</option>
+<option value="liberia">Liberia</option>
+<option value="libya">Libya</option>
+<option value="liechtenstein">Liechtenstein</option>
+<option value="lithuania">Lithuania</option>
+<option value="luxembourg">Luxembourg</option>
+<option value="macau">Macau</option>
+<option value="macedonia">Macedonia</option>
+<option value="madagascar">Madagascar</option>
+<option value="malawi">Malawi</option>
+<option value="malaysia">Malaysia</option>
+<option value="maldives">Maldives</option>
+<option value="mali">Mali</option>
+<option value="malta">Malta</option>
+<option value="marshall_islands">Marshall Islands</option>
+<option value="mauritania">Mauritania</option>
+<option value="mauritius">Mauritius</option>
+<option value="mexico">Mexico</option>
+<option value="micronesia">Micronesia</option>
+<option value="moldova">Moldova</option>
+<option value="monaco">Monaco</option>
+<option value="mongolia">Mongolia</option>
+<option value="montenegro">Montenegro</option>
+<option value="morocco">Morocco</option>
+<option value="mozambique">Mozambique</option>
+<option value="namibia">Namibia</option>
+<option value="nauru">Nauru</option>
+<option value="nepal">Nepal</option>
+<option value="netherlands">Netherlands</option>
+<option value="netherlands_antilles">Netherlands Antilles</option>
+<option value="new_zealand">New Zealand</option>
+<option value="nicaragua">Nicaragua</option>
+<option value="niger">Niger</option>
+<option value="nigeria">Nigeria</option>
+<option value="north_korea">North Korea</option>
+<option value="norway">Norway</option>
+<option value="oman">Oman</option>
+<option value="pakistan">Pakistan</option>
+<option value="palau">Palau</option>
+<option value="palestinian_territories">Palestinian Territories</option>
+<option value="panama">Panama</option>
+<option value="papua_new_guinea">Papua New Guinea</option>
+<option value="paraguay">Paraguay</option>
+<option value="peru">Peru</option>
+<option value="philippines">Philippines</option>
+<option value="poland">Poland</option>
+<option value="portugal">Portugal</option>
+<option value="qatar">Qatar</option>
+<option value="romania">Romania</option>
+<option value="russia">Russia</option>
+<option value="rwanda">Rwanda</option>
+<option value="saint_kitts_and_nevis">Saint Kitts and Nevis</option>
+<option value="saint_lucia">Saint Lucia</option>
+<option value="saint_vincent_and_the_grenadines">Saint Vincent and the Grenadines</option>
+<option value="samoa">Samoa</option>
+<option value="san_marino">San Marino</option>
+<option value="sao_tome_and_principe">Sao Tome and Principe</option>
+<option value="saudi_arabia">Saudi Arabia</option>
+<option value="senegal">Senegal</option>
+<option value="serbia">Serbia</option>
+<option value="seychelles">Seychelles</option>
+<option value="sierra_leone">Sierra Leone</option>
+<option value="singapore">Singapore</option>
+<option value="slovakia">Slovakia</option>
+<option value="slovenia">Slovenia</option>
+<option value="solomon_islands">Solomon Islands</option>
+<option value="somalia">Somalia</option>
+<option value="south_africa">South Africa</option>
+<option value="south_korea">South Korea</option>
+<option value="spain">Spain</option>
+<option value="sri_lanka">Sri Lanka</option>
+<option value="sudan">Sudan</option>
+<option value="suriname">Suriname</option>
+<option value="swaziland">Swaziland</option>
+<option value="sweden">Sweden</option>
+<option value="switzerland">Switzerland</option>
+<option value="syria">Syria</option>
+<option value="taiwan">Taiwan</option>
+<option value="tajikistan">Tajikistan</option>
+<option value="tanzania">Tanzania</option>
+<option value="thailand">Thailand</option>
+<option value="timor-leste">Timor-Leste</option>
+<option value="togo">Togo</option>
+<option value="tonga">Tonga</option>
+<option value="trinidad_and_tobago">Trinidad and Tobago</option>
+<option value="tunisia">Tunisia</option>
+<option value="turkey">Turkey</option>
+<option value="turkmenistan">Turkmenistan</option>
+<option value="tuvalu">Tuvalu</option>
+<option value="uganda">Uganda</option>
+<option value="ukraine">Ukraine</option>
+<option value="united_arab_emirates">United Arab Emirates</option>
+<option value="united_kingdom">United Kingdom</option>
+<option value="united_states_of_america">United States of America</option>
+<option value="uruguay">Uruguay</option>
+<option value="uzbekistan">Uzbekistan</option>
+<option value="vanuatu">Vanuatu</option>
+<option value="venezuela">Venezuela</option>
+<option value="vietnam">Vietnam</option>
+<option value="yemen">Yemen</option>
+<option value="zambia">Zambia</option>
+<option value="zimbabwe">Zimbabwe</option>
+</select>
+</span>
+</div>
+</div>
+<div class="bfNoSection" id="register_data_section">
+<section class="bfElemWrap bfLabelTop" id="bfElemWrap1622">
+<label id="bfLabel1622" for="ff_elem1622">Institution/company<span class="bfRequired">*</span> 
+</label>
+<input class="ff_elem" type="text" name="ff_nm_register_institution[]" value="" id="ff_elem1622"/>
+</section>
+<section class="bfElemWrap bfLabelTop" id="bfElemWrap1623">
+<label id="bfLabel1623" for="ff_elem1623">Email<span class="bfRequired">*</span> 
+</label>
+<input class="ff_elem" type="text" name="ff_nm_register_email[]" value="" id="ff_elem1623"/>
+</section>
+<section class="bfElemWrap bfLabelTop" id="bfElemWrap1627">
+<label id="bfLabel1627" for="ff_elem1627">Full address<span class="bfRequired">*</span> 
+</label>
+<textarea cols="20" rows="5" class="ff_elem" name="ff_nm_register_address[]" id="ff_elem1627"></textarea>
+</section>
+</div>
+<div class="bfNoSection" id="register_perso_description">
+<section class="bfSectionDescription">
+<p>Please add in the following a short description of yourself, your activity and your motivation for attending the school :</p>
+</section>
+<section class="bfElemWrap bfLabelTop" id="bfElemWrap1624">
+<label id="bfLabel1624" for="ff_elem1624">Personal description<span class="bfRequired">*</span> 
+</label>
+<textarea cols="20" rows="5" class="ff_elem" name="ff_nm_register_perso_description_text[]" id="ff_elem1624"></textarea>
+</section>
+</div>
+<div class="bfNoSection" id="register_abi_description">
+<section class="bfSectionDescription">
+<p>Please add in the following a short description of your current or intended usage of ABINIT.<br> For instance type of simulations, systems sizes, running on which architectures etc.</p>
+</section>
+<section class="bfElemWrap bfLabelTop" id="bfElemWrap1636">
+<label id="bfLabel1636" for="ff_elem1636">ABINIT usage description<span class="bfRequired">*</span> 
+</label>
+<textarea cols="20" rows="5" class="ff_elem" name="ff_nm_register_abi_description_text[]" id="ff_elem1636"></textarea>
+</section>
+</div>
+<div class="bfNoSection" id="register_background">
+<section class="bfElemWrap bfLabelLeft" id="bfElemWrap1626">
+<label id="bfLabel1626" for="ff_elem1626">By submitting this form, I agree to the data entered being used to organise the 2024 ABINIT school.<span class="bfRequired">*</span> 
+</label>
+<input class="ff_elem" type="checkbox" name="ff_nm_register_agreement[]" value="checked" id="ff_elem1626"/>
+</section>
+</div>
+<div class="bfFieldset-wrapper bfWrapperBlock bfClearfix"><div class="bfFieldset-tl"><div class="bfFieldset-tr"><div class="bfFieldset-t"></div></div></div><div class="bfFieldset-l"><div class="bfFieldset-r"><div class="bfFieldset-m bfClearfix"><fieldset class="bfBlock" id="bfQuickModeSection65612">
+<div class="bfClearfix">
+<span class="bfElemWrap bfLabelTop" id="bfElemWrap1634">
+<button type="button" class="ff_elem btn btn-primary bfCustomSubmitButton" value="reset" onclick="if(typeof bf_htmltextareainit != 'undefined'){ bf_htmltextareainit() }populateSummarizers();if(document.getElementById('bfPaymentMethod')){document.getElementById('bfPaymentMethod').value='';};ff_resetForm(this,'click');return false;" type="submit" name="ff_nm_register_reset[]" id="ff_elem1634"><span>reset</span></button>
+</span>
+<span class="bfElemWrap bfLabelTop" id="bfElemWrap1635">
+<button type="button" class="ff_elem btn btn-primary bfCustomSubmitButton" value="next" onclick="if(typeof bf_htmltextareainit != 'undefined'){ bf_htmltextareainit() }populateSummarizers();if(document.getElementById('bfPaymentMethod')){document.getElementById('bfPaymentMethod').value='';};ff_validate_nextpage_notop(this,'click');return false;" type="submit" name="ff_nm_register_next[]" id="ff_elem1635"><span>next</span></button>
+</span>
+</div>
+</fieldset></div></div></div><div class="bfFieldset-bl"><div class="bfFieldset-br"><div class="bfFieldset-b"></div></div></div></div><!-- bfFieldset-wrapper end -->
+</div>
+</div><!-- bfPage end -->
+<div id="bfPage2" class="bfPage" style="display:none;">
+<section class="bfPageIntro">
+<h4><span style="color: #ff9c00;">Registration form</span></h4>
+<p> </p>
+<p><strong>Check your data before submitting:<br /></strong></p>
+</section>
+<span class="bfErrorMessage" style="display:none"></span>
+<section class="bfElemWrap bfLabelTop" id="bfElemWrap1628">
+<label id="bfLabel1628" >Personal data</label>
+<span class="ff_elem bfSummarize" id="ff_elem1628"></span>
+<script type="text/javascript"><!--
+bfRegisterSummarize("ff_elem1628", "register_title", "bfSelect", "empty", false)
+//--></script><script type="text/javascript">
+                                                        <!--
+							function bfFieldCalcff_elem1628(value){
+								if(!isNaN(value)){
+									value = Number(value);
+								}
+								value=value+' '+bfField('register_firstname')+' '+bfField('register_lastname')+' - '+bfField('register_institution')+' - '+bfField('register_email');
+								return value;
+							}
+                                                        //-->
+							</script></section>
+<section class="bfElemWrap bfLabelTop" id="bfElemWrap1641">
+<label id="bfLabel1641" >Nationality</label>
+<span class="ff_elem bfSummarize" id="ff_elem1641"></span>
+<script type="text/javascript"><!--
+bfRegisterSummarize("ff_elem1641", "register_nationality", "bfSelect", "empty", true)
+//--></script></section>
+<section class="bfElemWrap bfLabelTop" id="bfElemWrap1629">
+<label id="bfLabel1629" >Address</label>
+<span class="ff_elem bfSummarize" id="ff_elem1629"></span>
+<script type="text/javascript"><!--
+bfRegisterSummarize("ff_elem1629", "register_address", "bfTextarea", "empty", false)
+//--></script></section>
+<section class="bfElemWrap bfLabelTop" id="bfElemWrap1630">
+<label id="bfLabel1630" >Personal description</label>
+<span class="ff_elem bfSummarize" id="ff_elem1630"></span>
+<script type="text/javascript"><!--
+bfRegisterSummarize("ff_elem1630", "register_perso_description_text", "bfTextarea", "empty", true)
+//--></script></section>
+<section class="bfElemWrap bfLabelTop" id="bfElemWrap1637">
+<label id="bfLabel1637" >ABINIT usage description</label>
+<span class="ff_elem bfSummarize" id="ff_elem1637"></span>
+<script type="text/javascript"><!--
+bfRegisterSummarize("ff_elem1637", "register_abi_description_text", "bfTextarea", "empty", true)
+//--></script></section>
+<div class="bfFieldset-wrapper bfWrapperBlock bfClearfix"><div class="bfFieldset-tl"><div class="bfFieldset-tr"><div class="bfFieldset-t"></div></div></div><div class="bfFieldset-l"><div class="bfFieldset-r"><div class="bfFieldset-m bfClearfix"><fieldset class="bfBlock" id="register_button2_section">
+<div class="bfClearfix">
+<span class="bfElemWrap bfLabelTop" id="bfElemWrap1631">
+<button type="button" class="ff_elem btn btn-primary bfCustomSubmitButton" value="previous" onclick="if(typeof bf_htmltextareainit != 'undefined'){ bf_htmltextareainit() }populateSummarizers();if(document.getElementById('bfPaymentMethod')){document.getElementById('bfPaymentMethod').value='';};ff_previouspage_notop(this,'click');return false;" type="submit" name="ff_nm_register_previous[]" id="ff_elem1631"><span>previous</span></button>
+</span>
+<span class="bfElemWrap bfLabelTop" id="bfElemWrap1632">
+<button type="button" class="ff_elem btn btn-primary bfCustomSubmitButton" value="submit" onclick="if(typeof bf_htmltextareainit != 'undefined'){ bf_htmltextareainit() }populateSummarizers();if(document.getElementById('bfPaymentMethod')){document.getElementById('bfPaymentMethod').value='';};ff_validate_submit(this,'click');return false;" type="submit" name="ff_nm_register_submit[]" id="ff_elem1632"><span>submit</span></button>
+</span>
+</div>
+</fieldset></div></div></div><div class="bfFieldset-bl"><div class="bfFieldset-br"><div class="bfFieldset-b"></div></div></div></div><!-- bfFieldset-wrapper end -->
+</div><!-- bfPage end -->
+<div id="bfPage3" class="bfPage" style="display:none;">
+<section class="bfPageIntro">
+<h4><span style="color: #ff9c00;">Registration form</span></h4>
+<p> </p>
+<p><strong>Thank you!<br /></strong></p>
+<p>Your registration data has been <b>saved</b>.</p>
+<p>You should receive a confirmation email soon.</p>
+<p>We'll contact you later by email to notify you of whether you have been accepted or not.</p>
+</section>
+<span class="bfErrorMessage" style="display:none"></span>
+<section class="bfElemWrap bfLabelTop" id="bfElemWrap1633">
+<button type="button" class="ff_elem btn btn-primary bfCustomSubmitButton" value="reload form" onclick="if(typeof bf_htmltextareainit != 'undefined'){ bf_htmltextareainit() }populateSummarizers();if(document.getElementById('bfPaymentMethod')){document.getElementById('bfPaymentMethod').value='';};ff_register_reload_action(this,'click');return false;" type="submit" name="ff_nm_register_reload[]" id="ff_elem1633"><span>reload form</span></button>
+</section>
+</div>
+<noscript>Please turn on javascript to submit your data. Thank you!</noscript>
+<input type="hidden" name="ff_contentid" value="0"/>
+<input type="hidden" name="ff_applic" value="mod_facileforms"/>
+<input type="hidden" name="ff_record_id" value=""/>
+<input type="hidden" name="ff_module_id" value="160"/>
+<input type="hidden" name="ff_form" value="16"/>
+<input type="hidden" name="ff_task" value="submit"/>
+<input type="hidden" name="ff_frame" value="1"/>
+<input type="hidden" name="option" value="com_breezingforms"/>
+<input type="hidden" name="Itemid" value="218"/>
+<input type="hidden" name="tmpl" value="component"/>
+</form>
+</div></div></div><div class="bfPage-bl"><div class="bfPage-br"><div class="bfPage-b"></div></div></div></div><!-- form end -->
+<div style="clear:both; display: block; text-align: center; margin-top: 20px;"><span style="margin: 0 auto;">Powered by BreezingForms</span></div>
+	</body>
+</html>

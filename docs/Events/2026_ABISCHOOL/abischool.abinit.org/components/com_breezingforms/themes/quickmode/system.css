@@ -1,0 +1,746 @@
+/*
+ ########## BreezingForms 1.7.1 QuickMode ##########
+ @autor crosstec.de
+ @copyright Copyright (C) 2010 crosstec.de. All rights reserved.
+ ########################################
+*/
+
+/* ##### General BreezingForms Default styles ##### */
+
+.bfQuickMode .bfSignature{
+    width: 45%;
+    display: inline-block;
+
+}
+
+.bfQuickMode .bfSignature canvas{
+    width: 100%;
+    height: 200px;
+}
+
+.bfQuickMode .bfSignatureCanvasBorder{
+    width: 100%;
+    height: 200px;
+    border: 5px solid #F0F0FF;
+    border: 5px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 5px;
+}
+
+.bfCalendarResponsiveContainer .picker__button--today,
+.bfCalendarResponsiveContainer .picker__button--clear{
+    color: black !important;
+    outline: none !important;
+    border: none !important;
+    text-shadow: none !important;
+    height: auto !important;
+    -moz-border-radius:  0 !important;
+    -webkit-border-radius:   0!important;
+    border-radius:  0 !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+}
+
+.bfCalendarResponsiveContainer .picker__select--year, .bfCalendarResponsiveContainer .picker__select--month{
+    float: none !important;
+    margin-left: .25em !important;
+    margin-right: .25em !important;
+    font-size: .8em !important;
+    position: relative !important;
+    width: auto !important;
+    max-width: none !important;
+    min-width: 1px !important;
+}
+
+@media (min-height:33.875em){
+    .bfCalendarResponsiveContainer .picker__box{
+        display: inline-block !important;
+    }
+}
+
+@media (min-width: 24.5em){
+    .bfCalendarResponsiveContainer .picker__select--month, .bfCalendarResponsiveContainer .picker__select--year {
+        font-size: .8em !important;
+        margin-top: -.5em !important;
+    }
+}
+
+.bfQuickMode input[type="radio"]:checked + label:before {
+    background: none;
+    border: none;
+    content: none;
+}
+
+.bfQuickMode input[type="checkbox"]:checked + label:before {
+    background: none;
+    border: none;
+    content: none;
+}
+
+.bfQuickMode legend {
+    background: none;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    line-height: unset;
+}
+
+.bfQuickMode .bfFieldset-br{
+    margin-bottom: 10px;
+}
+
+.bfQuickMode .bfFieldset-wrapper{
+
+}
+
+.bfQuickMode input:focus, .bfQuickMode textarea:focus {
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.bfQuickMode textarea:focus, .bfQuickMode input[type="text"]:focus, .bfQuickMode input[type="password"]:focus, .bfQuickMode input[type="datetime"]:focus, .bfQuickMode input[type="datetime-local"]:focus, .bfQuickMode input[type="date"]:focus, .bfQuickMode input[type="month"]:focus, .bfQuickMode input[type="time"]:focus, .bfQuickMode input[type="week"]:focus, .bfQuickMode input[type="number"]:focus, .bfQuickMode input[type="email"]:focus, .bfQuickMode input[type="url"]:focus, .bfQuickMode input[type="search"]:focus, .bfQuickMode input[type="tel"]:focus, .bfQuickMode input[type="color"]:focus, .bfQuickMode .uneditable-input:focus {
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.bfQuickMode select, .bfQuickMode textarea, .bfQuickMode input[type="text"], .bfQuickMode input[type="password"], .bfQuickMode input[type="datetime"], .bfQuickMode input[type="datetime-local"], .bfQuickMode input[type="date"], .bfQuickMode input[type="month"], .bfQuickMode input[type="time"], .bfQuickMode input[type="week"], .bfQuickMode input[type="number"], .bfQuickMode input[type="email"], .bfQuickMode input[type="url"], .bfQuickMode input[type="search"], input[type="tel"], .bfQuickMode input[type="color"], .bfQuickMode .uneditable-input {
+    /*border-radius: 0;*/
+}
+
+.bfQuickMode input, .bfQuickMode textarea, .bfQuickMode select {
+    /*border-radius: 0;*/
+}
+
+.bfQuickMode .recaptchatable #recaptcha_response_field {
+    position: relative !important;
+    margin-top: 5px !important;
+}
+
+
+.bfQuickMode {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bfQuickMode .bfFieldset-wrapper {
+    margin-bottom: 10px;
+}
+
+.bfQuickMode .bfWrapperBlock {
+	margin: 15px 0 10px 0;
+}
+
+.bfQuickMode .bfNoSection {
+	/*margin: 10px 0;*/
+}
+
+.bfQuickMode fieldset .bfWrapperBlock {
+	width: 100%;
+	/*margin-bottom: 0px;*/
+}
+
+.bfQuickMode fieldset {
+    /*margin-bottom: 10px;*/
+    margin: 0;
+}
+
+.bfQuickMode label {
+    vertical-align: top;
+}
+
+.bfQuickMode section.bfElemWrap {
+    padding: 5px;
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bfQuickMode span.bfElemWrap {
+    padding: 5px;
+    margin: 0px 10px 0px 0px;
+    position: relative;
+    float: left;
+}
+
+.bfQuickMode section input[type='text'], .bfQuickMode section textarea, .bfQuickMode section select {
+    float: left;
+    margin: 0px;
+    width: 45%;
+}
+
+.bfQuickMode span input[type='text'], .bfQuickMode span textarea, .bfQuickMode span select  {
+    width: auto;
+    float: none;
+    margin: 0px 10px 0px 0px;
+}
+
+.bfQuickMode p:after, .bfQuickMode .bfInline:after {
+    content: "."; 
+    display: block; 
+    height: 0;  
+    clear: both; 
+    visibility: hidden;
+}
+
+/* ##### inline ##### */
+
+.bfQuickMode fieldset .bfWrapperInline, .bfQuickMode .bfNoSection .bfWrapperInline {
+	width: 100%;
+	max-width: 50%;
+	float: left;
+	/*position: relative;*/
+}
+
+/*.bfQuickMode fieldset.bfInline {
+    margin: 0px 10px 10px 0px;
+    width: 100%;
+    max-width: 44%;
+}*/
+
+.bfQuickMode fieldset.bfInline {
+    /*margin: 0px 10px 10px 0px;*/
+    width: 90%;
+    float: left;
+}
+
+.bfQuickMode fieldset.bfInline section {
+    padding: 5px;
+    margin: 0px 0px 0px 0px;
+}
+
+.bfQuickMode .bfInline .bfLabelLeft .bfElementGroupNoWrap input[type='text'] {
+    width: 60%;
+}
+
+/* ##### page intro ##### */
+
+.bfQuickMode .bfPageIntro {
+    padding: 5px;
+    margin: 0px 0px 10px 0px;
+    background: none;
+    border: none;
+    font-weight: normal;
+}
+
+.bfQuickMode .bfPageIntro section {
+    background: none;
+}
+
+/* ##### error messages #####*/
+
+.bfQuickMode .bfErrorMessage {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #ffeded;
+    font-weight: bold;
+    float: none;
+    display: block;
+    color: red;
+}
+
+/* ##### tooltip ##### */
+
+.bfQuickMode span.bfTooltip {
+    width: auto;
+    padding: 0px 15px 0px 0px;
+    margin: 0px;
+    display: inline;
+    background: transparent url('img/icon_info.png') top left no-repeat;
+}
+
+/* ##### Section Description #####*/
+
+.bfQuickMode .bfSectionDescription {
+    background: none;
+    border: none;
+    font-weight: normal;
+}
+
+.bfQuickMode .bfSectionDescription section {
+    background: none;
+    border: none;
+}
+
+/* ##### label and input field positions ##### */
+
+.bfQuickMode .bfLabelTop label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.bfQuickMode .bfLabelTop input, .bfQuickMode .bfLabelTop textarea, .bfQuickMode .bfLabelTop select, .bfQuickMode .bfLabelTop button {
+    float: none;
+    width: auto;
+}
+
+.bfQuickMode .bfLabelLeft label {
+    width: 45%;
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+
+.bfQuickMode .bfLabelLeft input, .bfQuickMode .bfLabelLeft textarea, .bfQuickMode .bfLabelLeft select, .bfQuickMode .bfLabelLeft button  {
+    /*width: auto;*/
+    float: left;
+    margin: 0px;
+}
+
+.bfQuickMode .bfLabelRight label {
+    width: 45%;
+    float: right;
+    margin: 0px 0px 0px 10px; 
+}
+
+.bfQuickMode .bfLabelRight input, .bfQuickMode .bfLabelRight textarea, .bfQuickMode .bfLabelRight select, .bfQuickMode .bfLabelRight button {
+    float: left;
+    margin: 0px;
+}
+
+.bfQuickMode .bfLabelBottom label {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 99%;
+    top: 40px;
+}
+
+.bfQuickMode .bfLabelBottom input, .bfQuickMode .bfLabelBottom textarea, .bfQuickMode .bfLabelBottom select, .bfQuickMode .bfLabelBottom button {
+    float: left;
+    width: auto;
+}
+
+.bfQuickMode section.bfLabelBottom input,
+.bfQuickMode section.bfLabelBottom textarea,
+.bfQuickMode section.bfLabelBottom select,
+.bfQuickMode section.bfLabelBottom button,
+.bfQuickMode span.bfLabelBottom input,
+.bfQuickMode span.bfLabelBottom textarea,
+.bfQuickMode span.bfLabelBottom select,
+.bfQuickMode span.bfLabelBottom button {
+    margin: 0px 0px 20px 0px;
+}
+
+.bfQuickMode section.bfLabelBottom .bfSummarize {
+    display: block;
+    margin: 0px 0px 20px 0px;
+}
+
+.bfQuickMode span.bfLabelLeft label {
+    width: auto;
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+
+.bfQuickMode span.bfLabelLeft input, .bfQuickMode span.bfLabelLeft textarea, .bfQuickMode span.bfLabelLeft select, .bfQuickMode span.bfLabelLeft button {
+    width: auto;
+    float: none;
+    margin: 0px;
+}
+
+.bfQuickMode span.bfLabelRight label {
+    width: auto;
+    float: right;
+    margin: 0px 5px 0px 10px; 
+}
+
+.bfQuickMode span.bfLabelRight input, .bfQuickMode span.bfLabelRight textarea, .bfQuickMode span.bfLabelRight select, .bfQuickMode span.bfLabelRight button {
+    width: auto;
+    float: none;
+    margin: 0px;
+}
+
+/* ##### required ##### */
+
+.bfQuickMode .bfRequired {
+    vertical-align: top;
+    background: none;
+    font-size: 100%;
+    font-weight: bold;
+    border: none;
+    padding: 0px 0px 0px 5px;
+    margin: 0px;
+    color: #f00;
+    float: none;
+}
+
+/* ##### Element groups ##### */
+
+.bfQuickMode .bfElementGroupNoWrap, .bfQuickMode .bfElementGroup, .bfQuickMode .bfCaptcha  {
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    float: none;
+    background: none;
+    border: none;
+}
+
+.bfQuickMode section.bfLabelTop .bfElementGroupNoWrap {
+    width: 80%;
+    float: left;
+}
+
+.bfQuickMode .bfLabelTop .bfElementGroup {
+    width: 80%;
+    float: left;
+}
+
+.bfQuickMode .bfLabelTop .bfElementGroupNoWrap,
+.bfQuickMode .bfLabelTop .bfCaptcha {
+    width: auto;
+    padding-top: 10px;
+}
+
+.bfQuickMode .bfLabelLeft .bfElementGroupNoWrap,
+.bfQuickMode .bfLabelLeft .bfCaptcha {
+    width: auto;
+    background: none;
+    float: left;
+}
+
+.bfQuickMode .bfLabelLeft .bfElementGroup,
+.bfQuickMode .bfLabelRight .bfElementGroup,
+.bfQuickMode section.bfLabelLeft .bfElementGroupNoWrap {
+    width: 45%;
+    float: left;
+}
+
+.bfQuickMode .bfLabelRight .bfElementGroupNoWrap,
+.bfQuickMode .bfLabelRight .bfCaptcha {
+    width: auto;
+    float: left;
+}
+
+.bfQuickMode section.bfLabelRight .bfElementGroupNoWrap {
+    width: 45%;
+    float: left;
+}
+
+.bfQuickMode span.bfLabelBottom .bfElementGroupNoWrap {
+    width: auto;
+}
+
+.bfQuickMode .bfLabelBottom .bfElementGroupNoWrap,
+.bfQuickMode .bfLabelBottom .bfElementGroup,
+.bfQuickMode .bfLabelBottom .bfCaptcha {
+    float: left;
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+.bfQuickMode .bfLabelLeft .bfElementGroup label,
+.bfQuickMode .bfLabelLeft .bfElementGroupNoWrap label,
+.bfQuickMode .bfLabelTop .bfElementGroup label,
+.bfQuickMode .bfLabelTop .bfElementGroupNoWrap label,
+.bfQuickMode .bfLabelRight .bfElementGroup label,
+.bfQuickMode .bfLabelRight .bfElementGroupNoWrap label,
+.bfQuickMode .bfLabelBottom .bfElementGroup label,
+.bfQuickMode .bfLabelBottom .bfElementGroupNoWrap label {
+    width: auto;
+    float: none;
+    margin: 0px 10px 10px 0px;
+    display: inline;
+    position: static;
+}
+
+.bfQuickMode .bfLabelLeft .bfElementGroup input,
+.bfQuickMode .bfLabelLeft .bfElementGroupNoWrap input,
+.bfQuickMode .bfLabelTop .bfElementGroup input,
+.bfQuickMode .bfLabelTop .bfElementGroupNoWrap input,
+.bfQuickMode .bfLabelRight .bfElementGroup input,
+.bfQuickMode .bfLabelRight .bfElementGroupNoWrap input,
+.bfQuickMode .bfLabelBottom .bfElementGroup input,
+.bfQuickMode .bfLabelBottom .bfElementGroupNoWrap input {
+    width: auto;
+    float: none;
+    margin: 3px 5px 0px 0px;
+    display: inline;
+}
+
+/* ##### Captcha ##### */
+
+.bfQuickMode .bfCaptcha {
+    background: none;
+    border:  none;
+}
+
+.bfQuickMode .bfCaptcha input {
+    width: auto;
+    float: left
+}
+
+.bfQuickMode .bfCaptcha img {
+    vertical-align: middle;
+}
+
+.bfQuickMode .bfCaptcha .ff_capimg {
+    margin-bottom: 10px;
+}
+
+/* ##### Summarize ##### */
+
+.bfQuickMode .bfSummarize {
+    font-weight: bold;
+    display: table-cell;
+}
+
+.bfQuickMode .bfNotAvailable {
+    color: #ccc;
+}
+
+/* ##### buttons ##### */
+
+.bfQuickMode .bfNextButton, .bfQuickMode .bfSubmitButton, .bfQuickMode .bfCancelButton {
+    float: right;
+    margin-top: 20px;
+}
+
+.bfQuickMode .bfPrevButton {
+    margin-top: 20px;
+    float: left;
+}
+
+.bfQuickMode .bfCancelButton{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bfQuickMode .bfCalendar ~ span > button {
+    height: inherit;
+    margin: 0px 0px 0px 5px;
+    float: none;
+}
+
+.bfQuickMode input[type='text'].bfCalendar{
+
+    width: 40%;
+}
+
+.bfQuickMode button{
+    box-shadow: none;
+}
+
+.ff_elem{
+    box-shadow: none;
+}
+
+#bfCaptchaEntry {
+    width: 196px;
+}
+
+/* ##### Uploader ##### */
+
+#bfFileQueue {
+	/*
+	width: 400px;
+	height: 300px;
+	overflow: auto;
+	border: 1px solid #E5E5E5;
+	*/
+	margin-bottom: 10px;
+	position: absolute;
+}
+
+#bfSubmitMessage{
+	border: 2px solid #E5E5E5;
+	background-color: #F5F5F5;
+	margin-top: 5px;
+	padding: 10px;
+	width: 350px;
+        -moz-border-radius-bottomright: 50px 25px;
+        border-bottom-right-radius: 50px 25px;
+}
+
+#bfFileQueue{
+	border: 2px solid #E5E5E5;
+	background-color: #F5F5F5;
+	margin-top: 5px;
+	padding: 10px;
+	width: 350px;
+        -moz-border-radius-bottomright: 50px 25px;
+        border-bottom-right-radius: 50px 25px;
+        z-index: 1100;
+}
+
+.bfFileQueueItem{
+	border: 2px solid #E5E5E5;
+	background-color: #F5F5F5;
+	margin: 5px;
+	padding: 10px;
+}
+
+.uploadifyQueueItem {
+	font: 11px Verdana, Geneva, sans-serif;
+	border: 2px solid #E5E5E5;
+	background-color: #F5F5F5;
+	margin-top: 5px;
+	padding: 10px;
+	width: 350px;
+}
+
+.uploadifyError {
+	border: 2px solid #FBCBBC !important;
+	background-color: #FDE5DD !important;
+}
+
+.uploadifyQueueItem .cancel {
+	float: right;
+}
+
+.uploadifyProgress {
+	background-color: #FFFFFF;
+	border-top: 1px solid #808080;
+	border-left: 1px solid #808080;
+	border-right: 1px solid #C5C5C5;
+	border-bottom: 1px solid #C5C5C5;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.uploadifyProgressBar {
+	background-color: #0099FF;
+	width: 1px;
+	height: 3px;
+}
+
+@media all and (max-width: 767px) {
+
+    .bfQuickMode fieldset.bfInline {
+
+        margin-bottom: -3px;
+    }
+
+    .bfQuickMode fieldset .bfWrapperBlock {
+        margin-bottom: 0px;
+    }
+
+    .bfQuickMode .bfLabelLeft label,
+    .bfQuickMode .bfLabelRight label{
+        width: 90%;
+        min-width: 90%;
+        max-width: 90%;
+        float: none;
+        margin: 0px 10px 0px 0px;
+        display: block;
+    }
+    
+    .bfQuickMode fieldset .bfWrapperInline, .bfQuickMode .bfNoSection .bfWrapperInline {
+	width: 100%;
+	max-width: 100%;
+        min-width: 100%;
+	float: none;
+        display: block;
+    }
+
+    .bfQuickMode .bfSignature{
+        width: 90%;
+        max-width: 90%;
+        min-width: 90%;
+    }
+
+
+    .bfQuickMode input[type=text], 
+    .bfQuickMode textarea,  
+    .bfQuickMode .uneditable-input,
+    .bfQuickMode input[type=text]:hover, 
+    .bfQuickMode textarea:hover,  
+    .bfQuickMode .uneditable-input:hover,
+    .bfQuickMode input[type=text]:focus, 
+    .bfQuickMode textarea:focus,  
+    .bfQuickMode .uneditable-input:focus{
+         width: 90%;
+         max-width: 90%;
+         min-width: 90%;
+     }
+     .bfQuickMode select {
+         width: 90%;
+         max-width: 90%;
+         min-width: 90%;
+     }
+     .bfQuickMode .bfElementGroup{
+         width: 90%;
+         max-width: 90%;
+         min-width: 90%;
+     }
+     #ff_capimgValue {
+        width: 90% !important;
+        min-width: 90% !important;
+        max-width: 90% !important;
+    }
+    #bfCaptchaEntry{
+        width: 60% !important;
+        min-width: 60% !important;
+        max-width: 60% !important;
+    }
+    
+    .bfQuickMode .bfElementGroupNoWrap,
+    .bfQuickMode .bfElementGroup{
+        width: 90% !important;
+        min-width: 90% !important;
+        max-width: 90% !important;
+    }
+    .bfQuickMode input[type='text'].bfCalendar{
+
+        width: 75%;
+        min-width: 75%;
+        max-width: 75%;
+    }
+}
+
+@media all and (max-width: 535px) {
+    .bfQuickMode .bfFieldset-b {
+        height: 16px;
+    }
+}
+
+@media all and (max-width: 285px) {
+
+    .bfQuickMode input[type='text'].bfCalendar{
+
+        width: 60%;
+        min-width: 60%;
+        max-width: 60%;
+    }
+
+}
+
+.bfRecaptchaCustomControls,
+.bfRecaptchaCustomResponseField{
+    padding-top: 10px !important;
+}
+
+.bfRecaptchaCustomControls button{
+    margin-right: 5px !important;
+}
+
+.bfRecaptchaCustomResponseField #recaptcha_response_field{
+    width: 100% !important;
+}
+
+.bfRecaptchaCustom #recaptcha_image{
+    width: 100% !important;
+}
+
+.bfQuickMode *, :after, :before {
+    box-sizing: unset;
+}
+
+@media all and (max-width: 767px) {
+    .bfQuickMode fieldset .bfWrapperInline, .bfQuickMode .bfNoSection .bfWrapperInline {
+
+        margin-bottom: 0;
+    }
+}
+
+.bfQuickMode .js-calendar button {
+    padding: 0 8px;
+    max-width: 50px;
+}
+
+.bfFlashFileQueueClass{
+    clear: left;
+}
