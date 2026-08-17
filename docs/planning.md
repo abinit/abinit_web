@@ -5,12 +5,18 @@ Note : there is a unique version number (and associated git tag) for the frozen 
 
 ### ABINITv10.9 planning 
 
-:red_circle: Tentatively August 16, 2026 :
-Start v10.9.4, being the filtered, migrated version of v10.9.3. Merge ABINITv10.9.4 contributions, to be done carefully, as the gitlab will be now hosted at ULiege, and only filtered contributions will be accepted.
+:red_circle: Likely, beginning of September, 2026 :
+Merge ABINITv10.9.4 contributions, to be done carefully, as the gitlab will be now hosted at ULiege, and only filtered contributions will be accepted.
+
+:red_circle: Tentatively, before August 28, 2026 :
+Start v10.9.4, being the filtered, migrated version (ULg) of v10.9.3. Merge ABINITv10.9.4 contributions, to be done carefully, as the gitlab will be now hosted at ULiege, and only filtered contributions will be accepted.
+
+:red_circle: August 17, 2026 :
+Merge ABINITv10.9.2 contributions and freeze ABINITv10.9.3, to be used as the non-filtered reference (UCLouvain) for the migration.
 
 [DONE] August 8, 2026 :
 Merge ABINITv10.9.0 contributions, as well as merge ABINITv10.8.3, to reach frozen v10.9.1 (17b84f4101). Start ABINITv10.9.2 (655d888e65) 
-for a short period of development, as after one week, ABINITv10.9.3 will be frozen, and used as the non-filtered reference for the migration.
+for a short period of development.
 
 [DONE] May 22, 2026 
 Start ABINITv10.9.0 (823e6d21), for new developments, from v10.8.1.
