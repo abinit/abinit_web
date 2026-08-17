@@ -5,6 +5,9 @@ Note : there is a unique version number (and associated git tag) for the frozen 
 
 ### ABINITv10.9 planning 
 
+:red_circle: Likely, beginning of September, 2026 :
+Merge ABINITv10.9.4 contributions, to be done carefully, as the gitlab will be now hosted at ULiege, and only filtered contributions will be accepted.
+
 :red_circle: Tentatively, before August 28, 2026 :
 Start v10.9.4, being the filtered, migrated version (ULg) of v10.9.3. Merge ABINITv10.9.4 contributions, to be done carefully, as the gitlab will be now hosted at ULiege, and only filtered contributions will be accepted.
 
