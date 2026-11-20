@@ -8,6 +8,64 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="./styles.css" rel="stylesheet"> <!-- Link to your
   external CSS file -->
+  <style>
+    /* Benchmark page layout */
+    .benchmark { margin-left: 15%; margin-right: 10%; }
+    .benchmark a { color: #F18F34; }
+    .benchmark-intro { max-width: 900px; }
+    .benchmark-toc { margin: 10px 0 20px; }
+    .benchmark-toc a { display: inline-block; margin-right: 20px; font-weight: bold; }
+    .benchmark-section {
+      margin-top: 40px;
+      padding-bottom: 6px;
+      border-bottom: 3px solid #F18F34;
+      scroll-margin-top: 20px;
+    }
+    .benchmark-item {
+      display: grid;
+      grid-template-columns: minmax(0, 500px) minmax(0, 1fr);
+      gap: 12px 30px;
+      align-items: start;
+      padding: 25px 0;
+      border-bottom: 1px solid #ddd;
+      scroll-margin-top: 20px;
+    }
+    .benchmark-title {
+      grid-column: 1 / -1;
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #222;
+      margin: 0;
+    }
+    .benchmark-image { width: 100%; height: auto; }
+    .benchmark-description h5 {
+      position: relative;
+      padding-left: 16px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #222;
+      margin: 14px 0 4px;
+    }
+    .benchmark-description h5::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.35em;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #F18F34;
+    }
+    .benchmark-description h5:first-child { margin-top: 0; }
+    .benchmark-description p {
+      margin: 0 0 4px 16px;
+      color: #555;
+    }
+    @media (max-width: 900px) {
+      .benchmark { margin-left: 16px; margin-right: 16px; }
+      .benchmark-item { grid-template-columns: minmax(0, 1fr); }
+    }
+  </style>
 </head>
 
 <body>
@@ -92,49 +150,44 @@
 
 <div class="separator-line1"></div>
 
-<div class="benchmark" style="margin-left: 15%; margin-right: 10%;">
+<div class="benchmark">
     <div class="separator">&nbsp;</div>
 
     <h2>Benchmarks</h2>
+    <p class="benchmark-intro">Parallel performance of ABINIT on different systems and supercomputers. Each benchmark gives the feature tested, the system, the ABINIT version, the compilation options and the hardware.</p>
 
-    <div class="benchmark-item">
-        <img alt="GW screening test on Zr2Y2O7/C1 testcase on MN4 “highmem” compute nodes" class="benchmark-image" data-entity-type="file" data-entity-uuid="50b637a5-d4d2-473b-90a3-6278b63341c6" src="/sites/default/files/inline-images/GW_scaling954.png" width="500" height="936" loading="lazy">
+    <nav class="benchmark-toc">
+        <a href="#gs-cpu">Ground state on CPU</a>
+        <a href="#gs-gpu">Ground state on GPU</a>
+        <a href="#gw">GW</a>
+    </nav>
+
+    <!-- ============================================================ -->
+    <h3 class="benchmark-section" id="gs-cpu">Ground-state DFT on CPU</h3>
+
+    <div class="benchmark-item" id="lisrh3">
+        <h4 class="benchmark-title">LiSrH<sub>3</sub>:Eu defect supercell (625 atoms)</h4>
+        <img alt="Scaling of a 625-atom LiSrH3 supercell with one Eu substitution" class="benchmark-image"
+             src="./benchmark/Scaling-LiSrH3-2023.png" width="500" loading="lazy">
         <div class="benchmark-description">
             <h5>Feature tested:</h5>
-            <p>Screening part of a GW calculation: optdriver 3</p>
+            <p>Ground-state calculation - self-consistent DFT</p>
             <h5>System tested:</h5>
-            <p>11 atom Zr2Y2O7/C1 crystalline structure [nband=2000, nelect=88, empty(active)=1956; 36 q-points]</p>
-            <h5>Abinit version: 9.5.4</h5>
+            <p>625 atoms supercell of LiSrH<sub>3</sub> with one Eu(Sr) substitution | 1 k-point | 1024 bands | GGA+U on Eu-4f with PAW pseudos from Pseudo Dojo (JTH v1.1 PBE standard) | Paral over 2 spins, npbands, npfft, bandpp</p>
+            <h5>Abinit version: 9.8.1</h5>
             <h5>Compilation options:</h5>
-            <p>Fortran90 (and some C) parallelized with MPI with -O2 -xCORE-AVX512 -mtune=skylake Intel 2017.4 compilers and MPI libraries, with MKL BLAS/LAPACK &amp; DFTI-FFT, NetCDF/HDF5</p>
+            <p>Gnu 11.3 compiler with -g -O2 and MPI</p>
             <h5>Hardware:</h5>
-            <p>MareNostrum 4 on the highmem compute node (7928 MB per core) which has 2 sockets Intel Xeon Platinum 8160 CPU with 24 cores each @2.10GHz for a total of 48 cores per node. L1d 32K; L1i cache 32K; L2 cache 1024K; L3 cache 33792K. 100 Gbit/s Intel Omni-Path HFI Silicon 100 Series PCI-E adapter.</p>
-            <h5>Source: <a href="https://gitlab.pop-coe.eu/documents/reports/-/raw/master/POP2-AR-157-Abinit.pdf" style="color: #F18F34;">Link</a></h5>
+            <p><a href="https://www.ceci-hpc.be/clusters/lucia/">Lucia supercomputer</a> AMD EPYC 7513 32C 2.6GHz with Mellanox HDR Infiniband</p>
+            <p><a href="https://top500.org/system/180122/">#245 HPC ranking</a></p>
+            <h5>Source: <a href="https://github.com/abinit/abinit_assets/blob/main/abinit_web_site/benchmarks/benchmark_defect_supercell.tar">Link</a></h5>
         </div>
     </div>
 
-    <div class="benchmark-item">
-        <img alt="CHEBFI versus LOBPCG" class="benchmark-image"
-             data-entity-type="file" src="./benchmark/chebfi32768.png"
-             style="vertical-align:middle" width="500">
-        <div class="benchmark-description">
-            <h5>Feature tested:</h5>
-            <p>Ground-state calculation - self-consistent DFT with different diagonalization algorithms.</p>
-            <h5>System tested:</h5>
-            <p>512 atoms of Ti with PAW pseudopotential [nband=4096]</p>
-            <h5>Abinit version: 7.10</h5>
-            <h5>Compilation options:</h5>
-            <p>We used the Intel MKL library for BLAS and LAPACK dense linear algebra, and the ELPA library for the dense eigenproblem in the Rayleigh–Ritz step (in our tests, we found it was about twice as fast as ScaLAPACK).</p>
-            <h5>Hardware:</h5>
-            <p><a href="https://www-hpc.cea.fr/en/complexe/tgcc-curie.htm" style="color: #F18F34;">Curie supercomputer</a> with 16-core Intel Nehalem-EX X7560 @ 2.26 GHz processors per node.</p>
-            <h5>Source: <a href="https://www.sciencedirect.com/science/article/pii/S0010465514003531?via%3Dihub" style="color: #F18F34;">A. Levitt and M. Torrent, Comput. Phys. Commun. 187, 98 (2015).</a></h5>
-        </div>
-    </div>
-
-    <div class="benchmark-item">
-        <img alt="Ti2O3" class="benchmark-image" data-entity-type="file"
-             src="./benchmark/ScalingTi2023.png" style="vertical-align:middle"
-             width="500">
+    <div class="benchmark-item" id="ti-dense-kmesh">
+        <h4 class="benchmark-title">Ti metal with a dense k-point mesh (3 atoms)</h4>
+        <img alt="Scaling of Ti metal with an 80x80x80 k-point mesh" class="benchmark-image"
+             src="./benchmark/ScalingTi2023.png" width="500" loading="lazy">
         <div class="benchmark-description">
             <h5>Feature tested:</h5>
             <p>Ground-state calculation - self-consistent DFT</p>
@@ -144,35 +197,79 @@
             <h5>Compilation options:</h5>
             <p>Gnu 11.3 compiler with -g -O2 and MPI</p>
             <h5>Hardware:</h5>
-            <p><a href="https://www.cenaero.be/fr/lucia-inauguration" style="color: #F18F34;">Lucia supercomputer</a> AMD EPYC 7513 32C 2.6GHz with Mellanox HDR Infiniband</p>
-            <p><a href="https://top500.org/system/180122/" style="color: #F18F34;">#245 HPC ranking</a></p>
+            <p><a href="https://www.ceci-hpc.be/clusters/lucia/">Lucia supercomputer</a> AMD EPYC 7513 32C 2.6GHz with Mellanox HDR Infiniband</p>
+            <p><a href="https://top500.org/system/180122/">#245 HPC ranking</a></p>
             <h5>Additional note:</h5>
             <p>Until 512 cores only k-point parallelization is used while above there are additional parallelization levels on bands and fft, explaining the improved performance.</p>
-            <h5>Source: <a href="https://github.com/abinit/abinit_assets/blob/main/abinit_web_site/benchmarks/benchmark_Ti_dense_kmesh.tar" style="color: #F18F34;">Link</a></h5>
+            <h5>Source: <a href="https://github.com/abinit/abinit_assets/blob/main/abinit_web_site/benchmarks/benchmark_Ti_dense_kmesh.tar">Link</a></h5>
         </div>
     </div>
 
-    <div class="benchmark-item">
-        <img alt="LiSrH3-Eu" class="benchmark-image" data-entity-type="file"
-             src="./benchmark/Scaling-LiSrH3-2023.png"
-             style="vertical-align:middle" width="500">
+    <div class="benchmark-item" id="ti-chebfi">
+        <h4 class="benchmark-title">Ti 512 atoms: CHEBFI versus LOBPCG</h4>
+        <img alt="CHEBFI versus LOBPCG for 512 atoms of Ti" class="benchmark-image"
+             src="./benchmark/chebfi32768.png" width="500" loading="lazy">
         <div class="benchmark-description">
             <h5>Feature tested:</h5>
-            <p>Ground-state calculation - self-consistent DFT</p>
+            <p>Ground-state calculation - self-consistent DFT with different diagonalization algorithms.</p>
             <h5>System tested:</h5>
-            <p>625 atoms supercell of LiSrH3 with one Eu(Sr) substitution | 1 k-point | 1024 bands | GGA+U on Eu-4f with PAW pseudos from Pseudo Dojo (JTH v1.1 PBE standard) | Paral over 2 spins, npbands, npfft, bandpp</p>
-            <h5>Abinit version: 9.8.1</h5>
+            <p>512 atoms of Ti with PAW pseudopotential [nband=4096]</p>
+            <h5>Abinit version: 7.10</h5>
             <h5>Compilation options:</h5>
-            <p>Gnu 11.3 compiler with -g -O2 and MPI</p>
+            <p>We used the Intel MKL library for BLAS and LAPACK dense linear algebra, and the ELPA library for the dense eigenproblem in the Rayleigh–Ritz step (in our tests, we found it was about twice as fast as ScaLAPACK).</p>
             <h5>Hardware:</h5>
-            <p><a href="https://www.cenaero.be/fr/lucia-inauguration" style="color: #F18F34;">Lucia supercomputer</a> AMD EPYC 7513 32C 2.6GHz with Mellanox HDR Infiniband</p>
-            <p><a href="https://top500.org/system/180122/" style="color: #F18F34;">#245 HPC ranking</a></p>
-            <h5>Source: <a href="https://github.com/abinit/abinit_assets/blob/main/abinit_web_site/benchmarks/benchmark_defect_supercell.tar" style="color: #F18F34;">Link</a></h5>
+            <p><a href="https://www-hpc.cea.fr/en/complexe/tgcc-curie.htm">Curie supercomputer</a> with 16-core Intel Nehalem-EX X7560 @ 2.26 GHz processors per node.</p>
+            <h5>Source: <a href="https://www.sciencedirect.com/science/article/pii/S0010465514003531?via%3Dihub">A. Levitt and M. Torrent, Comput. Phys. Commun. 187, 98 (2015).</a></h5>
         </div>
     </div>
 
-    <div class="benchmark-item">
-        <img alt="Ti-GPU" class="benchmark-image" data-entity-type="file" src="https://www.abinit.org/sites/default/files/2023-12/GPU-Jun2023.png" style="vertical-align:middle" width="500">
+    <div class="benchmark-item" id="mnf2-np-spkpt">
+        <h4 class="benchmark-title">MnF<sub>2</sub>, non-collinear magnetism: parallelization levels at equal <i>np_spkpt</i></h4>
+        <img alt="MnF2 elapsed wall time versus np_spkpt for different band, spinor and FFT parallelization" class="benchmark-image"
+             src="./benchmark/comparison_elapsed_time.png" width="500" loading="lazy">
+        <div class="benchmark-description">
+            <h5>Feature tested:</h5>
+            <p>Ground-state calculation - non-collinear magnetism with constrained DFT (direction of the Mn magnetic moments) - Comparison of parallelization levels at equal k-point parallelization <i>np_spkpt</i></p>
+            <h5>System tested:</h5>
+            <p>MnF<sub>2</sub>, 12 atoms | non-collinear antiferromagnetic order | 10&times;10&times;5 k-mesh | FFT grid 64&times;64&times;90 | 160 bands | ecut = 60 Ha | LDA with ONCVPSP norm-conserving pseudopotentials (PseudoDojo v0.4 for Mn)</p>
+            <h5>Abinit version: 10.9.2</h5>
+            <h5>Compilation options:</h5>
+            <p>Gnu 11.3 compiler with -g -O2 -march=native and MPI</p>
+            <h5>Hardware:</h5>
+            <p><a href="https://www.ceci-hpc.be/clusters/lucia/">Lucia supercomputer</a> AMD EPYC 7763 64C 2.45GHz with Mellanox HDR Infiniband</p>
+            <h5>Additional note:</h5>
+            <p>The legend gives <i>npband</i>-<i>npspinor</i>-<i>npfft</i> (<i>bandpp</i> = 40). Total wall time of a run with one SCF step (nstep 1); with only 500 k-points, there is no further gain above <i>np_spkpt</i> = 512.</p>
+            <h5>Source: <a href="https://github.com/abinit/abinit_assets/blob/main/abinit_web_site/benchmarks/benchmark_MnF2_paral.tar">Link</a></h5>
+        </div>
+    </div>
+
+    <div class="benchmark-item" id="mnf2-npband">
+        <h4 class="benchmark-title">MnF<sub>2</sub>, non-collinear magnetism: scaling with <i>npband</i></h4>
+        <img alt="MnF2 wall time versus npband" class="benchmark-image"
+             src="./benchmark/wall_time_vs_npband.png" width="500" loading="lazy">
+        <div class="benchmark-description">
+            <h5>Feature tested:</h5>
+            <p>Ground-state calculation - non-collinear magnetism with constrained DFT (direction of the Mn magnetic moments) - Scaling with band parallelization <i>npband</i></p>
+            <h5>System tested:</h5>
+            <p>Same MnF<sub>2</sub> system as <a href="#mnf2-np-spkpt">above</a> | <i>np_spkpt</i> = 32 | <i>npspinor</i> = 1 | <i>npfft</i> = 1 | <i>bandpp</i> = 10 | total MPI processes = 32 &times; <i>npband</i> </p>
+            <h5>Abinit version: 10.9.2</h5>
+            <h5>Compilation options:</h5>
+            <p>Gnu 11.3 compiler with -g -O2 -march=native and MPI</p>
+            <h5>Hardware:</h5>
+            <p><a href="https://www.ceci-hpc.be/clusters/lucia/">Lucia supercomputer</a> AMD EPYC 7763 64C 2.45GHz with Mellanox HDR Infiniband</p>
+            <h5>Additional note:</h5>
+            <p>Total wall time of a run with one SCF step (nstep 1); from <i>npband</i> = 1 to 16 the speed-up is 5.7.</p>
+            <h5>Source: <a href="https://github.com/abinit/abinit_assets/blob/main/abinit_web_site/benchmarks/benchmark_MnF2_npband.tar">Link</a></h5>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <h3 class="benchmark-section" id="gs-gpu">Ground-state DFT on GPU</h3>
+
+    <div class="benchmark-item" id="ti-gpu-4096">
+        <h4 class="benchmark-title">Ti 512 atoms, 4096 bands: GPU versus CPU</h4>
+        <img alt="GPU versus CPU for 512 atoms of Ti with 4096 bands" class="benchmark-image"
+             src="./benchmark/Scaling_CPU_gfortran11.2.png" width="500" loading="lazy">
         <div class="benchmark-description">
             <h5>Feature tested:</h5>
             <p>Ground-state calculation - self-consistent DFT - Comparison between GPU and CPU</p>
@@ -183,11 +280,14 @@
             <p>gfortran 11.2.0 -g -O2 using OpenMPI 4.1.4, Cuda 11.8, Kokkos 3.7.00, and mkl 22.3</p>
             <h5>Hardware:</h5>
             <p>CPU AMD EPYC 7H12 2*64 cores and GPU 4*Nvidia A100 40Gb</p>
+            <h5>Source: <a href="https://github.com/abinit/abinit_assets/blob/main/abinit_web_site/benchmarks/benchmark_GPU_CPU_gfortran11.2.tar">Link</a></h5>
         </div>
     </div>
 
-    <div class="benchmark-item">
-        <img alt="Ti-GPU" class="benchmark-image" data-entity-type="file" src="https://www.abinit.org/sites/default/files/2023-12/Abinit-GPU2023.png" style="vertical-align:middle" width="500">
+    <div class="benchmark-item" id="ti-gpu-2048">
+        <h4 class="benchmark-title">Ti 512 atoms, 2048 bands: GPU versus CPU</h4>
+        <img alt="GPU versus CPU for 512 atoms of Ti with 2048 bands" class="benchmark-image"
+             src="./benchmark/Scaling_CPU_nvhpc22.11.png" width="500" loading="lazy">
         <div class="benchmark-description">
             <h5>Feature tested:</h5>
             <p>Ground-state calculation - self-consistent DFT - Comparison between GPU and CPU</p>
@@ -198,11 +298,32 @@
             <p>Compiler NVHPC 22.11 -g --use_fast_math --compiler-options=-O3 with openMP target + cuda</p>
             <h5>Hardware:</h5>
             <p>CPU AMD EPYC 7H12 2*64 cores per node and GPU 4*Nvidia A100 80Gb per node</p>
+            <h5>Source: <a href="https://github.com/abinit/abinit_assets/blob/main/abinit_web_site/benchmarks/benchmark_GPU_CPU_nvhpc22.11.tar">Link</a></h5>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <h3 class="benchmark-section" id="gw">GW calculations</h3>
+
+    <div class="benchmark-item" id="gw-zr2y2o7">
+        <h4 class="benchmark-title">Zr<sub>2</sub>Y<sub>2</sub>O<sub>7</sub>: GW screening</h4>
+        <img alt="GW screening test on Zr2Y2O7/C1 testcase on MN4 highmem compute nodes" class="benchmark-image"
+             src="./benchmark/GW_scaling954.png" width="500" loading="lazy">
+        <div class="benchmark-description">
+            <h5>Feature tested:</h5>
+            <p>Screening part of a GW calculation: optdriver 3</p>
+            <h5>System tested:</h5>
+            <p>11 atom Zr<sub>2</sub>Y<sub>2</sub>O<sub>7</sub>/C1 crystalline structure [nband=2000, nelect=88, empty(active)=1956; 36 q-points]</p>
+            <h5>Abinit version: 9.5.4</h5>
+            <h5>Compilation options:</h5>
+            <p>Fortran90 (and some C) parallelized with MPI with -O2 -xCORE-AVX512 -mtune=skylake Intel 2017.4 compilers and MPI libraries, with MKL BLAS/LAPACK &amp; DFTI-FFT, NetCDF/HDF5</p>
+            <h5>Hardware:</h5>
+            <p>MareNostrum 4 on the highmem compute node (7928 MB per core) which has 2 sockets Intel Xeon Platinum 8160 CPU with 24 cores each @2.10GHz for a total of 48 cores per node. L1d 32K; L1i cache 32K; L2 cache 1024K; L3 cache 33792K. 100 Gbit/s Intel Omni-Path HFI Silicon 100 Series PCI-E adapter.</p>
+            <h5>Source: <a href="https://gitlab.pop-coe.eu/documents/reports/-/raw/master/POP2-AR-157-Abinit.pdf">Link</a></h5>
         </div>
     </div>
 </div>
 
-<script src="abinit_info_download.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
